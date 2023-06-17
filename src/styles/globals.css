@@ -1,0 +1,124 @@
+@import '~react-notifications/lib/notifications.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  body {
+    @apply text-purple-900;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply leading-tight mb-5 font-lato text-purple-800;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl;
+  }
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+  h5 {
+    @apply text-lg md:text-xl;
+  }
+  h6 {
+    @apply text-base md:text-lg;
+  }
+  
+  p { /* Could also be body */
+    @apply leading-relaxed;
+  }
+  p:not(:last-child) {
+    @apply mb-5;
+  }
+
+  input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]) {
+    @apply flex h-10 w-full rounded-md border border-purple-100 bg-transparent px-3 py-2 text-sm ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-purple-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-purple-100 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  textarea {
+    @apply flex h-32 w-full rounded-md border border-purple-100 bg-transparent px-3 py-2 text-sm ring-offset-white placeholder:text-purple-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-purple-100 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  [class*="btn-"], [type="submit"] {
+    @apply flex items-center justify-center h-10 w-full rounded-lg text-sm font-medium text-white bg-purple-900 hover:bg-purple-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-purple-500 disabled:cursor-not-allowed disabled:opacity-50 uppercase px-6 py-2 transition-all duration-200 ease-linear;
+  }
+  .brand-btn {
+    @apply bg-purple-900 hover:bg-purple-700 focus-visible:ring-purple-500 text-center text-white rounded-xl px-6 py-2;
+  }
+  
+  .pl-shadow {
+    box-shadow: 0px 2px 15px -4px rgb(22 21 52 / 25%);
+  }
+  .home-preview-shadow {
+    box-shadow: -10px 10px 20px -5px rgba(22, 21, 52, 0.2);
+  }
+  .agreements-preview-shadow {
+    box-shadow: 0px 3px 8px -2px rgba(139, 128, 249, 0.25);
+  }
+}
+
+section {
+  @apply flex flex-col items-center w-full overflow-x-hidden py-14;
+}
+
+.section_wrap {
+  @apply flex flex-col items-center w-full relative;
+}
+
+.🔒️ p:not(:last-child) {
+  padding: 0px!important;
+  margin: 0px!important;
+  white-space: break-spaces;
+  word-break: break-all;
+  text-align: left;
+}
+.cl-internal-b3fm6y {
+  display: none;
+}
+
+select {
+  border: 1px solid grey;
+}
+
+
+.loading {
+  @apply bg-purple-100 text-transparent rounded-2xl animate-opacity_pulse;
+}
+
+/* form input[type="radio"]:checked+label {
+  background-color: #F88379;
+  color: white;
+} */
+
+button#mobile-nav .burger, button#mobile-nav .burger:before, button#mobile-nav .burger:after {
+  @apply block h-[2px] w-8 bg-white transition-all duration-200 ease-linear rotate-0;
+}
+button#mobile-nav .burger:before, button#mobile-nav .burger:after {
+  @apply content-[''] absolute left-0 top-0;
+}
+button#mobile-nav .burger:before {
+  @apply -translate-y-3;
+}
+button#mobile-nav .burger:after {
+  @apply translate-y-3;
+}
+
+button#mobile-nav[aria-expanded="true"] .burger {
+  @apply rotate-45;
+  @apply before:translate-y-0 before:rotate-90;
+  @apply after:opacity-0;
+}
+
+.preview-clause{
+  scroll-margin-top: 150px;
+  transition: .2s ease-in-out;
+}
+

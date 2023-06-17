@@ -1,0 +1,9 @@
+.beta-dashboard-embed.embed-buttons, .beta-dashboard-embed.embed-buttons iframe {
+  width: 100%;
+}
+
+@media (max-width:783px){
+  .beta-dashboard-embed.embed-buttons iframe{
+    height   : 400px;
+  }
+}

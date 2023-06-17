@@ -1,0 +1,219 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["jsonProtocol"]
+}
+
+datasource db {
+  provider     = "mysql"
+  url          = env("DATABASE_URL")
+  relationMode = "prisma"
+}
+
+model Contracts {
+  id                String              @id @default(cuid())
+  key               Int                 @unique
+  name              String
+  agreementTitle    String
+  variables         Json
+  tags              String              @db.Text
+  createdAt         DateTime            @default(now())
+  updatedAt         DateTime            @updatedAt
+  description       String              @db.Text
+  slug              String              @unique
+  clauseOrder       Json?
+  contractQuestions ContractQuestions[]
+  clauses           Clauses[]
+}
+
+model ContractQuestions {
+  id           String                         @id @default(cuid())
+  key          Int                            @unique
+  group        String
+  variable     String
+  text         String                         @db.Text
+  help         String?                        @db.Text
+  inputType    InputType
+  inputOptions Json?
+  contract     Contracts[]
+  conditionals ContractQuestionConditionals[]
+}
+
+model ContractQuestionConditionals {
+  id               String              @id @default(cuid())
+  key              Int                 @unique
+  operand          Operand
+  termOne          String
+  termTwo          String
+  contractQuestion ContractQuestions[]
+}
+
+model Clauses {
+  id                 String               @id @default(cuid())
+  key                Int                  @unique
+  group              String
+  version            String
+  text               String               @db.Text
+  help               String?              @db.Text
+  deleteWarning      String               @db.Text
+  formatting         String
+  contract           Contracts[]
+  questions          ClauseQuestions[]
+  clauseConditionals ClauseConditionals[]
+}
+
+model ClauseQuestions {
+  id           String    @id @default(cuid())
+  key          Int       @unique
+  variable     String
+  prompt       String
+  help         String    @db.Text
+  answerFormat String
+  function     String?   @db.Text
+  questionType String    @db.Text
+  clause       Clauses[]
+}
+
+model ClauseConditionals {
+  id      String    @id @default(cuid())
+  key     Int       @unique
+  operand Operand
+  termOne String
+  termTwo String
+  clause  Clauses[]
+}
+
+model SavedAgreements {
+  id                  String   @id @default(cuid())
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+  user_id             String
+  data_questions      Json
+  data_clauses        Json
+  data_clause_answers Json
+  data_contract_edits Json
+  completed           Boolean  @default(false)
+  agreement           String   @db.Text
+  agreement_variables Json
+  user_defined_name   String   @db.Text
+}
+
+model UserMeta {
+  id     String @id @default(cuid())
+  userId String
+  key    String @db.Text
+  value  String @db.Text
+}
+
+model BusinessProfile {
+  id            String        @id @default(cuid())
+  userId        String
+  businessName  String        @db.Text
+  ownerName     String        @db.Text
+  signerName    String        @db.Text
+  addressOne    String        @db.Text
+  addressTwo    String        @db.Text
+  city          String        @db.Text
+  state         String        @db.Text
+  zip           String        @db.Text
+  website       String        @db.Text
+  choiceOfLaw   String        @db.Text
+  choiceOfForum BusinessForum
+  enableFee     Boolean
+}
+
+model ClauseConditionalsToClauses {
+  A String
+  B String
+
+  @@unique([A, B], map: "_ClauseConditionalsToClauses_AB_unique")
+  @@index([B], map: "_ClauseConditionalsToClauses_B_index")
+  @@map("_ClauseConditionalsToClauses")
+}
+
+model ClauseQuestionsToClauses {
+  A String
+  B String
+
+  @@unique([A, B], map: "_ClauseQuestionsToClauses_AB_unique")
+  @@index([B], map: "_ClauseQuestionsToClauses_B_index")
+  @@map("_ClauseQuestionsToClauses")
+}
+
+model ClausesToContracts {
+  A String
+  B String
+
+  @@unique([A, B], map: "_ClausesToContracts_AB_unique")
+  @@index([B], map: "_ClausesToContracts_B_index")
+  @@map("_ClausesToContracts")
+}
+
+model ContractQuestionConditionalsToContractQuestions {
+  A String
+  B String
+
+  @@unique([A, B], map: "_ContractQuestionConditionalsToContractQuestions_AB_unique")
+  @@index([B], map: "_ContractQuestionConditionalsToContractQuestions_B_index")
+  @@map("_ContractQuestionConditionalsToContractQuestions")
+}
+
+model ContractQuestionsToContracts {
+  A String
+  B String
+
+  @@unique([A, B], map: "_ContractQuestionsToContracts_AB_unique")
+  @@index([B], map: "_ContractQuestionsToContracts_B_index")
+  @@map("_ContractQuestionsToContracts")
+}
+
+model Options {
+  id    String @id
+  key   String @unique
+  value String
+}
+
+model TermsOfService {
+  id        String   @id
+  version   Int      @unique
+  text      String   @db.LongText
+  createdAt DateTime @default(now())
+}
+
+model UserTermsOfServiceAcceptance {
+  id        String   @id
+  createdAt DateTime @default(now())
+  userId    String
+}
+
+model TermsOfServiceToUserTermsOfServiceAcceptance {
+  A String
+  B String
+
+  @@unique([A, B], map: "_TermsOfServiceToUserTermsOfServiceAcceptance_AB_unique")
+  @@index([B], map: "_TermsOfServiceToUserTermsOfServiceAcceptance_B_index")
+  @@map("_TermsOfServiceToUserTermsOfServiceAcceptance")
+}
+
+enum InputType {
+  SELECT
+  CHECKBOX
+  BOOLEAN
+  DROPDOWN
+  RADIO
+}
+
+enum Operand {
+  EQUALS
+  NOT_EQUALS
+  GREATER_THAN
+  LESS_THAN
+  GREATER_THAN_OR_EQUAL_TO
+  LESS_THAN_OR_EQUAL_TO
+  CONTAINS
+  NOT_CONTAINS
+}
+
+enum BusinessForum {
+  Arbitration
+  Court
+}

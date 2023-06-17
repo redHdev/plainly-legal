@@ -1,0 +1,23 @@
+{
+  "title": "",
+  "description": "",
+  "classes": "grid grid-cols-6 gap-4",
+  "questions": [
+    {
+      "name": "First Name",
+      "placeholder": "John",
+      "input": "input",
+      "type": "text",
+      "required": true,
+      "classes": "col-span-3"
+    },
+    {
+      "name": "Last Name",
+      "placeholder": "Smith",
+      "input": "input",
+      "type": "text",
+      "required": true,
+      "classes": "col-span-3"
+    }
+  ]
+}
