@@ -48,5 +48,7 @@ export interface AgreementData {
   data_clauses: Clauses[];
   data_clause_answers: liveFormData;
   data_contract_edits: liveFormData;
+  data_clause_calculations?: liveFormData;
   completed: boolean;
+  globalText?: liveFormData;
 }

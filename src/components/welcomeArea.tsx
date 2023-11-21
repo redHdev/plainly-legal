@@ -1,82 +1,62 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { useUser } from "@clerk/nextjs";
-import { motion as m } from "framer-motion";
+import { currentUser } from "@clerk/nextjs";
 
 import { Cog } from "~/components/icons";
+import { cn } from "~/utils/cn";
 
-export const WelcomeUser = ({
+export const WelcomeUser = async ({
   showSettingsBtn = true,
+  text,
+  children,
+  className,
 }: {
   showSettingsBtn?: boolean;
+  text?: string;
+  children?: React.ReactNode;
+  className?: string;
 }) => {
-  // Use the useUser hook to get the Clerk.user object
-  // This hook causes a re-render on user changes
-  const { isLoaded, isSignedIn, user } = useUser();
+  //Grab the user from the server state
+  const user = await currentUser();
 
-  if (!isLoaded || !isSignedIn) {
+  if (!user) {
     // You can handle the loading or signed state separately
     return (
-      <m.div
-        animate={{
-          opacity: 1,
-        }}
-        transition={{
-          duration: 0.25,
-          ease: "easeOut",
-        }}
-        exit={{
-          opacity: 0,
-        }}
-        className="flex flex-row items-center gap-3 "
-      >
+      <div className={cn("flex flex-row items-center gap-3", className)}>
         <div className="image-container">
-          <div className="aspect-square h-16 overflow-hidden rounded-full bg-purple-100"></div>
+          <div className="aspect-square h-14 overflow-hidden rounded-full bg-purple-100 sm:h-16"></div>
         </div>
         <div className="flex-grow">
           <h6 className="loading subtitle mb-1 inline-flex text-xl leading-none">
-            Welcome back
+            {text ?? "Welcome back"}
           </h6>
           <h2 className="loading mb-0 text-4xl font-semibold">_</h2>
+          {children}
         </div>
-      </m.div>
+      </div>
     );
   } else {
     return (
-      <m.div
-        initial={{
-          opacity: 0,
-        }}
-        animate={{
-          opacity: 1,
-        }}
-        transition={{
-          duration: 0.5,
-          ease: "easeOut",
-        }}
-        exit={{
-          opacity: 0,
-        }}
-        className="flex flex-row items-center gap-3"
-      >
+      <div className={cn("flex flex-row items-center gap-3", className)}>
         <div className="image-container">
-          <div className="aspect-square h-16 overflow-hidden rounded-full bg-purple-100">
+          <div className="aspect-square h-14 overflow-hidden rounded-full bg-purple-100 sm:h-16">
             <Image
-              src={user?.profileImageUrl}
-              width={70}
-              height={70}
+              src={user?.imageUrl.replace("w=96", "w=128")}
+              width={120}
+              height={120}
               alt="Profile Image"
               className="h-full w-full rounded-full border border-light_purple-200 object-cover"
             />
           </div>
         </div>
         <div className="flex-grow">
-          <h6 className="subtitle mb-1 text-xl leading-none">Welcome back</h6>
-          <h2 className="mb-0 text-4xl font-semibold">
+          <h6 className="subtitle mb-1 leading-none sm:text-xl">
+            {text ?? "Welcome back"}
+          </h6>
+          <h2 className="mb-0 text-3xl font-semibold sm:text-4xl">
             {user?.firstName} {user?.lastName}
           </h2>
+          {children}
         </div>
         {showSettingsBtn && (
           <Link
@@ -89,7 +69,7 @@ export const WelcomeUser = ({
             </div>
           </Link>
         )}
-      </m.div>
+      </div>
     );
   }
 };

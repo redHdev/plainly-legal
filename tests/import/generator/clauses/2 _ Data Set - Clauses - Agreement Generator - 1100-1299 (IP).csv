@@ -1,0 +1,1757 @@
+Key,Clause Group,Clause Version,Clause Text,Clause Help,Delete Warning,Formatting,Questions,Plain Text Name
+1100,ip,services_ip_transfer,"<strong>Transfer of Intellectual Property Rights</strong><br />
+<br />
+Until payment-in-full is received, {service_provider_designation} shall retain ownership of the intellectual property rights in the material created. Upon payment-in-full, the {customer_identifier} is and shall be, the sole and exclusive owner of all right, title, and interest throughout the world in and to all the copy created under this Agreement, including the copyrights in all works created pursuant to this Agreement (collectively, the &ldquo;<strong>Deliverables</strong>&rdquo;). The Parties hereby agree that the Deliverables are a &ldquo;work made for hire&rdquo; for the {customer_identifier}.<br />
+<br />
+If, for any reason, any of the Deliverables do not constitute a &ldquo;work made for hire,&rdquo; contingent only upon the receipt of full payment for services under this Agreement, {service_provider_designation} agrees to assign and hereby irrevocably does assign to the {customer_identifier}, in each case without additional consideration, all right, title, and interest throughout the world in and to the Deliverables, including all copyrights therein.<br />
+<br />
+The assignment of copyrights under this Agreement includes all rights of paternity, integrity, disclosure, and withdrawal and any other rights that may be known as &ldquo;moral rights&rdquo; (collectively, &ldquo;<strong>Moral Rights</strong>&rdquo;). {service_provider_designation} hereby irrevocably waives, to the extent permitted by applicable law, any and all claims {service_provider_designation} may now or hereafter have in any jurisdiction to any Moral Rights with respect to the Deliverables.<br />
+<br />
+Notwithstanding the foregoing, to the extent that {service_provider_designation} uses any preexisting materials in creating the Deliverables, {service_provider_designation} retains ownership of such preexisting materials and, to the extent necessary, hereby grants to the {customer_identifier} an irrevocable, worldwide, unlimited, royalty-free license to use, publish, reproduce, display, distribute copies of, and prepare derivative works based upon, such preexisting materials and derivative works thereof.
+",This clause is what transfers ownership of the work product created under this Agreement from the service provider to the client.,"Without this clause, there is some question about whether you still have an ownership interest in the website. Although that might seem fine for you, it probably isn't fair to your client who has paid you for the work. Note that this clause only applies if the client has paid you in full.",,,Transfer of Intellectual Property
+1101,ip,web_dev_portfolio,"<p><strong>Inclusion in Web Developer&rsquo;s Portfolio</strong><br />
+<br />
+Client hereby provides a fully paid up, irrevocable, lifetime license to {service_provider_designation} to display the final website in {service_provider_designation}&rsquo;s portfolio. For the avoidance of doubt, this provision allows the {service_provider_designation} to include screenshots, videos, and any other means of capturing the website in {service_provider_designation}&rsquo;s portfolio, including an online portfolio.</p>
+",This clause lets you include the finished website in your portfolio to help your marketing efforts.,"This clause is one that is subject to negotiation with your client. If you remove this clause from the agreement, make sure you do not include the finished website in your portfolio. ",,,Inclusion in Portfolio
+1102,ip,confidentiality_services_two_way,"<strong>Confidentiality</strong><br />
+<br />
+From time to time during the Term of this Agreement, either Party (as the &ldquo;<strong>Disclosing Party</strong>&rdquo;) may disclose or make available to the other Party (as the &ldquo;<strong>Receiving Party</strong>&rdquo;), non-public, proprietary, and confidential information of Disclosing Party that, if disclosed in writing or other tangible form is clearly labeled as &ldquo;confidential,&rdquo; is identified as confidential when disclosed, or which the Receiving Party should reasonably know to be confidential (&ldquo;<strong>Confidential Information</strong>&rdquo;).<br />
+<br />
+Confidential Information does not include any information that: (a) is or becomes generally available to the public other than as a result of Receiving Party&#39;s breach of this section; (b) is or becomes available to the Receiving Party on a non-confidential basis from a third-party source, provided that such third party is not and was not prohibited from disclosing such Confidential Information; (c) was in Receiving Party&#39;s possession prior to Disclosing Party&#39;s disclosure hereunder; or (d) was or is independently developed by Receiving Party without using any Confidential Information.<br />
+<br />
+The Receiving Party shall protect and safeguard the confidentiality of the Disclosing Party&#39;s Confidential Information with at least the same degree of care as the Receiving Party would protect its own Confidential Information, but in no event with less than a commercially reasonable degree of care. The Receiving Party shall not use the Disclosing Party&#39;s Confidential Information, or permit it to be accessed or used, for any purpose other than to exercise its rights or perform its obligations under this Agreement and shall not disclose any such Confidential Information to any person or entity not involved in performing the Services under this Agreement.<br />
+<br />
+If the Receiving Party is required by applicable law or legal process to disclose any Confidential Information, it shall, prior to making such disclosure, use commercially reasonable efforts to notify Disclosing Party of such requirements to afford Disclosing Party the opportunity to seek, at Disclosing Party&#39;s sole cost and expense, a protective order or other remedies.
+","This clause allows you and your client to share confidential information with each other knowing it will be protected. If either party discloses information that is clearly confidential (or that you say is confidential), the other party has to protect it like their own secret sauce. The only exceptions are if the information becomes public some other way or the party that receives the confidential information gets a subpoena or other legal process requiring them to produce it to someone else. ","If there is a chance you will be sharing confidential information with each other, you positively must have a confidentiality clause in place. Without it, that information will not be protected. ",,,Confidentiality
+1103,ip,group_program_ip_clause,"<strong>Ownership Of All Intellectual Property</strong><br />
+<br />
+All content included as part of the Program, such as text, graphics, logos, images, as well as the compilation thereof, and any software used in the Program, is the property of the Company or its suppliers and protected by copyright and other laws that protect intellectual property and proprietary rights.<br />
+<br />
+The Company name, the Company logo, the Company slogan, and all related names, logos, product and service names, designs, and slogans are trademarks of the Company or its affiliates or licensors. You must not use such marks without the prior written permission of the Company. All other names, logos, product and service names, designs and slogans in the Program are the trademarks of their respective owners.<br />
+<br />
+Your participation in the Program does not result in a transfer of any intellectual property to You, and, as a condition of participation in the Program, You agree to observe and abide by all copyright and other intellectual property protection.<br />
+<br />
+You are granted a single-use, non-exclusive, non-transferable, revocable license to access and use the Program content and resources. You hereby agree that You will not modify, publish, transmit, reverse engineer, participate in the transfer or sale, create derivative works, or in any way exploit any of the content, in whole or in part, found in the Program.<br />
+<br />
+The Company content is not for resale. Your participation in the Program does not entitle You to make any unauthorized use of any protected content, and in particular You will not delete or alter any proprietary rights or attribution notices in any content. You will use protected content solely for Your individual use, and will make no other use of the content without the express written permission of the Company and the copyright owner. You agree that You do not acquire any ownership rights in any protected content. We do not grant You any licenses, express or implied, to the intellectual property of the Company or our licensors except as expressly authorized herein.<br />
+<br />
+You hereby agree that any infringement of the Company&rsquo;s intellectual property shall result in an immediate termination of the license granted hereunder. To be clear, if You violate the Company&rsquo;s intellectual property rights, Your access to the Program will be terminated immediately, and You shall not be entitled to a refund of any portion of the fees.
+","This clause protects the intellectual property rights of the company offering the program. It makes clear that all the material is owned by the company and that all the customer is buying is the right to use the material themselves, not to resell it.",This clause is meant to protect you as the group program creator. Removing it could create some confusion about what your customers can do with the material they receive inside the program.,,,Ownership of Intellectual Property
+1104,ip,group_program_confidentiality_standard,"<strong>Confidentiality</strong><br />
+<br />
+The Company respects the privacy of its customers and will not disclose any information You provide except as set forth in this Agreement. As a condition of participating in the Program, You hereby agree to respect the privacy of other Program participants and to respect the Company&rsquo;s confidential information.<br />
+<br />
+Specifically, You shall not share any information provided by other Program participants outside of the bounds of the Program unless You receive express written permission from such other participants to share the information. Similarly, the content of the Program contains the Company&rsquo;s proprietary methods, processes, forms, templates, and other information. You hereby agree not to share the information provided to You in the Program with anyone other than the Company, its owners and employees, and other Program participants.
+","This section protects the confidentiality of your company and all the program participants. It gives your customers peace of mind, knowing you will protect their confidential information. Just as importantly, it requires customers to honor the privacy of other program participants. ",This clause protects your confidential information and provides protection to your customers. You should not remove it unless you have a compelling reason to do so.,,,Confidentiality
+1105,ip,group_program_submission_license,"<strong>Materials Provided By You During The Program</strong><br />
+<br />
+The Company does not claim ownership of the information or materials You may provide during the Program (including feedback and suggestions) or post, upload, input, or submit to any Website or our associated services (collectively &ldquo;<strong>Submissions</strong>&rdquo;).<br />
+<br />
+However, by posting, uploading, inputting, providing, or submitting Your Submissions, You are granting the Company, our affiliated companies, and necessary sub-licensees permission to include Your Submissions in the Program going forward.<br />
+<br />
+In other words, the Company has the right to include Your Submissions &ndash; including any audio or video recordings of You participating in any sessions as part of the Program &ndash; in the Program going forward.<br />
+<br />
+No compensation will be paid with respect to the use of Your Submissions, as provided herein. The Company is under no obligation to post or use any Submissions You may provide and may remove any Submissions at any time in the Company&rsquo;s sole discretion.<br />
+<br />
+By posting, uploading, inputting, providing, or submitting Your Submissions, You warrant and represent that You own or otherwise control all of the rights to Your Submissions as described in this section including, without limitation, all the rights necessary for You to provide, post, upload, input, or submit the Submissions.
+","This section protects you from a customer complaining that their interactions in the program remain visible in the future. For example, if you include group calls, it prevents a customer who appeared on one of those call recordings from demanding that you remove that recording (or any portion that includes them) from the program in the future. ",This clause is what gives you express permission to keep recordings in your program for future participants. You should not remove this clause unless you have a compelling reason to do so. ,,,Materials Provided During Program
+1106,ip,product_ip_clause,"<p><strong>Ownership Of All Intellectual Property</strong><br />
+<br />
+All content included as part of the Product, such as text, graphics, logos, images, as well as the compilation thereof, and any software used in the Product, is the property of the Company or its suppliers and protected by copyright and other laws that protect intellectual property and proprietary rights.<br />
+<br />
+The Company name, the Company logo, the Company slogan, and all related names, logos, product and service names, designs, and slogans are trademarks of the Company or its affiliates or licensors. You must not use such marks without the prior written permission of the Company. All other names, logos, product and service names, designs and slogans in the Product are the trademarks of their respective owners.<br />
+<br />
+Your purchase of the Product does not result in a transfer of any intellectual property to You, and, as a condition of purchase and use of the Product, You agree to observe and abide by all copyright and other intellectual property protection.<br />
+<br />
+You are granted a single-use, non-exclusive, non-transferable, revocable license to access and use the Product. You hereby agree that You will not modify, publish, transmit, reverse engineer, participate in the transfer or sale, create derivative works, or in any way exploit any of the content, in whole or in part, found in the Product.<br />
+<br />
+The Company content is not for resale. Your purchase of the Product does not entitle You to make any unauthorized use of any protected content, and in particular, You will not delete or alter any proprietary rights or attribution notices in any content. You will use protected content solely for Your individual use, and will make no other use of the content without the express written permission of the Company and the copyright owner. You agree that You do not acquire any ownership rights in any protected content. We do not grant You any licenses, express or implied, to the intellectual property of the Company or our licensors except as expressly authorized herein.<br />
+<br />
+You hereby agree that any infringement of the Company&rsquo;s intellectual property shall result in an immediate termination of the license granted hereunder. To be clear, if You violate the Company&rsquo;s intellectual property rights, Your access to the Product will be terminated immediately, and You shall not be entitled to a refund of any portion of the fees.</p>
+","This clause protects the intellectual property rights of the company offering the Product. It makes clear that all the material is owned by the company and that all the customer is buying is the right to use the material themselves, not to resell it.",This clause is meant to protect you as the product seller. Removing it could create some confusion about what your customers can do with the material they receive when the purchase the Product.,,,Ownership of Intellectual Property
+1107,ip,group_program_confidentiality_enhanced,"<p><strong>Confidentiality</strong><br />
+<br />
+The Company respects the privacy of its customers and will not disclose any information You provide except as set forth in this Agreement.<br />
+<br />
+<strong><em>As a condition of participating in the Program, You hereby agree to respect the privacy of other Program participants and to respect the Company&rsquo;s confidential information. </em></strong><br />
+<br />
+Specifically, You shall not share any information provided by other Program participants outside of the bounds of the Program unless You receive express written permission from such other participants to share the information. Similarly, the content of the Program contains the Company&rsquo;s proprietary methods, processes, forms, templates, and other information. You hereby agree not to share the information provided to You in the Program with anyone other than the Company, its owners and employees, and other Program participants.</p>","This section protects the confidentiality of your company and all the program participants. It gives your customers peace of mind, knowing you will protect their confidential information. Just as importantly, it requires customers to honor the privacy of other program participants. ",This clause protects your confidential information and provides protection to your customers. You should not remove it unless you have a compelling reason to do so.,,,Confidentiality
+1108,ip,event_publicity_release,"<p><strong>Publicity Waiver And Release</strong><br />
+<br />
+The Company will be recording all of the presentations that are part of the event. This shall include the main stage sessions, breakout sessions, VIP question and answer sessions, coaching sessions, and the chat that occurs during the event. The Company reserves the right to use these recordings commercially for all legal purposes.<br />
+<br />
+As a condition of participating in the Event, You hereby irrevocably permit, authorize, grant, and license Company and its affiliates, successors, and assigns, and the employees, officers, directors, and agents of each and all of them (&quot;<strong>Authorized Persons</strong>&quot;), the rights to display, publicly perform, exhibit, transmit, broadcast, reproduce, record, photograph, digitize, modify, alter, edit, adapt, create derivative works, exploit, sell, rent, license, otherwise use, and permit others to use the Event recordings, including to the extent that Your name, image, likeness, appearance, voice, or other identifiable information might appear on the recordings of the Event.<br />
+<br />
+The Company shall be the exclusive owner of all rights, including copyright, in the recordings. You hereby irrevocably transfer, assign, and otherwise convey to Company Your entire right, title, and interest, if any, in and to the recordings and all copyrights and other intellectual property rights in the recordings arising in any jurisdiction throughout the universe in perpetuity, including all registration, renewal, and reversion rights, and the right to sue to enforce such copyrights against infringers.<br />
+<br />
+In other words, the Company has the right to use the recordings &ndash; including any audio or video recordings of You participating in any sessions as part of the Event &ndash; commercially, including as marketing material going forward.</p>",This section makes clear that you are recording the event and that this might mean you record your customers (if they are on camera). This gives you the right to use those recordings in your business on an ongoing basis. ,"Removing this creates a significant risk that people who attend the event can complain about you using recordings of the event if their name, image, or likeness appears on camera. ",,,Publicity Waiver & Release
+1109,ip,coaching_confidentiality,"<p><strong>Confidentiality</strong><br />
+<br />
+The Coach shall treat the relationship with Client, as well as all information shared by the Client, as confidential. Coach shall not disclose the existence of the relationship or any information shared during the coaching sessions without the Client&rsquo;s written consent. This means that the Coach will not disclose the Client&rsquo;s name as a reference without the Client&rsquo;s consent.<br />
+<br />
+Client should be aware that a coach-client relationship does not give rise to privilege or any other legally protected confidentiality. That means that Coach could be ordered by a court to disclose information related to the relationship. Coach will notify Client of any legal request that would implicate Client&rsquo;s information prior to disclosing it but may not be able to oppose disclosing the information.<br />
+<br />
+Confidential Information does not include information: (a) known to Coach prior to Client disclosing it; (b) that is generally known to the public or in the industry; (c) obtained by Coach from a third party, without breach of any obligation to the Client; or (d) that is or was developed independently by Coach without use of or reference to the Client&rsquo;s confidential information.</p>",This clause sets out the confidentiality requirement between the Coach and the Client. The Coach agrees to keep everything confidential unless ordered to share it by a court.,"Confidentiality is an important element of a coaching relationship. Generally, you should not remove this clause.",,,Confidentiality
+1110,ip,contractor_ip_rights,"<p><strong>Intellectual Property Rights</strong><br />
+<br />
+The Company is and shall be, the sole and exclusive owner of all right, title, and interest throughout the world in and to all the results and proceeds of the Services performed under this Agreement (collectively, the &ldquo;<strong>Deliverables</strong>&rdquo;), including all patents, copyrights, trademarks, trade secrets, and other intellectual property rights (collectively &ldquo;<strong>Intellectual Property Rights</strong>&rdquo;) therein. You agree that the Deliverables are hereby deemed a &ldquo;work made for hire&rdquo; as defined in 17 U.S.C. &sect; 101 for the Company.<br />
+<br />
+If, for any reason, any of the Deliverables do not constitute a &ldquo;work made for hire,&rdquo; You agree to assign and hereby irrevocably do assign to the Company, in each case without additional consideration, all right, title, and interest throughout the world in and to the Deliverables, including all Intellectual Property Rights therein.<br />
+<br />
+Any assignment of copyrights under this Agreement includes all rights of paternity, integrity, disclosure, and withdrawal and any other rights that may be known as &ldquo;moral rights&rdquo; (collectively, &ldquo;<strong>Moral Rights</strong>&rdquo;). You hereby irrevocably waive, to the extent permitted by applicable law, any and all claims You may now or hereafter have in any jurisdiction to any Moral Rights with respect to the Deliverables.<br />
+<br />
+Upon the reasonable request of the Company, You shall promptly take such further actions, including execution and delivery of all appropriate instruments of conveyance, as may be necessary to assist the Company to prosecute, register, perfect, record, or enforce its rights in any Deliverables. In the event the Company is unable, after reasonable effort, to obtain Your signature on any such documents, You hereby irrevocably designate and appoint the Company as Your agent and attorney-in-fact, to act for and on Your behalf solely to execute and file any such application or other document and do all other lawfully permitted acts to further the prosecution and issuance of patents, copyrights, or other intellectual property protection related to the Deliverables with the same legal force and effect as if You had executed them. You agree that this power of attorney is coupled with an interest.<br />
+<br />
+Notwithstanding this section, to the extent that any of Your pre-existing materials are contained in the Deliverables, You retain ownership of such preexisting materials and hereby grant to the Company an irrevocable, worldwide, unlimited, royalty-free license to use, publish, reproduce, display, distribute copies of, and prepare derivative works based upon, such preexisting materials and derivative works thereof. The Company may assign, transfer, and sublicense such rights to others without Your approval.<br />
+<br />
+You shall require each of Your employees and contractors to execute written agreements securing for the Company the rights provided for in this section prior to such employee or contractor providing any Services under this Agreement.</p>","This section sets out that everything the contractor creates for the company under this agreement is owned by the company. It includes all ""intellectual property"" rights, which include things like patentable inventions, copyrights, trade secrets, etc. The second to last paragraph addresses the extent to which the contractor uses things the contractor has already created to create the final work product for the company (e.g., a website template used as the starting point for a design). That paragraph says the contractor still owns the underlying work but gives the company permission to use it as part of the finished product. ","Without this clause, there is a question about who owns whatever is created by the contractor. That could mean that the contractor later claims to own the material, which would give the contractor the ability to stop you from using it or to sell it to someone else. Getting the intellectual property rights transferred to you is one of the core purposes of a contractor agreement. Do not remove this clause. ",,,Intellectual Property Rights
+1111,ip,contractor_confidentiality,"<p><strong>Confidentiality</strong><br />
+<br />
+You understand and acknowledge that during the course of engagement with the Company, You will have access to and learn about confidential, secret, and proprietary documents, materials, data, and other information, in tangible and intangible form, of and relating to the Company and its businesses and associated third parties (&ldquo;<strong>Confidential Information</strong>&rdquo;). You further understand and acknowledge that this Confidential Information and the Company&rsquo;s ability to reserve it for the exclusive knowledge and use of the Company is of great competitive importance and commercial value to the Company, and that improper use or disclosure of the Confidential Information by the Contractor will cause irreparable harm to the Company, for which remedies at law will not be adequate and may also cause the Company to incur financial costs, loss of business advantage, liability under confidentiality agreements with third parties, civil damages, and criminal penalties.<br />
+<br />
+For purposes of this Agreement, Confidential Information includes, but is not limited to, all information not generally known to the public, in spoken, printed, electronic or any other form or medium, relating to: business methods, policies, research, operations, strategies, techniques, terms of agreements, know-how, trade secrets, supplier information, vendor information, financial information, marketing information and techniques, advertising information and techniques, pricing information, cost information, design information, staffing information, supplier lists, vendor lists, internal controls, sales information, revenue, product plans, inventions, unpublished patent applications, customer information, customer lists, CRM databases, and other similar types of information of the Company or its businesses, or of any other person or entity that has entrusted information to the Company in confidence.<br />
+<br />
+The above list is not exhaustive, and Confidential Information includes other information that is either marked or otherwise identified as confidential or proprietary or that would otherwise appear to a reasonable person to be confidential or proprietary.<br />
+<br />
+You understand and agree that Confidential Information You develop in the course of Your engagement with the Company shall be subject to the terms and conditions of this Agreement as if the Company furnished the same Confidential Information to You in the first instance.<br />
+<br />
+Confidential Information shall not include information that: (a) is or becomes generally available to the public other than through Your breach of this Agreement; or (b) is communicated to You by a third party that had no confidentiality obligations with respect to such information.<br />
+<br />
+You agree to treat all Confidential Information as strictly confidential, not to disclose Confidential Information or permit it to be disclosed, in whole or part, to any third party without the prior written consent of the Company in each instance, and not to use any Confidential Information for any purpose except as required in the performance of the Services. You shall notify the Company immediately in the event You become aware of any loss or disclosure of any Confidential Information.<br />
+<br />
+Upon completion of Your work for the Company, You shall return to the Company all Company property and all Company documents and materials belonging to the Company and stored in any fashion, including those stored electronically. This shall include, but is not limited to, any materials that constitute or contain any Confidential Information, whether they were provided to You by the Company or any of its business associates or created by You in connection with the engagement. To the extent any such materials are duplicates of materials in the possession of the Company, You shall delete or destroy all copies of the materials rather than return them.</p>","This clause sets out that the company will be sharing confidential information with the contractor and requires the contractor to keep that information confidential. Specifically, the contractor is allowed to use that information for only one purpose: to complete the work under this agreement.","Protecting your confidential information is one of the core purposes of a contractor agreement. If you delete this clause, the contractor will generally be free to use the information you provide for any purpose. You should not remove this clause unless you replace it with a confidentiality clause that will serve the same purpose.",,,Confidentiality
+1112,ip,employee_confidentiality_defined,"<strong>Confidential Information</strong><br />
+<br />
+The Employee understands and acknowledges that during the course of employment by the Employer, the Employee will have access to and learn about confidential, secret, and proprietary documents, materials, data, and other information, in tangible and intangible form, of and relating to the Employer and its businesses and existing and prospective customers, suppliers, investors, and other associated third parties (&ldquo;<strong>Confidential Information</strong>&rdquo;). The Employee further understands and acknowledges that this Confidential Information and the Employer&#39;s ability to reserve it for the exclusive knowledge and use of the Employer is of great competitive importance and commercial value to the Employer, and that improper use or disclosure of the Confidential Information by the Employee will cause irreparable harm to the Employer, for which remedies at law will not be adequate and may also cause the Employer to incur financial costs, loss of business advantage, liability under confidentiality agreements with third parties, civil damages, and criminal penalties.<br />
+<br />
+For purposes of this Agreement, Confidential Information includes, but is not limited to, all information not generally known to the public, in spoken, printed, electronic or any other form or medium, relating to: business methods, policies, research, operations, strategies, techniques, terms of agreements, know-how, trade secrets, supplier information, vendor information, financial information, marketing information and techniques, advertising information and techniques, pricing information, cost information, design information, staffing information, supplier lists, vendor lists, internal controls, sales information, revenue, product plans, inventions, unpublished patent applications, customer information, customer lists, and CRM databases of the Employer or its businesses, or of any other person or entity that has entrusted information to the Employer in confidence.<br />
+<br />
+The Employee understands that the above list is not exhaustive, and that Confidential Information includes other information that is either marked or otherwise identified as confidential or proprietary or that would otherwise appear to a reasonable person to be confidential or proprietary.<br />
+<br />
+The Employee understands and agrees that Confidential Information developed by the Employee in the course of the Employee&rsquo;s employment by the Employer shall be subject to the terms and conditions of this Agreement as if the Employer furnished the same Confidential Information to the Employee in the first instance.",This clause defines the information that the employee is agreeing to protect. It is drafted broadly to require the employee to protect basically any non-public information about the company.,You should not delete this clause because it defines what is considered confidential. This clause is drafted to give broad protection to your business. Removing it would make this agreement largely toothless.,,,Confidential Information
+1113,ip,employee_confidentiality_use_restrictions,"<strong>Disclosure and Use Restrictions</strong><br />
+<br />
+The Employee agrees and covenants:<br />
+<ul>
+        <li>to treat all Confidential Information as strictly confidential;&nbsp;</li>
+        <li>not to directly or indirectly disclose or make available Confidential Information, or allow it to be disclosed, published, communicated, or made available, in whole or part, to anyone within the Employer not having a need to know and authority to know and use the Confidential Information and, in any event, not to anyone outside of the direct employ of the Employer except as required in the performance of any of the Employee&#39;s authorized employment duties to the Employer and only after execution of a confidentiality agreement by the third-party with whom Confidential Information is to be shared;&nbsp;</li>
+        <li>not to access or use any Confidential Information, and not to copy any documents, records, files, media, or other resources containing any Confidential Information, or remove any such documents, records, files, media, or other resources from the premises or control of the Employer, except to the extent required to perform the Employee&rsquo;s functions; and</li>
+        <li>not to use any Confidential Information upon departure from the employment with the Employer, except as expressly authorized by the Employer in writing.</li>
+</ul>",This clause sets out what the employee agrees to do (protect the information) and not to (share the information or use it for anything other than serving the employer). ,This is the core of the agreement. You should not remove this clause.,,,Disclosure and Use Restrictions
+1114,ip,employee_confidentiality_duration,"<strong>Duration of Confidentiality Obligations</strong><br />
+<br />
+The Employee understands and acknowledges that the Employee&#39;s obligations under this Agreement regarding any particular Confidential Information begin immediately and shall continue during and after the Employee&rsquo;s employment by the Employer until the Confidential Information has become public knowledge other than as a result of the Employee&#39;s breach of this Agreement.","This clause makes clear that the employee will protect the employer's confidential information from the moment this agreement is signed until the information is no longer confidential. Importantly, this obligation applies even after the employee stops working for the employer. ",This clause is important because it expressly imposes the duty to preserve your confidential information even after the employee stops working for you. You generally should not remove this clause. ,,,Duration of Confidentiality Obligations
+1115,ip,employee_security,"<strong>Security</strong><br />
+<br />
+The Employee agrees and covenants (i) to comply with all Employer security procedures; (ii) not to access or use any of Employer&rsquo;s facilities or electronic systems except as authorized by Employer; and (iii) not to access or use any of Employer&rsquo;s facilities or electronic systems in any manner after the termination of the Employee&#39;s employment by the Employer, whether termination is voluntary or involuntary.",This clause explains the employee's obligation to follow all security procedures and to not access the systems in an unauthorized way. ,"This clause imposes obligations that would prevent an employee from accessing your online systems in a way that they shouldn't. While there is an argument that your employees would have an implied duty to follow these rules, making it explicit clears up any doubt. Removing this clause could cause you a headache if the worst case ever happens. ",,,Security
+1116,ip,employee_exit_obligations,"<strong>Exit Obligations</strong><br />
+<br />
+Upon voluntary or involuntary termination of the Employee&#39;s employment, the Employee shall return to the Employer all Employer property and all Employer documents and materials belonging to the Employer and stored in any fashion, including those stored electronically. This shall include, but is not limited to, any materials that constitute or contain any Confidential Information, whether they were provided to the Employee by the Employer or any of its business associates or created by the Employee in connection with the Employee&rsquo;s employment by the Employer. To the extent any such materials are duplicates of materials in the possession of the Employer, the Employee shall delete or destroy all copies of the materials rather than return them.",This clause covers what happens when the employee stops working for the company. It sets out that the employee will return all property and either return or destroy all electronic copies of confidential information.,"You need to have an express clause setting out what employees are to do when they leave your employment. You do not want employees to keep copies of your confidential information. Removing this clause would allow employees to keep copies of that information. While they would not be allowed to use or share it (because of other clauses), an employee having the information creates risk.",,,Exit Obligations
+1117,ip,employee_acknowledgement,"<strong>Acknowledgement</strong><br />
+<br />
+The Employee acknowledges and agrees that the services to be rendered to the Employer are of a special and unique character and that the Employee will necessarily obtain knowledge and skill relevant to the Employer&rsquo;s business and industry. The Employee further acknowledges that it will be necessary to become aware of certain Confidential Information in the course of the employment. The Employee acknowledges that the terms and conditions of this Agreement are reasonable under the circumstances of the employment and that the Employee&rsquo;s compensation reflects, in part, the obligations under this Agreement.","This clause is here to cover the legal bases. In some states, an employer needs to have a reason to require an employee to sign a confidentiality agreement. The employee needing to know the information to fulfill their role is one reason that always works. Because of the nature of work in the online business world, that rationale will always apply.",Do not remove this clause. Any employee who has access to confidential information should be someone who needs access to that information. This clause ensures that the agreement is enforceable. Removing this clause could make the agreement subject to challenge later.,,,Acknowledgement
+1118,ip,employee_ip_transfer_definitions,"<strong>Definitions</strong><br />
+<br />
+The following terms have the following meanings.<br />
+<br />
+&ldquo;<strong>Intellectual Property Rights</strong>&rdquo; means all rights in and to US and foreign (i) patents, patent disclosures, and inventions, (ii) trademarks, service marks, trade dress, trade names, logos, corporate names, domain names, social media names and identities, and other similar designations of source or origin, together with the goodwill symbolized by any of the foregoing, (iii) copyrights, potentially copyrighted or copyrightable material, and works of authorship, (iv) trade secrets, know-how, and other confidential information, and (v) all other intellectual property rights, in each case whether registered or unregistered, and including all registrations and applications for, and renewals or extensions of, such rights, and all similar or equivalent rights or forms of protection in any part of the world.<br />
+<br />
+&ldquo;<strong>Work Product</strong>&rdquo; means all writings, technology, inventions, discoveries, processes, techniques, methods, ideas, concepts, research, proposals, materials, and all other work product of any nature whatsoever, that are created, prepared, produced, authored, edited, amended, conceived, or reduced to practice by the Employee solely or jointly with others during the period of the Employee&rsquo;s employment by the Employer and relate in any way to the business or contemplated business, products, activities, research, or development of the Employer or result from any work performed by the Employee for the Employer, all rights and claims related to the foregoing, and all printed, physical, and electronic copies and other tangible embodiments of any such work product.","This clause defines the terms ""intellectual property"" and ""work product."" These terms are defined broadly to include all forms or ownership of intangible assets. It covers copyrights, trademarks, inventions, the company's secret sauce, and any other similar right.",You should not remove this clause. This section defines terms that are used in the rest of the agreement. Removing this clause could create confusion and mean you don't end up owning all the assets your employee creates for you.,,,Definitions
+1119,ip,employee_transfer_ip_rights,"<strong>Transfer of Intellectual Property RIghts</strong><br />
+<br />
+To the maximum extent allowed by law, the Employee acknowledges that all Work Product and Intellectual Property Rights created during the Employee&rsquo;s employment with the Employer are and shall be the exclusive property of the Employer. To the extent necessary by law, the Employee agrees to assign and hereby does assign all rights, title, and interest in all Work Product and Intellectual Property Rights created during the Employee&rsquo;s employment with the Employer. Further to this provision, the Parties agree as follows:<br />
+<br />
+<ul>
+        <li><u>Work Product.</u> The Employee hereby irrevocably agrees that all right, title, and interest in and to all Work Product as well as any and all Intellectual Property Rights therein and all improvements thereto shall be the sole and exclusive property of the Employer. The Work Product shall at all times remain the confidential information of the Employer, and the Employer shall have the unrestricted right, in its sole and absolute discretion, to (i) use, commercialize, or otherwise exploit any Work Product or (ii) file an application for patent, copyright registration, or registration of any other Intellectual Property Rights, and prosecute or abandon such application prior to issuance or registration. No royalty or other consideration shall be due or owing to the Employee now or in the future as a result of such activities.<br />
+        </li>
+        <li><u>Work Made for Hire.</u> The Employee acknowledges that, to the extent permitted by law, all Work Product consisting of copyrightable subject matter is &ldquo;work made for hire&rdquo; as defined in the Copyright Act of 1976 (17 U.S.C. &sect; 101), and such copyrights are therefore owned by the Employer.<br />
+        </li>
+        <li><u>Assignment.</u>To the extent that the foregoing provisions are insufficient or do not apply, the Employee hereby irrevocably agrees to assign and hereby does assign to the Employer the Employee&rsquo;s entire right, title, and interest in and to all Work Product and Intellectual Property Rights.<br />
+        </li>
+        <li><u>Duty To Cooperate.</u> During and after the Employee&rsquo;s employment, the Employee agrees to reasonably cooperate with the Employer to (i) apply for, obtain, perfect, and transfer to the Employer the Work Product as well as any and all Intellectual Property Rights in the Work Product in any jurisdiction throughout the world, and (ii) maintain, protect, and enforce the same.<br />
+        </li>
+        <li><u>Power of Attorney.</u> The Employee hereby irrevocably grants the Employer power of attorney to execute and deliver any such documents on the Employee&rsquo;s behalf in the Employee&rsquo;s name and to do all other lawfully permitted acts to transfer legal ownership of the Work Product to the Employer and further the transfer, prosecution, issuance, and maintenance of all Intellectual Property Rights, to the full extent permitted by law, if the Employee does not promptly cooperate with the Employer&#39;s request (without limiting the rights the Employer shall have in such circumstances by operation of law). This power of attorney is coupled with an interest and shall not be affected by the Employee&#39;s subsequent incapacity.</li>
+</ul>","This section is what actually transfers ownership of all work to the company. It is set up with a belt-and-suspenders approach. The first three sections (""Work Product"", ""Work Made For Hire"", and ""Assignment"") are different ways of saying that the company owns the material. The first two say that the company has always been the owner. The Assignment clause transfers ownership in the event there are any questions. The final two sections impose a duty on the employee to cooperate if any documents need to be created or filed in the future. ",You should not remove this clause. This is what actually transfers ownership of the material to you. ,,,Transfer of Intellectual Property
+1120,ip,nda_one_way_confidential_information,"<p><strong>Confidential Information</strong><br />
+<br />
+The Recipient understands and acknowledges that during the course of doing business with the Disclosing Party, the Recipient will have access to and learn about confidential, secret, and proprietary documents, materials, data, and other information, in tangible and intangible form, of and relating to the Disclosing Party and its businesses and existing and prospective customers, suppliers, investors, and other associated third parties (&ldquo;<strong>Confidential Information</strong>&rdquo;). The Recipient further understands and acknowledges that this Confidential Information and the Disclosing Party&#39;s ability to reserve it for the exclusive knowledge and use of the Disclosing Party is of great competitive importance and commercial value to the Disclosing Party, and that improper use or disclosure of the Confidential Information by the Recipient will cause irreparable harm to the Disclosing Party, for which remedies at law will not be adequate and may also cause the Disclosing Party to incur financial costs, loss of business advantage, liability under confidentiality agreements with third parties, civil damages, and criminal penalties.<br />
+<br />
+For purposes of this Agreement, Confidential Information includes, but is not limited to, all information not generally known to the public, in spoken, printed, electronic or any other form or medium, relating to: business methods, policies, research, operations, strategies, techniques, terms of agreements, know-how, trade secrets, supplier information, vendor information, financial information, marketing information and techniques, advertising information and techniques, pricing information, cost information, design information, staffing information, supplier lists, vendor lists, internal controls, sales information, revenue, product plans, inventions, unpublished patent applications, customer information, customer lists, and CRM databases of the Disclosing Party or its businesses, or of any other person or entity that has entrusted information to the Disclosing Party in confidence.<br />
+<br />
+The Parties understand that the above list is not exhaustive, and that Confidential Information includes other information that is either marked or otherwise identified as confidential or proprietary or that would otherwise appear to a reasonable person to be confidential or proprietary.</p>","This clause defines the information is considered ""confidential"" under this agreement. It is drafted broadly to protect basically any non-public information.",You should not delete this clause because it defines what is considered confidential. This clause is drafted to give broad protection to the party sharing confidential information. Removing it would make this agreement largely toothless.,,,Confidential Information
+1121,ip,nda_two_way_confidential_information,"<p><strong>Confidential Information</strong><br />
+<br />
+Except as set out in the Exclusions from Confidential Information Section below, &quot;<strong>Confidential Information</strong>&quot; means all non-public, confidential, or proprietary information disclosed on or after the Effective Date, by either Party (a &quot;<strong>Disclosing Party</strong>&quot;) to the other Party (a &quot;<strong>Recipient</strong>&quot;) or to any of such Recipient&#39;s employees, officers, directors, partners, shareholders, agents, attorneys, accountants, or advisors (collectively, &quot;<strong>Representatives</strong>&quot;).<br />
+<br />
+For purposes of this Agreement, Confidential Information includes, but is not limited to, all information not generally known to the public, in spoken, printed, electronic or any other form or medium, relating to: business methods, policies, research, operations, strategies, techniques, terms of agreements, know-how, trade secrets, supplier information, vendor information, financial information, marketing information and techniques, advertising information and techniques, pricing information, cost information, design information, staffing information, supplier lists, vendor lists, internal controls, sales information, revenue, product plans, inventions, unpublished patent applications, customer information, customer lists, and CRM databases of the Disclosing Party or its businesses, or of any other person or entity that has entrusted information to the Disclosing Party in confidence.<br />
+<br />
+The Parties understand that the above list is not exhaustive, and that Confidential Information includes other information that is either marked or otherwise identified as confidential or proprietary or that would otherwise appear to a reasonable person to be confidential or proprietary.</p>","This clause defines the information is considered ""confidential"" under this agreement. It is drafted broadly to protect basically any non-public information.",You should not delete this clause because it defines what is considered confidential. This clause is drafted to give broad protection to the party sharing confidential information. Removing it would make this agreement largely toothless.,,,Confidential Information
+1122,ip,nda_exclusions,"<p><strong>Exclusions from Confidential Information</strong><br />
+<br />
+Except as required by applicable federal, state, or local law or regulation, the term &quot;Confidential Information&quot; as used in this Agreement shall not include information that:<br />
+<ul>
+        <li>at the time of disclosure is, or thereafter becomes, generally available to and known by the public other than as a result of, directly or indirectly, any breach of this Agreement by the Recipient;<br />
+        &nbsp;</li>
+        <li>at the time of disclosure is, or thereafter becomes, available to the Recipient on a non-confidential basis from a third-party source, provided that such third party is not and was not prohibited from disclosing such Confidential Information to the Recipient;<br />
+        &nbsp;</li>
+        <li>was known by or in the possession of the Recipient prior to being disclosed by or on behalf of the Disclosing Party pursuant to this Agreement; or<br />
+        &nbsp;</li>
+        <li>was or is independently developed by the Recipient, as established by documentary evidence, without reference to or use of, in whole or in part, any of the Disclosing Party&#39;s Confidential Information.</li>
+</ul>","This clause explains that information that was already publicly known or that later becomes publicly known isn't ""confidential"" under this Agreement. This is a standard clause in NDAs because the limitations should only apply to information that the receiving party only knows because information was shared in confidence.","You should not delete this clause. If you remove this clause, it creates risks that a party can abuse the agreement by sharing information that is already publicly known and then claiming the receiving party under this agreement can't use that public information because of the confidentiality clause. ",,,Exclusions from Confidential Information
+1123,ip,nda_recipient_obligations,"<p><strong>Recipient Obligations</strong><br />
+<br />
+The Recipient agrees:<br /></p>
+<ul>
+	<li>to treat all Confidential Information as strictly confidential, including to protect and safeguard the confidentiality of all such Confidential Information with at least the same degree of care as the Recipient would protect its own Confidential Information, but in no event with less than a commercially reasonable degree of care;&nbsp;<br />
+	&nbsp;</li>
+	<li>not disclose any such Confidential Information to any person or entity, except to the Recipient&#39;s Representatives who: (i) need to know the Confidential Information to assist the Recipient, or act on its behalf, in relation to the Purpose; (ii) are informed in writing by the Recipient of the confidential nature of the Confidential Information; and (iii) are subject to confidentiality duties or obligations to the Recipient that are no less restrictive than the terms and conditions of this Agreement;<br />
+	&nbsp;</li>
+	<li>not to access or use any Confidential Information, and not to copy any documents, records, files, media, or other resources containing any Confidential Information, or remove any such documents, records, files, media, or other resources from the premises or control of the Disclosing Party, except to the extent required to perform the Recipient&rsquo;s functions;&nbsp;<br />
+	&nbsp;</li>
+	<li>not to use the Disclosing Party&rsquo;s Confidential Information, or permit it to be accessed or used, for any purpose other than the Purpose or otherwise to the detriment of the Disclosing Party;&nbsp;<br />
+	&nbsp;</li>
+	<li>not to use any Confidential Information upon completion of the engagement with the Company, except as expressly authorized by the Company in writing;<br />
+	&nbsp;</li>
+	<li>to comply with all applicable security policies, including on-site access, remote access, and related security rules, of the Disclosing Party; and<br />
+	&nbsp;</li>
+	<li>to be responsible for any breach of this Agreement caused by any of its Representatives.</li>
+</ul>",This clause sets out what the receiving party agrees to do (protect the information) and not to (share the information or use it for anything other than serving the purpose of the agreement). ,This is the core of the agreement. You should not remove this clause.,,,Recipient Obligations
+1124,ip,nda_legally_required_disclosure,"<p><strong>Legally Required Disclosure</strong>&nbsp;<br />
+<br />
+If the Recipient receives any valid order of a court or government agency, subpoena, or other document request in a court or government proceeding (a &quot;<strong>Disclosure Request</strong>&quot;), it shall promptly notify the Disclosing Party of the Disclosure Request so that the Disclosing Party may seek an order to prevent the disclosure. The Recipient shall also provide reasonable assistance in opposing any such disclosure and seeking a protective order or other confidentiality protection for the Confidential Information.&nbsp;<br />
+<br />
+If the Recipient is ultimately required to produce or disclose information subject to a Disclosure Request, it shall disclose only such Confidential Information as it is required to produce and shall seek the highest level of confidentiality protection available to it.</p>",This clause explains that the party who received confidential information can share it if required by a court order. This is a standard clause for all confidentiality clauses. This clause also requries the party who receives a court order to notify the party who originally disclosed the information. That notification is intended to give the disclosing party the chance to oppose the court order.,"Do not remove this clause. Because a court order will trump a confidentiality clause, it is important to include a procedure for what happens when a court orders disclosure. Removing this clause could prevent the party whose confidential information is at issue from getting a chance to object to the court order.",,,Legally Required Disclosure
+1125,ip,nda_return_or_destruction,"<p><strong>Return or Destruction of Confidential Information</strong>&nbsp;<br />
+<br />
+Upon the completion of the Purpose or termination of the relationship between the Recipient and the Disclosing Party, the Recipient and its Representatives shall return to the Disclosing Party all copies, whether in written, electronic or other form or media, of the Disclosing Party&#39;s Confidential Information, or destroy all such copies and certify in writing to the Disclosing Party that such Confidential Information has been destroyed. In addition, the Recipient shall also destroy all copies of any Notes created by the Recipient or its Representatives and certify in writing to the Disclosing Party that such copies have been destroyed.</p>",This clause explains what happens when the parties have finished their business together. The party who received confidential information is required to either return or destroy the confidential information it has received. ,"Do not remove this clause. Although the receiving party would still be bound to protect the informations, the best practice is to limit how many peoople have access to confidential information. Removing this clause would increase the risk of an inadvertent disclosure.",,,Return or Destruction of Confidential Information
+1126,ip,guest_appareance_release,"<p>{company_name} (the &ldquo;<strong>Company</strong>&rdquo;) creates and produces a show called {show_title} (the &ldquo;<strong>{show_type_identifier}</strong>&rdquo;). {guest_name} (the &ldquo;<strong>Guest</strong>&rdquo;, &ldquo;<strong>I</strong>&rdquo;, or &ldquo;<strong>me</strong>&rdquo;) has agreed to appear on the {show_type_identifier} and agrees as follows as a condition of appearing:<br />
+<br />
+I consent to the audio and video recording of the interview and further agree that the Company shall be the exclusive owner of all rights, title, and interest in the recordings of the interview (the &quot;<strong>Interview Recordings</strong>&quot;). To the extent I might otherwise have any interest in the Interview Recordings, I hereby irrevocably transfer, assign, and otherwise convey to Company my entire right, title, and interest, if any, in and to the Interview Recordings, including all copyrights and other intellectual property rights in those recordings.<br />
+<br />
+Other than transferring ownership of the Interview Recordings, this Guest Appearance Waiver and Release does not result in the transfer of ownership of intellectual property.<br />
+<br />
+To the extent I provide any copyrighted material during the {show_type_identifier}, I hereby grant the Company a non-exclusive, royalty-free, perpetual, worldwide license to publish the Interview Recordings, including my underlying copyrighted work.<br />
+<br />
+I recognize and agree that the Company shall have exclusive rights to edit the content of the interview prior to its publication and has the right to make derivative works using the Interview Recordings, including creating clips from the Interview Recordings for use in other media.<br />
+<br />
+I hereby permit the Company to use my name, image, likeness, appearance, voice, professional and personal biographical information, and all materials created by or on behalf of Company that incorporate any of the foregoing in perpetuity for any legal purpose related to the promotion of the {show_type_identifier}.<br />
+<br />
+I agree that I will not receive any monetary compensation for my appearance on the {show_type_identifier} but will instead receive the intangible value of exposure by appearing on the {show_type_identifier}, which I recognize as valuable consideration.<br />
+<br />
+To the fullest extent permitted by applicable law, I hereby irrevocably waive all legal and equitable claims relating to or arising out of my appearance on the {show_type_identifier} and from the Company&rsquo;s subsequent reproduction and distribution of the {show_type_identifier}.<br />
+<br />
+Signed:<br />
+<br />
+_____________________<br />
+{guest_name}<br />
+<br />
+Date: ________________
+</p>
+","This is a standard guest release form. This agreement transfers ownership of the recordings of the guest appearance to the host, but makes clear that the guest continues to own all their underlying intellectual property. It also includes a paragraph that gives the host the right to use the guests name, image, and likeness rights to promote the appearance and the underlying show more generally.","This is a single-clause agreement, so obviously don't delete it. You can edit individual elements instead.",,"26, 139, 166",Guest Appareance Waiver and Release
+1127,ip,testimonial_release,"<p>{company_name} (the &ldquo;<strong>Company</strong>&rdquo;) desires to use and publicize the name, likeness, and other personal characteristics and private information of the individual named below (&quot;<strong>I</strong>&quot; or &quot;<strong>me</strong>&quot;) for use as a testimonial for its business and products as part of its advertising, promotion, and other commercial and business purposes. In exchange for the intangible value I gained and will gain from the Company, its products and services, and by participating in Company&#39;s publicity programs and other good and valuable consideration, the receipt and sufficiency of which I hereby acknowledge, I give Company my permission for such use and publicity for such purposes.<br />
+<br />
+I hereby permit, authorize, grant, and license Company and its affiliates, successors, and assigns, and the employees, officers, directors, and agents of each and all of them, the rights to display, exhibit, transmit, broadcast, reproduce, record, photograph, digitize, modify, alter, edit, adapt, create derivative works, exploit, sell, rent, license, otherwise use, and permit others to use my name, image, likeness, appearance, voice, professional and personal biographical information as part of a testimonial for the Company and its products and services.<br />
+<br />
+I represent and warrant to Company that I am at least eighteen (18) years of age, and I have full right, power, and authority to enter into this Agreement and grant the rights hereunder.<br />
+<br />
+Signed:<br />
+<br />
+_____________________<br />
+{publicity_release_name}<br />
+<br />
+Date: ________________</p>","This is a standard testimonial release. It gives the company permission to use the name, image, and likeness rights of the person providing the testimonial for promotional purposes.","As a single clause document, you obviously should not delete this clause.",,"26, 140",Testimonial Release
+1128,ip,publicity_release,"<p>{company_name} (the &ldquo;<strong>Company</strong>&rdquo;) desires to use and publicize the name, likeness, and other personal characteristics and private information of the individual named below (&quot;<strong>I</strong>&quot; or &quot;<strong>me</strong>&quot;) for advertising, promotion, and other commercial and business purposes. In exchange for the intangible value I will gain by participating in Company&#39;s publicity programs and other good and valuable consideration, the receipt and sufficiency of which I hereby acknowledge, I give Company my permission for such use and publicity for such purposes, according to the terms and conditions set forth in this Publicity Waiver and Release (&quot;<strong>Agreement</strong>&quot;).<br />
+<br />
+I hereby permit, authorize, grant, and license Company and its affiliates, successors, and assigns, and the employees, officers, directors, and agents of each and all of them, the rights to display, exhibit, transmit, broadcast, reproduce, record, photograph, digitize, modify, alter, edit, adapt, create derivative works, exploit, sell, rent, license, otherwise use, and permit others to use my name, image, likeness, appearance, voice, professional and personal biographical information, and all materials created by or on behalf of the Company that incorporate any of the foregoing (&quot;<strong>Materials</strong>&quot;) in perpetuity throughout the universe in any medium or format whatsoever now existing or hereafter created on any platform and for any legal purpose, including but not limited to advertising, public relations, publicity, packaging, and promotion of the Company and its affiliates and their businesses, products, and services, without further consent from or royalty, payment, or other compensation to me.<br />
+<br />
+The Company shall be the exclusive owner of all rights, including copyright, in the Materials. I hereby irrevocably transfer, assign, and otherwise convey to Company my entire right, title, and interest, if any, in and to the Materials and all copyrights and other intellectual property rights in the Materials arising in any jurisdiction throughout the universe in perpetuity, including all registration, renewal, and reversion rights, and the right to sue to enforce such copyrights against infringers. I acknowledge and agree that I have no right to review or approve Materials before they are used by Company, and that Company has no liability to me for any editing or alteration of the Materials or for any distortion or other effects resulting from Company&#39;s editing, alteration, or use of the Materials, or Company&#39;s presentation of me. Any credit or other acknowledgment of me, if any, shall be determined by Company in Company&#39;s sole discretion. Company has no obligation to create or use the Materials or to exercise any rights given by this Agreement.&nbsp;<br />
+<br />
+To the fullest extent permitted by applicable law, I hereby irrevocably waive all legal and equitable rights relating to all liabilities, claims, demands, actions, suits, damages, and expenses, including but not limited to claims for copyright or trademark infringement, infringement of moral rights, libel, defamation, invasion of any rights of privacy (including intrusion, false light, public disclosure of private facts, and misappropriation of name or likeness), violation of rights of publicity, physical or emotional injury or distress, or any similar claim or cause of action in tort, contract, or any other legal theory, now known or hereafter known in any jurisdiction throughout the world (collectively, &quot;<strong>Claims</strong>&quot;) arising directly or indirectly from the Authorized Persons&#39; exercise of their rights under this Agreement or the production, exhibition, exploitation, advertising, promotion, or other use of the Materials, and whether resulting in whole or in part by the negligence of Company or any other person, covenant not to make or bring any such Claim against any Authorized Persons, and forever release and discharge the Authorized Persons from liability under such Claims. I understand that Company is relying on this Agreement and will incur significant expense in reliance on this Agreement, and I agree that this Agreement cannot be terminated, rescinded, or modified, in whole or in part.&nbsp;<br />
+<br />
+I represent and warrant to Company that I am at least eighteen (18) years of age, and I have full right, power, and authority to enter into this Agreement and grant the rights hereunder.&nbsp;I further represent and warrant to Company that I will provide only true and correct statements and other information in connection with this Agreement, and the Authorized Persons&#39; use of the Materials and the rights and license granted hereunder do not, and will not, violate any right (including without limitation copyright, trademark, trade secret, right to privacy, or right of publicity) of, or conflict with or violate any contract with or commitment made to, any person or entity, and that no consent or authorization from, or any payment to, any third party is required in connection herewith.<br />
+<br />
+Signed:<br />
+<br />
+_____________________<br />
+{publicity_release_name}<br />
+<br />
+Date: ________________</p>","<p>This is a standard publicity release. The first paragraph explains that the person signing the release is agreeing to be party of the publicity program.<br />
+<br />
+The second paragraph grants the company the right to use the signer&#39;s name, image, and likeness in the promotional efforts and to create materials that use the signer&#39;s name, image, and likeness.<br />
+<br />
+The third paragraph makes clear that the company owns the materials they create that incorporate the signer&#39;s name, image, and likeness. This doesn&#39;t result in the signer giving up rights to anything other than the prmotional materials the company creates.<br />
+<br />
+The fourth paragraph is a limitation of liability. The person signing the agreement agrees to waive any claims they might have against the company that could come up from the company using the signer&#39;s name, image, and likenss.<br />
+<br />
+The final paragraph provides assurances that the signer is at least 18 years old (and therefore can sign a contract) and has the right to agree to what is in this waiver and release.</p>","As a single clause document, you obviously should not delete this clause.",,"26, 140",Publicity Waiver & Release
+1129,ip,photographer_ip_transfer,"<p><strong>Assignment of All Intellectual Property Rights</strong><br />
+<br />
+Photographer agrees to assign and hereby irrevocably does assign to the Company, in each case without additional consideration, all right, title, and interest throughout the world in and to the Photographs, including all intellectual property rights therein.<br />
+<br />
+The assignment of copyrights under this Addendum includes all rights of paternity, integrity, disclosure, and withdrawal and any other rights that may be known as &ldquo;moral rights&rdquo; (collectively, &ldquo;<strong>Moral Rights</strong>&rdquo;). Photographer hereby irrevocably waives, to the extent permitted by applicable law, any and all claims the Photographer may now or hereafter have in any jurisdiction to any Moral Rights with respect to the Photographs delivered to the Company.<br />
+<br />
+Upon the reasonable request of the Company, Photographer shall promptly take such further actions, including execution and delivery of all appropriate instruments of conveyance, as may be necessary to assist the Company to prosecute, register, perfect, record, or enforce its rights in any of the Photographs. In the event the Company is unable, after reasonable effort, to obtain the Photographer&rsquo;s signature on any such documents, the Photographer hereby irrevocably designates and appoints the Company as the Photographer&rsquo;s agent and attorney-in-fact, to act for and on the Photographer&rsquo;s behalf solely to execute and file any such application or other document and do all other lawfully permitted acts to further the registration, perfection, recording, or enforcement of copyrights in the Photographs with the same legal force and effect as if the Photographer had executed them.</p>",This clause transfers ownership of the photographs that the photographer takes to the company. It also requires the photographer to provide any assistance that might be necessary to file the necessary paperwork in the future.,This is the heart of this agreement. Do not remove it. ,,,Assignment of All Intellectual Property Rights
+1130,ip,photographer_portfolio_license,"<p><strong>Grant of Non-Exclusive License</strong><br />
+<br />
+The Company agrees to grant and hereby does grant to the Photographer a limited, non-exclusive, irrevocable, worldwide, royalty-free license to use, publish, reproduce, display, and distribute copies of the Photographs for the limited purpose of highlighting the Photographer&rsquo;s prior work. Specifically, the Company agrees that the Photographer may use these Photographs as part of the Photographer&rsquo;s portfolio. This license grant does not authorize the Photographer to use the Photographs for any other purpose.</p>","This clause gives the photographer permission to include the photgraphs in the photographer's portfolio. It is what is called a ""limited license,"" so it doesn't allow the photographer to do anything else with the photos.","If you want the photographer to be able to include the photographs in the photographer's portfolio, do not remove this clause. Removing this clause will mean the photographer cannot use the images in any way, not even in a portfolio.",,,Grant of Non-Exclusive License
+1131,ip,guest_expert_publicity_release,"<p><strong>Publicity Rights Release</strong><br />
+<br />
+{guest_expert_identifier} permits Company to use {guest_expert_identifier}&rsquo;s name, image, likeness, appearance, voice, professional and personal biographical information, and all materials created by or on behalf of Company that incorporate any of the foregoing in perpetuity for any legal purpose related to the promotion of the Program, including but not limited to advertising, public relations, publicity, packaging, and promotion of Company and its businesses, products, and services, without further consent from or royalty, payment, or other compensation to {guest_expert_identifier}.</p>","This clause allows you to use the guest's name, image, and likeness to promote your Program. ","If you want to be able to use the guest's name in your marketing, do not remove this clause. ",,,Publicity Rights Release
+1132,ip,affiliate_promo_material_license,"<p><strong>Promotional Material, Limited License, and Intellectual Property</strong><br />
+<br />
+From time to time, the Company may make materials available to Affiliate for use in promoting the Company&rsquo;s products (&ldquo;<strong>Promotional Material</strong>&rdquo;). The Promotional Material may include the Company&rsquo;s logos, images of products that are part of the Affiliate Program, display banner advertisements, button links, text links, and other graphic and textual material for use in Affiliate&rsquo;s promotion efforts.<br />
+<br />
+Upon acceptance into the Affiliate Program, the Company grants Affiliate a revocable, non-exclusive, worldwide, royalty-free license to use the Promotional Material during the term of this Agreement. The Affiliate may use the Promotional Material on its website, in emails, and in other promotional activities.<br />
+<br />
+Affiliate may use any such Promotional Material solely for the purpose of promoting the Company&rsquo;s products and/or for linking to the Company&rsquo;s website. Affiliate may not make any other use of the Promotional Material and shall not state or imply that the Company has endorsed the Affiliate.<br />
+<br />
+Affiliate agrees not to alter, add to, subtract from, or otherwise modify any of the Promotional Material provided by the Company without the express written consent of the Company. Moreover, Affiliate may not make any derivative works using the Promotional Material.</p>",This clause gives your affiliates the right to use your logo and other intellectual property in their promotional materials so long as they do so in compliance with your general standards. ,Do not remove this section. This gives affiliates the permission they need to use your intellectual property while also protecting your rights. ,,,Promotional Materials & Intellectual Property
+1133,ip,website_ip_clause,"<strong>No Unlawful Or Prohibited Use And Intellectual Property</strong><br />
+<br />
+You are granted a non-exclusive, non-transferable, revocable license to access and use the Website and the resources available for download from the Website strictly in accordance with these Terms of Use.<br />
+<br />
+As a condition of Your use of the Website, You warrant to the Company that You will not use the Website or any of the resources available for download from the Website for any purpose that is unlawful or prohibited by these Terms. You may not use the Website or any of the resources available for download from the Website in any manner that could damage, disable, overburden, or impair the Website or interfere with any other party&rsquo;s use and enjoyment of the Website. You may not obtain or attempt to obtain any materials or information through any means not intentionally made available or provided for through the Website.<br />
+<br />
+All content included as part of the Service, such as text, graphics, logos, images, as well as the compilation thereof, and any software used on the Website, is the property of the Company or its suppliers and protected by copyright and other laws that protect intellectual property and proprietary rights. You agree to observe and abide by all copyright and other proprietary notices, legends, or other restrictions contained in any such content and will not make any changes thereto.<br />
+<br />
+You will not modify, publish, transmit, reverse engineer, participate in the transfer or sale, create derivative works, or in any way exploit any of the content, in whole or in part, found on the Website or any of the resources available for download from the Website.<br />
+<br />
+The Company content is not for resale. Your use of the Website or any of the resources available for download from the Website does not entitle You to make any unauthorized use of any protected content, and in particular You will not delete or alter any proprietary rights or attribution notices in any content. You will use protected content solely for Your individual use and will make no other use of the content without the express written permission of the Company and the copyright owner. You agree that You do not acquire any ownership rights in any protected content. We do not grant You any licenses, express or implied, to the intellectual property of the Company or our licensors except as expressly authorized by these Terms.<br />
+<br />
+The Company name, the Company logo, the Company slogan, and all related names, logos, product and service names, designs, and slogans are trademarks of the Company or its affiliates or licensors. You must not use such marks without the prior written permission of the Company. All other names, logos, product and service names, designs, and slogans on this Website are the trademarks of their respective owners.<br />","This clause addresses your intellectual property. It sets out that website visitors may not use your content in violation of the terms, to damage the website, in violation of your copyrights, or in violation of your trademarks. In other words, it says people can't steal your content.  ","You should not delete this clause. Although you are not required to specifically say that people can't violate your rights, including an express clause is useful.",,,No Unlawful Or Prohibited Use And Intellectual Property
+1134,ip,website_paid_product_license,"<strong>Use Of Paid Products</strong><br />
+<br />
+The Company provides various paid digital products and programs for sale on this Website (the &quot;<strong>Paid Products</strong>&quot;). The Company grants You a limited, personal, non-exclusive, non-transferable license to use our Paid Products for Your own personal or internal business use. Except as otherwise provided, You acknowledge and agree that You have no right to modify, edit, copy, reproduce, create derivative works of, reverse engineer, alter, enhance, or in any way exploit any of the Paid Products beyond the license granted herein.<br />
+<br />
+As a condition of purchasing and/or using the Paid Products, You agree that the Forms You purchase or download may only be used by You for Your personal or business use and may not be sold or redistributed without the express written consent of the Company.<br />
+<br />
+As a condition of purchasing and/or using the Paid Products, You further agree that You shall not create any derivative work based upon the Paid Products and You shall not offer any competing products or services based upon any information contained in the Paid Products.","This clause serves as a catchall limitation on how website visitors may use your paid products. For any significant paid product, you should create a standalone agreement. This clause is really just meant to provide fallback protection.","If there is a chance you'll sell a product without creating a standalone agreement (or terms) for that product, you should not remove this clause. It puts limits on how purchasers can use that product. ",,,Use of Paid Products
+1135,ip,website_freemium_license,"<strong>Use Of Free Downloadable Content</strong><br />
+<br />
+The Company provides various resources on this Website, which users may access by providing an e-mail address. The Company grants You a limited, personal, non-exclusive, non-transferable license to use our resources provided in exchange for an email address (the &ldquo;<strong>Freemium Content</strong>&rdquo;) for Your own personal or internal business use. Except as otherwise provided, You acknowledge and agree that You have no right to modify, edit, copy, reproduce, create derivative works of, reverse engineer, alter, enhance, or in any way exploit any of the Freemium Content in any manner.<br />
+<br />
+By downloading the Freemium Content, You agree that the Freemium Content You download may only be used by You for Your personal or business use and may not be sold or redistributed without the express written consent of the Company.<br />
+<br />
+By downloading the Freemium Content, You further agree that You shall not create any derivative work based upon the Freemium Content and You shall not offer any competing products or services based upon any information contained in the Freemium Content.","This clause explains how visitors may use your free downloadable contnet. Specifically, it explains that your downloadable content is for their personal use, not for resale. ","If you alllow people to download free content in exchange for an email address (or other contact details), you generally should include this clause. Without it, people may believe they are entitled to use the material in a way that competes with you. ",,,Use of Free Downloadable Content
+1136,ip,speaking_ip_rights,"<strong>Intellectual Property Rights</strong><br />
+<br />
+The Parties agree as follows:<br />
+<br />
+<u>Speaker&rsquo;s Representations And Warranties</u> - Speaker represents and warrants that the content of the Speech, all material to be displayed or distributed during the Speech, and any other material provided by Speaker are the original work of Speaker or are works for which the Speaker has obtained the necessary permission to display and distribute. Speaker further represents and warrants that the use of these materials during the Speech will not infringe on any third party&rsquo;s rights. Specifically, Speaker represents and warrants that these materials do not infringe upon any third party&rsquo;s copyrights.<br />
+<br />
+<u>Ownership of Content</u> - Speaker is the sole owner of all rights, title, and interest in the Speech and all other materials provided by the Speaker. Nothing in this Agreement shall be construed as an assignment of any such rights.<br />
+<br />
+<u>Right to Livestream and Record</u> - Speaker agrees that Host may stream the Speech over the internet in real time, record the Speech, and distribute copies of any such recording. Speaker grants to the Host, its affiliates, successors, and assigns a non-exclusive, perpetual, irrevocable, unrestricted, royalty-free license to the content of the Speech for such purposes. The Parties agree that Host shall be the sole owner of any such recording. Host agrees not to incorporate the recording of the Speech into any other paid product without the express, written consent of the Speaker.<br />
+<br />
+<u>Publicity Release</u> - Speaker irrevocably permits Host to use Speaker&rsquo;s name, image, likeness, appearance, voice, and professional and personal biographical information to promote the Speech.","This clause sets out what the parties are agreeing to about the ownership of the speech.<br />
+<br />
+In the first substantive paragraph, the Speaker specifically assures the host that the material does not infringe anyone else&#39;s copyrights. A &quot;representation and warranty&quot; is just legalese for assurances.<br />
+<br />
+The next two paragraphs set out who owns the speech and the recording. The Speaker owns the speech itself, while the Host is given the right to livestream and record the speech. Notably, although the Host owns the recording, the Host agrees not to include it in any other paid products without getting permission from the Speaker.<br />
+<br />
+The final paragraph gives the Host permission to use the Speaker&#39;s name, image, and likeness to promote the event.","You should not delete this clause. This clause sets out a careful balance of who owns the speech and the recording of the speech. If you remove this clause, it will be unclear who may do what with the speech and the recording. ",,,Intellectual Property Rights
+1137,ip,guest_blog_assignment,"<strong>Intellectual Property &amp; Use Restrictions</strong><br />
+<br />
+If Your Guest Post is selected for publication:<br />
+<br />
+<ul>
+        <li>You agree not to submit Your Guest Post for consideration or publication anywhere else and agree not to republish the Guest Post on Your own blog, Medium, or any similar channel. You are free to quote from and promote the Guest Post on Your social media channels, but You may not republish it in its entirety.&nbsp;<br />
+        &nbsp;</li>
+        <li>If Your Guest Post is accepted for publication, you agree to assign and do hereby assign all rights, title, and interest in the Guest Post to the Company. This shall include the copyright in the Guest Post, including rights to paternity, integrity, disclosure, withdrawal, and any other rights that may be known as &ldquo;moral rights&rdquo; in the Guest Post.<br />
+        &nbsp;</li>
+        <li>You agree to defend, indemnify, and hold harmless the Company, its affiliates, officers, directors, employees, agents, successors and assigns from and against any and all losses, damages, liabilities, deficiencies, actions, judgments, interest, awards, penalties, fines, costs, or expenses of whatever kind arising out of or resulting from any breach of Your representation and warranty that You are the sole owner of the Guest Post and that publication of the Guest Post by the Company will not infringe any copyrights held by others.&nbsp;<br />
+        &nbsp;</li>
+        <li>You irrevocably permit the Company to use Your name, image, likeness, appearance, professional and personal biographical information, and all materials created by or on behalf of the Company that incorporate any of the foregoing in perpetuity in so far as it is used to advertise, market, or promote the Guest Post of the Blog.</li>
+</ul>","This clause addresses ownership of the guest blog post. Specifically, it transfers ownership to you, makes clear that the author may not submit it elsewhere, requires the author to defend you against any copyright infringement claims, and allows you to use the author's name, image, and likeness to promote the post. ","Do not remove this clause. For content, it is critical to include a clause that addresses things like copyright ownership. If you remove this clause, the author will own the post and will have the right to submit it elsewhere (or publish it themselves). ",,,Intellectual Property & Use Restrictions
+1138,ip,guest_blog_license,"<strong>Intellectual Property &amp; Use Restrictions</strong><br />
+<br />
+If Your Guest Post is selected for publication:<br />
+<br />
+<ul>
+	<li>You agree not to submit Your Guest Post for consideration or publication anywhere else and agree not to republish the Guest Post on Your own blog, Medium, or any similar channel. You are free to quote from and promote the Guest Post on Your social media channels, but You may not republish it in its entirety.&nbsp;<br />
+	&nbsp;</li>
+	<li>If Your Guest Post is accepted for publication, You agree to grant and hereby do grant to the Company an exclusive, irrevocable, worldwide, unlimited, royalty-free license to use, publish, reproduce, display, distribute copies of, and prepare derivative works based upon the Guest Post.<br />
+	&nbsp;</li>
+	<li>You agree to defend, indemnify, and hold harmless the Company, its affiliates, officers, directors, employees, agents, successors and assigns from and against any and all losses, damages, liabilities, deficiencies, actions, judgments, interest, awards, penalties, fines, costs, or expenses of whatever kind arising out of or resulting from any breach of Your representation and warranty that You are the sole owner of the Guest Post and that publication of the Guest Post by the Company will not infringe any copyrights held by others.&nbsp;<br />
+	&nbsp;</li>
+	<li>You irrevocably permit the Company to use Your name, image, likeness, appearance, professional and personal biographical information, and all materials created by or on behalf of the Company that incorporate any of the foregoing in perpetuity in so far as it is used to advertise, market, or promote the Guest Post of the Blog.</li>
+</ul>","This clause addresses ownership of the guest blog post. Specifically, it says the author continues to own it but gives you the exclusive right to publish it. It goes on to makes clear that the author may not submit it elsewhere, requires the author to defend you against any copyright infringement claims, and allows you to use the author's name, image, and likeness to promote the post. ","Do not remove this clause. For content, it is critical to include a clause that addresses things like copyright issues. Without this clause, you do not have a right to publish the work, and the author will have the right to submit it elsewhere (or publish it themselves). ",,,Intellectual Property & Use Restrictions
+1139,ip,speaking_ip_rights,"<strong>Intellectual Property Rights</strong><br />
+<br />
+The Parties agree as follows:<br />
+<br />
+<u>Speaker&rsquo;s Representations And Warranties</u> - Speaker represents and warrants that the content of the Speech, all material to be displayed or distributed during the Speech, and any other material provided by Speaker are the original work of Speaker or are works for which the Speaker has obtained the necessary permission to display and distribute. Speaker further represents and warrants that the use of these materials during the Speech will not infringe on any third party&rsquo;s rights. Specifically, Speaker represents and warrants that these materials do not infringe upon any third party&rsquo;s copyrights.<br />
+<br />
+<u>Ownership of Content</u> - Speaker is the sole owner of all rights, title, and interest in the Speech and all other materials provided by the Speaker. Nothing in this Agreement shall be construed as an assignment of any such rights.<br />
+<br />
+<u>Right to Livestream and Record</u> - Speaker agrees that Host may stream the Speech over the internet in real time, record the Speech, and distribute copies of any such recording. Speaker grants to the Host, its affiliates, successors, and assigns a non-exclusive, perpetual, irrevocable, unrestricted, royalty-free license to the content of the Speech for such purposes. The Parties agree that Host shall be the sole owner of any such recording. For the avoidance of doubt, Speaker agrees that Host may include a recording of the Speech in other products, including other paid products.<br />
+<br />
+<u>Publicity Release</u> - Speaker irrevocably permits Host to use Speaker&rsquo;s name, image, likeness, appearance, voice, and professional and personal biographical information to promote the Speech.","This clause sets out what the parties are agreeing to about the ownership of the speech.<br />
+<br />
+In the first substantive paragraph, the Speaker specifically assures the host that the material does not infringe anyone else&#39;s copyrights. A &quot;representation and warranty&quot; is just legalese for assurances.<br />
+<br />
+The next two paragraphs set out who owns the speech and the recording. The Speaker owns the speech itself, while the Host is given the right to livestream and record the speech. Notably, although the Host owns the recording, the Host agrees not to include it in any other paid products without getting permission from the Speaker.<br />
+<br />
+The final paragraph gives the Host permission to use the Speaker&#39;s name, image, and likeness to promote the event.","You should not delete this clause. This clause sets out a careful balance of who owns the speech and the recording of the speech. If you remove this clause, it will be unclear who may do what with the speech and the recording. ",,,Intellectual Property Rights
+1140,ip,,,,,,,
+1141,ip,,,,,,,
+1142,ip,,,,,,,
+1143,,,,,,,,
+1144,,,,,,,,
+1145,,,,,,,,
+1146,,,,,,,,
+1147,,,,,,,,
+1148,,,,,,,,
+1149,,,,,,,,
+1150,,,,,,,,
+1151,,,,,,,,
+1152,,,,,,,,
+1153,,,,,,,,
+1154,,,,,,,,
+1155,,,,,,,,
+1156,,,,,,,,
+1157,,,,,,,,
+1158,,,,,,,,
+1159,,,,,,,,
+1160,,,,,,,,
+1161,,,,,,,,
+1162,,,,,,,,
+1163,,,,,,,,
+1164,,,,,,,,
+1165,,,,,,,,
+1166,,,,,,,,
+1167,,,,,,,,
+1168,,,,,,,,
+1169,,,,,,,,
+1170,,,,,,,,
+1171,,,,,,,,
+1172,,,,,,,,
+1173,,,,,,,,
+1174,,,,,,,,
+1175,,,,,,,,
+1176,,,,,,,,
+1177,,,,,,,,
+1178,,,,,,,,
+1179,,,,,,,,
+1180,,,,,,,,
+1181,,,,,,,,
+1182,,,,,,,,
+1183,,,,,,,,
+1184,,,,,,,,
+1185,,,,,,,,
+1186,,,,,,,,
+1187,,,,,,,,
+1188,,,,,,,,
+1189,,,,,,,,
+1190,,,,,,,,
+1191,,,,,,,,
+1192,,,,,,,,
+1193,,,,,,,,
+1194,,,,,,,,
+1195,,,,,,,,
+1196,,,,,,,,
+1197,,,,,,,,
+1198,,,,,,,,
+1199,,,,,,,,
+1200,,,,,,,,
+1201,,,,,,,,
+1202,,,,,,,,
+1203,,,,,,,,
+1204,,,,,,,,
+1205,,,,,,,,
+1206,,,,,,,,
+1207,,,,,,,,
+1208,,,,,,,,
+1209,,,,,,,,
+1210,,,,,,,,
+1211,,,,,,,,
+1212,,,,,,,,
+1213,,,,,,,,
+1214,,,,,,,,
+1215,,,,,,,,
+1216,,,,,,,,
+1217,,,,,,,,
+1218,,,,,,,,
+1219,,,,,,,,
+1220,,,,,,,,
+1221,,,,,,,,
+1222,,,,,,,,
+1223,,,,,,,,
+1224,,,,,,,,
+1225,,,,,,,,
+1226,,,,,,,,
+1227,,,,,,,,
+1228,,,,,,,,
+1229,,,,,,,,
+1230,,,,,,,,
+1231,,,,,,,,
+1232,,,,,,,,
+1233,,,,,,,,
+1234,,,,,,,,
+1235,,,,,,,,
+1236,,,,,,,,
+1237,,,,,,,,
+1238,,,,,,,,
+1239,,,,,,,,
+1240,,,,,,,,
+1241,,,,,,,,
+1242,,,,,,,,
+1243,,,,,,,,
+1244,,,,,,,,
+1245,,,,,,,,
+1246,,,,,,,,
+1247,,,,,,,,
+1248,,,,,,,,
+1249,,,,,,,,
+1250,,,,,,,,
+1251,,,,,,,,
+1252,,,,,,,,
+1253,,,,,,,,
+1254,,,,,,,,
+1255,,,,,,,,
+1256,,,,,,,,
+1257,,,,,,,,
+1258,,,,,,,,
+1259,,,,,,,,
+1260,,,,,,,,
+1261,,,,,,,,
+1262,,,,,,,,
+1263,,,,,,,,
+1264,,,,,,,,
+1265,,,,,,,,
+1266,,,,,,,,
+1267,,,,,,,,
+1268,,,,,,,,
+1269,,,,,,,,
+1270,,,,,,,,
+1271,,,,,,,,
+1272,,,,,,,,
+1273,,,,,,,,
+1274,,,,,,,,
+1275,,,,,,,,
+1276,,,,,,,,
+1277,,,,,,,,
+1278,,,,,,,,
+1279,,,,,,,,
+1280,,,,,,,,
+1281,,,,,,,,
+1282,,,,,,,,
+1283,,,,,,,,
+1284,,,,,,,,
+1285,,,,,,,,
+1286,,,,,,,,
+1287,,,,,,,,
+1288,,,,,,,,
+1289,,,,,,,,
+1290,,,,,,,,
+1291,,,,,,,,
+1292,,,,,,,,
+1293,,,,,,,,
+1294,,,,,,,,
+1295,,,,,,,,
+1296,,,,,,,,
+1297,,,,,,,,
+1298,,,,,,,,
+1299,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+2422,,,,,,,,
+2423,,,,,,,,
+2424,,,,,,,,
+2425,,,,,,,,
+2426,,,,,,,,
+2427,,,,,,,,
+2428,,,,,,,,
+2429,,,,,,,,
+2430,,,,,,,,
+2431,,,,,,,,
+2432,,,,,,,,
+2433,,,,,,,,
+2434,,,,,,,,
+2435,,,,,,,,
+2436,,,,,,,,
+2437,,,,,,,,
+2438,,,,,,,,
+2439,,,,,,,,
+2440,,,,,,,,
+2441,,,,,,,,
+2442,,,,,,,,
+2443,,,,,,,,
+2444,,,,,,,,
+2445,,,,,,,,
+2446,,,,,,,,
+2447,,,,,,,,
+2448,,,,,,,,
+2449,,,,,,,,
+2450,,,,,,,,
+2451,,,,,,,,
+2452,,,,,,,,
+2453,,,,,,,,
+2454,,,,,,,,
+2455,,,,,,,,
+2456,,,,,,,,
+2457,,,,,,,,
+2458,,,,,,,,
+2459,,,,,,,,
+2460,,,,,,,,
+2461,,,,,,,,
+2462,,,,,,,,
+2463,,,,,,,,
+2464,,,,,,,,
+2465,,,,,,,,
+2466,,,,,,,,
+2467,,,,,,,,
+2468,,,,,,,,
+2469,,,,,,,,
+2470,,,,,,,,
+2471,,,,,,,,
+2472,,,,,,,,
+2473,,,,,,,,
+2474,,,,,,,,
+2475,,,,,,,,
+2476,,,,,,,,
+2477,,,,,,,,
+2478,,,,,,,,
+2479,,,,,,,,
+2480,,,,,,,,
+2481,,,,,,,,
+2482,,,,,,,,
+2483,,,,,,,,
+2484,,,,,,,,
+2485,,,,,,,,
+2486,,,,,,,,
+2487,,,,,,,,
+2488,,,,,,,,
+2489,,,,,,,,
+2490,,,,,,,,
+2491,,,,,,,,
+2492,,,,,,,,
+2493,,,,,,,,
+2494,,,,,,,,
+2495,,,,,,,,
+2496,,,,,,,,
+2497,,,,,,,,
+2498,,,,,,,,
+2499,,,,,,,,
+2500,,,,,,,,
+2501,,,,,,,,

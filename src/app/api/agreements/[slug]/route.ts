@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { type NextRequest, NextResponse } from "next/server";
 import { type FullContracts } from "~/types/contracts";
 import { getAgreement } from "~/data/agreements";

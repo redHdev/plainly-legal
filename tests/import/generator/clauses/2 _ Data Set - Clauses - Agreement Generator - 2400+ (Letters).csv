@@ -1,0 +1,215 @@
+Key,Clause Group,Clause Version,Clause Text,Clause Help,Delete Warning,Formatting,Questions,Plain Text Name
+2400,letters,employee_offer_full_time_salaried,"<p>{employee_name}<br />
+{employee_street_address}<br />
+{employee_city}, {employee_state} {employee_zip}<br />
+<br />
+Re: Offer of Employment<br />
+<br />
+Dear {employee_name},<br />
+<br />
+I am pleased to offer you a position as a {employee_position} with {company_name}. This letter sets forth the terms of the offer, which will govern your employment.<br />
+<br />
+This is a full-time position, and you will be paid a salary of {annual_salary} per year. At present, {company_name} does not offer any equity for its employees. Thus, as an employee, you will not receive any ownership interest in {company_name}.<br />
+<br />
+To perform your assigned duties, you will need access to confidential information that is valuable to {company_name}. As a condition of your employment, you will be required to sign a Confidentiality Agreement that will protect that information and limit your ability to use it outside of your employment with {company_name}.<br />
+<br />
+I also anticipate that during the course of your employment, you will contribute to the creation of certain intellectual property for the company. As a condition of your employment, you will be required to sign an Intellectual Property Transfer Agreement, transferring all rights, title, and interest in any such intellectual property to {company_name}.<br />
+<br />
+I am excited at the prospect of you joining the team. If you have any questions about the above details, please call me immediately. If you wish to accept this position, please sign below and return this letter to me.<br />
+<br />
+Sincerely,<br />
+<br />
+<u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</u><br />
+{signer_name}<br />
+<br />
+Offer Acceptance:<br />
+<br />
+<u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</u><br />
+{employee_name}</p>
+","This letter sets out the general terms of employment for a full-time employee who is paid a salary. We have not included any benefits language because most online businesses don't offer benefits at the outset. If your company offers benefits, you can add a paragraph setting out what benefits the employee will receive. ","Since the entire letter is one clause, you should not delete it. Edit anything that you feel needs to be changed.",,"112, 113, 119, 120, 121, 114, 26, 115, 116",Employee Offer Letter
+2401,letters,employee_offer_part_time_salary,"<p>{employee_name}<br />
+{employee_street_address}<br />
+{employee_city}, {employee_state} {employee_zip}<br />
+<br />
+Re: Offer of Employment<br />
+<br />
+Dear {employee_name},<br />
+<br />
+I am pleased to offer you a position as a {employee_position} with {company_name}. This letter sets forth the terms of the offer, which will govern your employment.<br />
+<br />
+This is a part-time position. You will be expected to work {weekly_hours} hours per week, and you will be paid a salary of {annual_salary} per year. At present, {company_name} does not offer any equity for its employees. Thus, as an employee, you will not receive any ownership interest in {company_name}.<br />
+<br />
+To perform your assigned duties, you will need access to confidential information that is valuable to {company_name}. As a condition of your employment, you will be required to sign a Confidentiality Agreement that will protect that information and limit your ability to use it outside of your employment with {company_name}.<br />
+<br />
+I also anticipate that during the course of your employment, you will contribute to the creation of certain intellectual property for the company. As a condition of your employment, you will be required to sign an Intellectual Property Transfer Agreement, transferring all rights, title, and interest in any such intellectual property to {company_name}.<br />
+<br />
+I am excited at the prospect of you joining the team. If you have any questions about the above details, please call me immediately. If you wish to accept this position, please sign below and return this letter to me.<br />
+<br />
+Sincerely,<br />
+<br />
+<br />
+{signer_name}<br />
+<br />
+<u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</u><br />
+Offer Acceptance:<br />
+<br />
+<u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</u><br />
+{employee_name}</p>","This letter sets out the general terms of employment for a part-time employee who is paid a salary. We have not included any benefits language because most online businesses don't offer benefits at the outset. If your company offers benefits, you can add a paragraph setting out what benefits the employee will receive. ","Since the entire letter is one clause, you should not delete it. Edit anything that you feel needs to be changed.",,"112, 113, 119, 120, 121,114, 26, 117, 115, 116",Employee Offer Letter
+2402,letters,employee_offer_part_time_hourly,"<p>{employee_name}<br />
+{employee_street_address}<br />
+{employee_city}, {employee_state} {employee_zip}<br />
+<br />
+Re: Offer of Employment<br />
+<br />
+Dear {employee_name},<br />
+<br />
+I am pleased to offer you a position as a {employee_position} with {company_name}. This letter sets forth the terms of the offer, which will govern your employment.<br />
+<br />
+This is a part-time position. You will be expected to provide timesheets showing the hours you work and will be paid {hourly_wage} per hour for your work. At present, {company_name} does not offer any equity for its employees. Thus, as an employee, you will not receive any ownership interest in {company_name}.<br />
+<br />
+To perform your assigned duties, you will need access to confidential information that is valuable to {company_name}. As a condition of your employment, you will be required to sign a Confidentiality Agreement that will protect that information and limit your ability to use it outside of your employment with {company_name}.<br />
+<br />
+I also anticipate that during the course of your employment, you will contribute to the creation of certain intellectual property for the company. As a condition of your employment, you will be required to sign an Intellectual Property Transfer Agreement, transferring all rights, title, and interest in any such intellectual property to {company_name}.<br />
+<br />
+I am excited at the prospect of you joining the team. If you have any questions about the above details, please call me immediately. If you wish to accept this position, please sign below and return this letter to me.<br />
+<br />
+Sincerely,<br />
+<br />
+<br />
+<u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</u><br />
+{signer_name}<br />
+<br />
+<br />
+Offer Acceptance:<br />
+<br />
+<u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</u><br />
+{employee_name}</p>
+
+","This letter sets out the general terms of employment for a part-time employee who is paid by the hour. We have not included any benefits language because most online businesses don't offer benefits at the outset. If your company offers benefits, you can add a paragraph setting out what benefits the employee will receive. ","Since the entire letter is one clause, you should not delete it. Edit anything that you feel needs to be changed.",,"112, 113, 119, 120, 121, 114, 26, 118, 116",Employee Offer Letter
+2403,letters,employee_offer_full_time_hourly,"<p>{employee_name}<br />
+{employee_street_address}<br />
+{employee_city}, {employee_state} {employee_zip}<br />
+<br />
+Re: Offer of Employment<br />
+<br />
+Dear {employee_name},<br />
+<br />
+I am pleased to offer you a position as a {employee_position} with {company_name}. This letter sets forth the terms of the offer, which will govern your employment.<br />
+<br />
+This is a full-time position. You will be expected to provide timesheets showing the hours you work and will be paid {hourly_wage} per hour for your work. At present, {company_name} does not offer any equity for its employees. Thus, as an employee, you will not receive any ownership interest in {company_name}.<br />
+<br />
+To perform your assigned duties, you will need access to confidential information that is valuable to {company_name}. As a condition of your employment, you will be required to sign a Confidentiality Agreement that will protect that information and limit your ability to use it outside of your employment with {company_name}.<br />
+<br />
+I also anticipate that during the course of your employment, you will contribute to the creation of certain intellectual property for the company. As a condition of your employment, you will be required to sign an Intellectual Property Transfer Agreement, transferring all rights, title, and interest in any such intellectual property to {company_name}.<br />
+<br />
+I am excited at the prospect of you joining the team. If you have any questions about the above details, please call me immediately. If you wish to accept this position, please sign below and return this letter to me.<br />
+<br />
+Sincerely,<br />
+<br />
+<u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</u><br />
+{signer_name}<br />
+<br />
+Offer Acceptance:<br />
+<br />
+<u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</u><br />
+{employee_name}</p>
+","This letter sets out the general terms of employment for a full-time employee who is paid hourly. We have not included any benefits language because most online businesses don't offer benefits at the outset. If your company offers benefits, you can add a paragraph setting out what benefits the employee will receive. ","Since the entire letter is one clause, you should not delete it. Edit anything that you feel needs to be changed.",,"112, 113, 119, 120, 121, 114, 26, 118, 116",Employee Offer Letter
+2404,,,,,,,,
+2405,,,,,,,,
+2406,,,,,,,,
+2407,,,,,,,,
+2408,,,,,,,,
+2409,,,,,,,,
+2410,,,,,,,,
+2411,,,,,,,,
+2412,,,,,,,,
+2413,,,,,,,,
+2414,,,,,,,,
+2415,,,,,,,,
+2416,,,,,,,,
+2417,,,,,,,,
+2418,,,,,,,,
+2419,,,,,,,,
+2420,,,,,,,,
+2421,,,,,,,,
+2422,,,,,,,,
+2423,,,,,,,,
+2424,,,,,,,,
+2425,,,,,,,,
+2426,,,,,,,,
+2427,,,,,,,,
+2428,,,,,,,,
+2429,,,,,,,,
+2430,,,,,,,,
+2431,,,,,,,,
+2432,,,,,,,,
+2433,,,,,,,,
+2434,,,,,,,,
+2435,,,,,,,,
+2436,,,,,,,,
+2437,,,,,,,,
+2438,,,,,,,,
+2439,,,,,,,,
+2440,,,,,,,,
+2441,,,,,,,,
+2442,,,,,,,,
+2443,,,,,,,,
+2444,,,,,,,,
+2445,,,,,,,,
+2446,,,,,,,,
+2447,,,,,,,,
+2448,,,,,,,,
+2449,,,,,,,,
+2450,,,,,,,,
+2451,,,,,,,,
+2452,,,,,,,,
+2453,,,,,,,,
+2454,,,,,,,,
+2455,,,,,,,,
+2456,,,,,,,,
+2457,,,,,,,,
+2458,,,,,,,,
+2459,,,,,,,,
+2460,,,,,,,,
+2461,,,,,,,,
+2462,,,,,,,,
+2463,,,,,,,,
+2464,,,,,,,,
+2465,,,,,,,,
+2466,,,,,,,,
+2467,,,,,,,,
+2468,,,,,,,,
+2469,,,,,,,,
+2470,,,,,,,,
+2471,,,,,,,,
+2472,,,,,,,,
+2473,,,,,,,,
+2474,,,,,,,,
+2475,,,,,,,,
+2476,,,,,,,,
+2477,,,,,,,,
+2478,,,,,,,,
+2479,,,,,,,,
+2480,,,,,,,,
+2481,,,,,,,,
+2482,,,,,,,,
+2483,,,,,,,,
+2484,,,,,,,,
+2485,,,,,,,,
+2486,,,,,,,,
+2487,,,,,,,,
+2488,,,,,,,,
+2489,,,,,,,,
+2490,,,,,,,,
+2491,,,,,,,,
+2492,,,,,,,,
+2493,,,,,,,,
+2494,,,,,,,,
+2495,,,,,,,,
+2496,,,,,,,,
+2497,,,,,,,,
+2498,,,,,,,,
+2499,,,,,,,,
+2500,,,,,,,,
+2501,,,,,,,,
+2502,,,,,,,,

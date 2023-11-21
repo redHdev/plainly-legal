@@ -1,0 +1,260 @@
+ID,Group,Variable,Text,Help Text,Input Type,Input Options
+1,agreement_type,web_dev_type,"Do you want this agreement to be titled ""Website Design Agreement"" or ""Website Development Agreement""?","We'll use your answer for the title of the agreement. No matter which you choose, you'll be able to define the particular services more specifically in a bit. ",select,"{
+     ""opt_1"": ""Website Design Agreement"", 
+     ""opt_2"": ""Website Development Agreement""
+}"
+2,services,web_dev_service_choice,Would you like to attach your own statement of work to the agreement to define the work you'll perform or to use our wizard to create a list of tasks you'll perform?,"A key part of any agreement is to lay out the work you'll perform. If you have provided a detailed statement of work to your client already, you can always use that to define the work, and we'll include a brief section saying that the work to be performed is included in the Statement of Work. Otherwise, we'll ask you a few more questions to figure out what to include in the agreement.",select,"{""opt_1"": ""Attach a Statement of Work"", ""opt_2"": ""Use Wizard to Create List of Services""}"
+3,services,web_dev_services,Which of the following services will you provide to your client?,Select all that apply. We'll use your answer to include or exclude relevant clauses.,checkbox,"{
+        ""opt_1"": ""Design Services"",
+        ""opt_2"": ""Website Creation Using A Builder"",
+        ""opt_3"": ""Custom Front-End Development"",
+        ""opt_4"": ""Wordpress Installation & Set Up"",
+        ""opt_5"": ""Mobile Responsive Design & Development"",
+        ""opt_6"": ""E-Commerce Store Set Up"",
+        ""opt_7"": ""Membership/Course Area Set Up"",
+        ""opt_8"": ""Blog Set Up"",
+        ""opt_9"": ""Accessibility"",
+        ""opt_10"": ""Search Engine Optimization Set Up"",
+        ""opt_11"": ""Pixel & Tracking Set Up"",
+        ""opt_12"": ""Email Service Provider Integration"",
+        ""opt_13"": ""Updates & Fixes Post Launch""
+}"
+4,services,web_design_files,Will you provide the web designs you create to your clients in a file other than or in addition to as a finished website?,"In other words, will you provide AI, PSD, or other image format files to your client?",boolean,
+5,services,web_builder_coding,"Beyond creating the website using a builder, will you write any code to customize your client's site?","If you answer ""Yes"", we'll add a clause saying that you'll provide this customization with code.",boolean,
+6,payment,services_payment_types,How will you charge for your services?,Select one of the following. We'll use your answer to decide which payment clause type to include in your agreement.,select,"{
+        ""opt_1"": ""A Single Payment"",
+        ""opt_2"": ""A Deposit Followed By Additional Payments"",
+        ""opt_3"": ""Hourly Billing""
+}"
+7,service_provider_specific,web_dev_delivery_deadline,Do you want to include a clause in the agreement that sets a deadline for your clients to deliver assets for you to begin your work?,"We developers and designers are often held up, waiting for their clients to deliver copy, images, or other assets. Our system has a clause that lets you set a deadline for clients to provide those assets and lets you delay their project to do another project if they are late in delivering their assets.",boolean,
+8,dispute_resolution,dispute_forum,"If a dispute arises, do you want that resolved in court or through binding arbitration?","Arbitration is a form of private dispute resolution. If you choose arbitration, the parties will have to pay for the arbitrator who decides the dispute, which is an added cost, but the dispute will generally be resolved more quickly, which will reduce fees paid to attorneys. For group programs, arbitration also allows you to require customers to bring their claims individually instead of potentially as a class action.",select,"{
+	""opt_1"": ""Arbitration"",
+	""opt_2"": ""Court""
+}"
+9,dispute_resolution,fee_shifting_choice,"If a dispute arises, do you want the losing party to have to pay the winning party's legal fees?","In the United States, each party to a legal dispute is generally responsible for paying their attorneys' fees, no matter who wins. You can change this with a contractual provision. While fee disputes rarely get to the point for this clause to kick in, including it can be an added incentive to get the parties to resolve a dispute through negotiation. ",boolean,
+10,payment,group_program_payment_types,Which of the following best describes how you'll charge for your program?,Select one of the following. We'll use your answer to decide which payment clause type to include in your agreement.,select,"{""opt_1"": ""Full Pay Only"", ""opt_2"": ""Full Pay & Payment Plan"", ""opt_3"": ""Free/No-Charge""}"
+11,refunds,group_program_refund_type,Which of the following best describes your refund policy for the program?,Select one of the following. We'll use your answer to decide which refund clause to include in your agreement. You'll customize things like the length of any refund policy later.,select,"{
+        ""opt_1"": ""No Refunds"",
+        ""opt_2"": ""No Questions Asked Refunds"",
+        ""opt_3"": ""Show Your Work Refunds""
+}"
+12,program_details,group_program_inclusions,Which of the following are included for everyone who purchases your program?,"Don't include things that are offered only as limited-time bonuses at this point. Because bonuses tend to change over time, we include a general provision saying that buyers will also get access to any bonuses advertised at their time of purchase.",checkbox,"{
+        ""opt_1"": ""Training/Course Portal"",
+        ""opt_2"": ""Private Discussion Group (e.g., Facebook Group)"",
+        ""opt_3"": ""Group Q&A Sessions"",
+        ""opt_4"": ""One-On-One Calls"",
+        ""opt_5"": ""Discounts on Other Offers""
+}"
+13,program_details,group_program_access_limit,Now let's talk about the training portal. How long will customers have access to the training material?,,select,"{""opt_1"": ""Lifetime Access"", ""opt_2"": ""Access For A Set Period of Time""}"
+14,program_details,group_program_group_access_limit,Now let's talk about the privage group that's part of your program. How long will customers have access to the private group?,,select,"{
+	""opt_1"": ""Lifetime Access"",
+	""opt_2"": ""Access For A Set Period of Time""
+}"
+15,gdpr,gdpr_representative,Do you employ a GDPR representative?,"Certain businesses are required to employ someone in the European Union to act as their representative for GDPR compliance issues. If you have employed one of these GDPR Representatives, click yes. If not, click no.",boolean,
+16,payment,product_payment_types,Which of the following best describes how you'll charge for your product?,Select one of the following. We'll use your answer to decide which payment clause type to include in your agreement.,select,"{""opt_1"": ""Full Pay Only"", ""opt_2"": ""Full Pay & Payment Plan"",""opt_3"": ""Free/No-Charge""}"
+17,refunds,product_refund_type,Do you offer refunds for the product?,We'll use your answer to decide which refund clause to include in your agreement. You'll customize things like the length of any refund policy later.,boolean,
+18,program_details,bootcamp_inclusions,Which of the following are included for everyone who purchases your program?,"Don't include things that are offered only as limited-time bonuses at this point. Because bonuses tend to change over time, we include a general provision saying that buyers will also get access to any bonuses advertised at their time of purchase.",checkbox,"{
+        ""opt_1"": ""Virtual Bootcamp or Workshop"",
+        ""opt_2"": ""In-Person Bootcamp or Workshop"",
+        ""opt_3"": ""Discussion Group (e.g., Facebook Group)"",
+        ""opt_4"": ""Group Q&A Calls"",
+        ""opt_5"": ""Recordings""
+}"
+19,payment,membership_subscription_options,Do you offer more than one subscription option (e.g. monthly and annual options)?,We'll use your answer to decide whether to include only a single subscription option or two options in your agreement.,boolean,
+20,cancellation,membership_cancellation,Which of the following best describes what happens when a member cancels their membership?,We'll use your answer to select the correct cancellation clause.,select,"{
+        ""opt_1"": ""They Retain Access To The Membership Through The Period They Paid For"",
+        ""opt_2"": ""They Lose Access Immediately & Receive A Prorated Refund"",
+        ""opt_3"": ""They Lose Access Immediately Without A Refund""
+}"
+21,payment,group_program_payment_types,Which of the following best describes how you'll charge for your program?,Select one of the following. We'll use your answer to decide which payment clause type to include in your agreement.,select,"{""opt_1"": ""Full Pay Only"", ""opt_2"": ""Full Pay & Payment Plan""}"
+22,program_details,group_coaching_inclusions,Which of the following are included for everyone who purchases your program?,"Don't include things that are offered only as limited-time bonuses at this point. Because bonuses tend to change over time, we include a general provision saying that buyers will also get access to any bonuses advertised at their time of purchase.",checkbox,"{
+        ""opt_1"": ""Training/Course Portal"",
+        ""opt_2"": ""Private Discussion Group (e.g., Facebook Group)"",
+        ""opt_3"": ""Group Coaching Calls"",
+        ""opt_4"": ""One-On-One Calls"",
+        ""opt_5"": ""Discounts on Other Offers"",
+        ""opt_6"": ""Intensives (e.g., bootcamps or workshops)"",
+        ""opt_7"": ""Access to Other Products or Programs"",
+        ""opt_8"": ""Live Event Ticket"",
+        ""opt_9"": ""Coaching Between Calls (e.g., Slack or Voxer Coaching)""
+}"
+23,termination,group_coaching_period,Which of the following best describes when people can enroll in your group coaching program?,,select,"{
+     ""opt_1"": ""Rolling Enrollment (i.e., people are joining and leaving the group on an ongoing basis)"", 
+     ""opt_2"": ""Fixed Enrollment Periods (i.e., we enroll by cohorts with fixed beginning and end dates)""
+}"
+24,refunds,live_event_refund_allowed,Do you allow refunds for this product?,,boolean,
+25,program_details,virtual_event_duration,Is your virtual event a one-day event or a multiple-day event?,,select,"{
+        ""opt_1"": ""One-Day Event"",
+        ""opt_2"": ""Multiple Day Event""
+}"
+26,program_details,virtual_event_recordings,Do all ticket holders get recordings of the virtual event?,,boolean,
+27,program_details,virtual_event_vip,Do you offer VIP tickets that have added features or benefits?,,boolean,
+28,payment,copywriting_agreeement_type,Which of the following best describes the nature of the engagement and how you'll be paid?,"We'll use your answer to select the correct clauses to describe the services, the fees, and a few other provisions.",select,"{
+        ""opt_1"": ""Project Rate"",
+        ""opt_2"": ""Day Rate"",
+        ""opt_3"": ""Hourly Rates"",
+        ""opt_4"": ""Monthly Retainer""
+}"
+29,payment,copywriting_number_of_payments,Which of the following best describes how your client will pay for the services?,,select,"{
+        ""opt_1"": ""A Single Payment At The Outset"",
+        ""opt_2"": ""A Deposit Now With The Balance On Completion""
+}"
+30,client_relations,copywriting_day_rates_rescheduling,Are clients allowed to reschedule their day rate session?,"Don't worry about the limits for rescheduling now. If you allow rescheduling, we'll put some limits on it in a bit. For now, just decide whether you'll allow rescheduling at all. ",boolean,
+31,services,coaching_area,Which of the following best describes the type of coaching you provide?,We'll use this to include the right kind of disclaimer. ,select,"{
+        ""opt_1"": ""General Life Coaching"",
+        ""opt_2"": ""Business Coaching"",
+        ""opt_3"": ""Health / Wellness Coaching"",
+        ""opt_4"": ""Fitness Coaching"",
+        ""opt_5"": ""Other Coaching""
+}"
+32,services,coaching_pack_type,Which of the following best describes what you are selling as part of this agreement?,,select,"{
+        ""opt_1"": ""Monthly Coaching Package"",
+        ""opt_2"": ""A Set Number of Coaching Sessions"",
+        ""opt_3"": ""Individual Coaching Sessions""
+}"
+33,services,coaching_access_between_calls,"Are you available to clients (e.g., via email or Voxer) between coaching sessions?",,boolean,
+34,fees,coaching_fees_multiple_payments,Which of the following best describes how your client will pay for the services?,,select,"{
+        ""opt_1"": ""A Single Payment At The Outset"",
+        ""opt_2"": ""Multiple Payments""
+}"
+35,termination,contractor_agreement_type,Which of the following best describes how long the contractor will be working for you?,,select,"{
+        ""opt_1"": ""For a Set Period of Time"",
+        ""opt_2"": ""Until the Project is Complete"",
+        ""opt_3"": ""On an Ongoing Basis (e.g., weekly or monthly services)""
+}"
+36,fees,contractor_project_payment_type,Which of the following best describes how you will pay the contractor?,,select,"{
+        ""opt_1"": ""A Single Payment Up Front"",
+        ""opt_2"": ""A Single Payment Upon Completion of the Work"",
+        ""opt_3"": ""A Deposit Now & The Balance Upon Completion"",
+        ""opt_4"": ""The Contractor Will Bill Hourly For The Work""
+}"
+37,fees,contractor_ongoing_payment_type,Which of the following best describes how you will pay the contractor?,,select,"{
+        ""opt_1"": ""Weekly or Monthly Payments In Advance"",
+        ""opt_2"": ""Weekly or Monthly Payments After The Work""
+}"
+38,fees,va_payment_type,Which of the following best describes how you will pay the virtual assistant?,,select,"{
+        ""opt_1"": ""Weekly or Monthly Payments In Advance"",
+        ""opt_2"": ""Weekly or Monthly Payments After The Work"",
+        ""opt_3"": ""The VA Will Bill Hourly For The Work""
+}"
+39,workers,full_time_or_part_time,Will the worker be a full-time employee or a part-time employee?,,select,"{
+        ""opt_1"": ""Full-Time"",
+        ""opt_2"": ""Part-Time""
+}"
+40,workers,salary_or_hourly,Will the employee be paid by the hour or a salary?,,select,"{
+        ""opt_1"": ""Hourly"",
+        ""opt_2"": ""Salaried""
+}"
+41,refunds,group_program_refund_type,Which of the following best describes your refund policy for the membership?,Select one of the following. We'll use your answer to decide which refund clause to include in your agreement. You'll customize things like the length of any refund policy later.,select,"{
+        ""opt_1"": ""No Refunds"",
+        ""opt_2"": ""No Questions Asked Refunds"",
+        ""opt_3"": ""Show Your Work Refunds""
+}"
+42,parties,nda_type,"First, let's figure out whether you want to create a one-way non-disclosure agreement or a two-way non-disclosure agreement. Which of the following best describes your situations?",,select,"{
+        ""opt_1"": ""One Party Will Be Sharing Confidential Information"",
+        ""opt_2"": ""Both Parties Will Be Sharing Confidential Information""
+}"
+43,dates,brand_photography_past,Are you creating this addendum for a photoshoot that has already occurred?,,boolean,
+44,ip,photographer_portfolio,Do you want the agreement to allow the photographer to include the photos in the photographer's portfolio?,"If you pick yes, we'll include a clause that gives the photographer what is called a ""limited license."" This clause will allow the photographer to include the photos in a portfolio of prior work, but not to use them in any other way. ",boolean,
+45,services,guest_expert_identifier,What is the best title to use for the guest in this agreement?,This is how we'll name the agreement and what we'll call the guest throughout.,select,"{
+        ""opt_1"": ""Guest Expert"",
+        ""opt_2"": ""Guest Teacher"",
+        ""opt_3"": ""Guest Coach""
+}"
+46,services,guest_teacher_ongoing,Will the guest be providing ongoing services for your program?,,boolean,
+47,services,guest_expert_set_term,Which of the following describes how long the guest will provide services?,,select,"{
+        ""opt_1"": ""Until One Party Terminates The Arrangement"",
+        ""opt_2"": ""For A Set Period of Time (e.g., 12 months)""
+}"
+48,fees,guest_expert_compensation,Will the guest be compensated for their services?,,boolean,
+49,services,guest_expert_inclusions,Which of the following will the guest be providing for your program?,We'll use your answer to decide how to describe the services in the agreement.,checkbox,"{
+        ""opt_1"": ""Recording A Custom Training For Your Program"",
+        ""opt_2"": ""Providing Existing Trainings For Your Program"",
+        ""opt_3"": ""Running A Live Training In Your Program"",
+        ""opt_4"": ""Conducting Live Q&A or Group Coaching Sessions"",
+        ""opt_5"": ""Answering Questions Posted In The Program's Group"",
+        ""opt_6"": ""Participating in Events Like Bootcamps"",
+        ""opt_7"": ""One-On-One Coaching with Program Participants""
+}"
+50,services,guest_expert_inclusions,Which of the following will the guest be providing for your program?,We'll use your answer to decide how to describe the services in the agreement.,checkbox,"{
+        ""opt_1"": ""Recording A Custom Training For Your Program"",
+        ""opt_2"": ""Providing Existing Trainings For Your Program"",
+        ""opt_3"": ""Running A Live Training Your Program""
+}"
+51,services,guest_non_solicitation,Do you want to include a clause that prohibits the guest from actively promoting their services to participants in your program?,,boolean,
+52,services,guest_non_respond_solicitations,"We'll include a clause prohibiting the guest from promoting their services directly, but how should the guest handle things if one of your program participants reaches out to them privately?",,select,"{
+        ""opt_1"": ""The Guest Still May Not Work With The Participant"",
+        ""opt_2"": ""The Guest Is Free To Work With The Participant""
+}"
+53,client_relations,affiliate_applications_allowed,Do you allow people you do not know to apply to be affiliates for your company?,"If you select Yes, we'll include a clause that requires an application. If all of your affiliates are hand-selected, you might not use an application process. When in doubt, answer ""Yes"" so that your agreement will include a section about applications. ",boolean,
+54,fees,affiliate_commission_structure,Which of the following best describes the commission structure for your products?,,select,"{
+        ""opt_1"": ""Affiliates Earn A Percentage Of Revenue"",
+        ""opt_2"": ""Affiliates Earn A Flat Fee Per Sale"",
+        ""opt_3"": ""We Have Both Percentage And Flat Fee Commissions""
+}"
+55,program_details,bootcamp_duration,Is your event a one-day event or a multiple-day event?,,select,"{
+        ""opt_1"": ""One-Day Event"",
+        ""opt_2"": ""Multiple Day Event""
+}"
+56,payment,membership_subscription_options_available,Which of the following membership plans do you offer? Select all that apply. ,,checkbox,"{
+        ""opt_1"": ""Monthly"",
+        ""opt_2"": ""Quarterly"",
+        ""opt_3"": ""Annual""
+}"
+57,program_details,program_bonuses_offered,"Do you offer (or expect to offer) bonuses to buyers that differ over time? If you say yes, we'll include a clause to cover bonuses in your terms.","We use a catchall ""bonuses"" clause because they are likely to differ over time. Unless you are sure you'll never offer bonuses, choose yes.",boolean,
+58,fees,coupons_available,"Do you expect to offer coupons or run other price-cut promotions for this program? If you say yes, we'll add a clause to address sales that happen at a reduced price.","If there is a chacne that you'll offer discounts or coupons, you should answer yes. Otherwise, there will be nothing in your terms to address a lower price.",boolean,
+59,disclaimers,website_terms_disclaimer_topics,Do you include (or expect to include) content on your website that touches on any of the following broad areas? Select all that apply.,We'll include disclaimers for each category you includes.,checkbox,"{
+        ""opt_1"": ""Legal Topics"",
+        ""opt_2"": ""Financial Topics"",
+        ""opt_3"": ""Tax Topics"",
+        ""opt_4"": ""Medical and/or Health Topics"",
+        ""opt_5"": ""None of These""
+}"
+60,disclosures,website_terms_reviews_included,"Do you sometimes create reviews for products, services, or other resources in exchange for a discount (or receiving the product or service for free)? Answer yes if you anticipate doing this in the future. ","If you select yes, we'll include a dislosure clause to cover these reviews. ",boolean,
+61,disclosures,website_terms_affiliate_links_included,Do you include (or expect to include) any affiliate links on your website?,"If you select yes, we'll include a dislosure clause to cover affiliate links. ",boolean,
+62,program_details,website_terms_paid_products,"Do you sell (or expect to sell) products on your website that don't have their own ""terms and conditions""? If you answer yes, we'll include a general provision to cover these types of products.","While you should create standalone terms for any major product that you sell, many business owners don't create terms for smaller digital products (e.g., ebooks, templates, etc.). If you will sell products without creating standalone terms, you should answer ""yes"" so we can include a general provision in your website terms. ",boolean,
+63,program_details,website_free_products,Do you offer free downloads on your website?,,boolean,
+64,program_details,website_guests,"Do you have guests appear on your platform? This includes things like podcast guests, guest blog posts, etc. ","If you answer yes, we'll include a clause that makes clear that you cannot attest to the accuracy of things these guests say. ",boolean,
+65,program_details,website_refunds_included,"Do you want to include a clause in your website terms to address refunds? You should include a clause in the terms for individual products to address refunds, but many business owners also include a general policy in their website terms. ","If you answer yes, we'll let you pick between a clause that allows refunds and one that says there are ""no refunds."" ",boolean,
+66,program_details,website_refunds_type,Which of the following do you want to include?,,select,"{
+        ""opt_1"": ""Refunds Allowed"",
+        ""opt_2"": ""No Refunds""
+}"
+67,program_details,speaking_in_person,Will the speech be in-person or virtual?,The speech is in-person if the speaker will be live in a room with the host (even if the event is a hybrid one that includes both in-person and virtual attendees).,select,"{
+       ""opt_1"": ""In-Person"",
+        ""opt_2"": ""Virtual""
+}"
+68,fees,speaking_payment,Which of the following best describes how the speaker will be paid?,,select,"{
+        ""opt_1"": ""A Single Payment"",
+        ""opt_2"": ""A Deposit & Balance Payment"",
+        ""opt_3"": ""The Speaker Is Not Being Paid""
+}"
+69,fees,speaking_expenses,"Will the Host reimburse the Speaker for any expenses (e.g., travel expenses)?",,boolean,
+70,client_relations,guest_blog_link_included,Will you include a link to the guest blogger's website in the article (including in the biography section)?,,boolean,
+71,ip,guest_blog_ip_provision,Is the guest blogger transferring ownership of the post to you or just giving you permission to include it on your site?,,select,"{
+       ""opt_1"": ""Transfering Ownership"",
+        ""opt_2"": ""Giving Permission To Use""
+}"
+72,ip,guest_speaker_ip_choice,"Now, let's address what the Host can do with the recording of the speech. Is the Host required to ask the Speaker's permission before adding the recording to other paid products?","If you answer yes, we'll add a clause requiring the Host to seek permission before using the recording. If you select no, we'll add a clause that expressly allows the Host to use the recording without seeking permission.",boolean,
+73,,,,,,
+74,,,,,,
+75,,,,,,
+76,,,,,,
+77,,,,,,
+78,,,,,,
+79,,,,,,
+80,,,,,,
+81,,,,,,
+82,,,,,,
+83,,,,,,
+84,,,,,,
+85,,,,,,
+86,,,,,,
+87,,,,,,
+88,,,,,,
+89,,,,,,
+90,,,,,,
+91,,,,,,
+92,,,,,,
+93,,,,,,
+94,,,,,,

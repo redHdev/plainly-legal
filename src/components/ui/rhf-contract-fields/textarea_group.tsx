@@ -18,7 +18,6 @@ const TextareaGroup = React.forwardRef<HTMLTextAreaElement, Props>(
         aria-labelledby={`${question.variable}-label`}
         className={`input-container ${classes ?? "col-span-1"}`}
       >
-        {/* {console.log(typeof control)} */}
         {question.text && (
           <span id={`${question.variable}-label`}>{question.text}</span>
         )}

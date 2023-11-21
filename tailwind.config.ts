@@ -10,10 +10,11 @@ export default {
       transparent: "transparent",
       current: "currentColor",
       orange: "#F88379",
+      salmon: "#F88379",
       red: "#FF3E3E",
       yellow: "#FEA935",
       // blue: "#59CBE8",
-      green: "#36E243",
+      green: "#66BB6A",
       blue: {
         50: "#F2FCFF",
         100: "#E1F7FC",
@@ -25,6 +26,7 @@ export default {
         700: "#7BD6ED",
         800: "#6AD0EB",
         900: "#59CBE8",
+        DEFAULT: "#59CBE8",
       },
       alt_blue: {
         50: "#F2F9FF",
@@ -37,6 +39,7 @@ export default {
         700: "#4b8ac9",
         800: "#2a6cb3",
         900: "#1d4f8c",
+        DEFAULT: "#1d4f8c",
       },
       purple: {
         50: "#F6F5FD",
@@ -49,6 +52,7 @@ export default {
         700: "#484761",
         800: "#2F2E4A",
         900: "#161534",
+        DEFAULT: "#161534",
       },
       light_purple: {
         50: "#EDECFE",
@@ -61,6 +65,7 @@ export default {
         700: "#A198FA",
         800: "#968CFA",
         900: "#8B80F9",
+        DEFAULT: "#8B80F9",
       },
       gray: colors.gray, // "#CCCCCC"
       black: colors.black, // "#161534"
@@ -72,7 +77,7 @@ export default {
       },
       screens: {
         xs: "460px",
-        header: "850px",
+        header: "980px",
       },
       fontFamily: {
         lato: ["Lato", ...fontFamily.sans],
@@ -105,6 +110,10 @@ export default {
             transform: "translateY(0)",
           },
         },
+        spin: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
       },
       /* Syntax:: duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name */
       animation: {
@@ -114,12 +123,24 @@ export default {
         opacity_pulse: "opacity_pulse 1.5s ease-out infinite",
         fadeInUp_50: "0.3s ease-out 0s 1 forwards fadeInUp_50",
         fadeInUp_delayed: "0.3s ease-out 0.35s 1 forwards fadeInUp_50",
+        "spin-fast": "spin .5s linear infinite",
+        spin: "spin 1s linear infinite",
+        "spin-slow": "spin 2s linear infinite",
       },
       margin: {
         "10vh": "10vh",
       },
       minHeight: {
         "645": "645px",
+      },
+      maxHeight: {
+        dialog: "calc(100svh - 200px)",
+      },
+      width: {
+        "dialog-xs": "min(460px, calc(100% - 2rem))",
+        "dialog-sm": "min(767px, calc(100% - 2rem))",
+        "dialog-md": "min(990px, calc(100% - 2rem))",
+        "dialog-lg": "min(1280px, calc(100% - 2rem))",
       },
     },
   },

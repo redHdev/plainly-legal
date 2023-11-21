@@ -5,7 +5,7 @@ import { type SubmitHandler, useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { type z } from "zod";
 import { motion as m } from "framer-motion";
-import replaceText from '~/utils/replaceText';
+import replaceText from "~/utils/replaceText";
 
 import {
   createDynamicContractQuestionsSchema,
@@ -15,17 +15,22 @@ import type { FullContracts } from "~/types/contracts";
 import ContractQuestion from "./ContractQuestion";
 import onPromise, { timeout } from "~/utils/helpers";
 import type { completionData } from "~/types/forms";
-import ShouldRenderField from "~/data/conditional";
+import ShouldRenderField from "~/utils/conditionals";
 import BackButton from "~/components/ui/BackButton";
+import { type InputJsonValueType } from "prisma/generated/zod";
 
 interface Props {
   agreement: FullContracts;
-  onCompletion?: (data: liveFormData) => void;
+  onCompletion?: (data: InputJsonValueType) => void;
+  prefillCompletion: completionData;
+  agreementPrefills: liveFormData;
 }
 
 export const AgreementQuestions: React.FC<Props> = ({
   agreement,
   onCompletion,
+  prefillCompletion,
+  agreementPrefills,
 }) => {
   const contractQuestions = agreement.contractQuestions;
   const dynamicFormSchema =
@@ -44,8 +49,17 @@ export const AgreementQuestions: React.FC<Props> = ({
   });
 
   const formref = useRef<HTMLFormElement>(null);
-  const [slideCompletion, setSlideCompletion] = useState<completionData>({});
+  const [slideCompletion, setSlideCompletion] =
+    useState<completionData>(prefillCompletion);
   const formData = watch();
+
+  //Push the agreement variables into the agreement data so we can use agreement level variables to determine clause visibility
+  const parsedVariables = agreement.variables as liveFormData;
+  const formDataFull = {
+    ...formData,
+    ...parsedVariables,
+    ...agreementPrefills,
+  } as liveFormData; //Full form data is the current answered questions, plus any other global variables in the agreement or global scope
 
   // Log errors if any
   if (Object.keys(errors).length > 0) {
@@ -54,41 +68,47 @@ export const AgreementQuestions: React.FC<Props> = ({
 
   // Update formResults state upon form submission
   const onSubmit: SubmitHandler<FormType> = (data) => {
-   
     //add agreement_title to the data
-    data.agreement_title = replaceText(agreement.agreementTitle, data, 3, true);
-
+    data.agreement_title = replaceText(
+      agreement.agreementTitle,
+      data,
+      3,
+      false,
+    );
     if (onCompletion) {
       onCompletion(data);
     }
-    
   };
 
+  //We want to show the questions in the right order because the database relationals will not link them in the order they are input. reOrder the questions to the same order they are in in the contractQuestionOrder array
+  const contractQuestionsOrder = agreement.contractQuestionOrder as number[];
+  const orderedQuestions = contractQuestionsOrder
+    .map((orderKey) =>
+      contractQuestions.find((clause) => clause.key === orderKey),
+    ) // map orderBy keys to their clauses
+    .filter(Boolean) // remove any undefined items, just in case a key in orderBy doesn't have a corresponding clause
+    .concat(
+      contractQuestions.filter(
+        (clause) => !contractQuestionsOrder.includes(clause.key),
+      ),
+    ); // append any clauses not in orderBy to the end
+
+  //Create a variable to hold the current slide
   let currentSlide: string | null = null;
 
   // Generate questions for each slide
-  const slideQuestions = contractQuestions.map((question, index) => {
-    // // Force index to start at 1 to make room for the hardcoded user_agreement_name field
-    // index = index == 0 ? index + 1 : index;
+  const slideQuestions = orderedQuestions.map((question, index) => {
+    if (!question) throw new Error("Question was expected but not found");
 
+    //If we should not render the slide, return null
     const shouldRender = question.conditionals
-      ? ShouldRenderField(question.conditionals, formData)
+      ? ShouldRenderField(question.conditionals, formDataFull)
       : true;
-
-    // Handle question rendering based on conditional check
-    if (!shouldRender) {
-      if (slideCompletion[question.variable]) {
-        const updatedSlideCompletion = { ...slideCompletion };
-        delete updatedSlideCompletion[question.variable];
-        setSlideCompletion(updatedSlideCompletion);
-      }
-      return null;
-    }
+    if (!shouldRender) return null;
 
     // If currentSlide is not set and question is not in slideCompletion, set as currentSlide
-    if (!currentSlide && !slideCompletion[question.variable]) {
+    if (!currentSlide && !slideCompletion[question.variable])
       currentSlide = question.id;
-    }
 
     return (
       <Controller
@@ -100,12 +120,13 @@ export const AgreementQuestions: React.FC<Props> = ({
           <ContractQuestion
             field={field}
             question={question}
-            onCompletion={async () => {
-              await timeout(400);
-              setSlideCompletion((prev) => ({
-                ...prev,
-                [question.variable]: true,
-              }));
+            onCompletion={() => {
+              void timeout(400).then(() => {
+                setSlideCompletion((prev) => ({
+                  ...prev,
+                  [question.variable]: true,
+                }));
+              });
             }}
             value=""
             hidden={currentSlide !== question.id}
@@ -113,13 +134,14 @@ export const AgreementQuestions: React.FC<Props> = ({
           >
             {index !== 0 && (
               <BackButton
+                className="rounded-none border-none bg-transparent p-0 underline hover:bg-transparent"
                 onClick={() => {
                   let backCompleted = false;
                   let currentIndex = index - 1;
 
                   while (!backCompleted) {
                     const previousQuestion =
-                      contractQuestions[currentIndex]?.variable;
+                      orderedQuestions[currentIndex]?.variable;
 
                     if (previousQuestion == null) {
                       throw new Error("Could not return to previous question");
@@ -149,22 +171,10 @@ export const AgreementQuestions: React.FC<Props> = ({
   useEffect(() => {
     if (!currentSlide && formref.current) {
       formref.current.dispatchEvent(
-        new Event("submit", { cancelable: true, bubbles: true })
+        new Event("submit", { cancelable: true, bubbles: true }),
       );
     }
   }, [currentSlide]);
-
-  // const userAgreementNameQuestion: FullContractQuestions = {
-  //   id: "users_agreement_name",
-  //   key: 1234567890, // dummy key
-  //   group: "default_fields",
-  //   variable: "users_agreement_name",
-  //   text: "What would you like to name this agreemet?",
-  //   help: "This is the name of the agreement",
-  //   inputType: "RADIO",
-  //   inputOptions: [],
-  //   conditionals: [],
-  // };
 
   return (
     <>
@@ -179,41 +189,9 @@ export const AgreementQuestions: React.FC<Props> = ({
         }}
         ref={formref}
         onSubmit={onPromise({ promise: handleSubmit(onSubmit) })}
-        className="mx-auto grid w-full max-w-xl gap-8"
+        className="mx-auto grid w-full max-w-xl gap-8 py-14"
       >
-        {/* <Controller
-          key={userAgreementNameQuestion.id}
-          name={userAgreementNameQuestion.variable}
-          control={control}
-          defaultValue=""
-          render={({ field }) => (
-            <ContractQuestion
-              field={field}
-              question={userAgreementNameQuestion}
-              onCompletion={async () => {
-                await timeout(400);
-                setSlideCompletion((prev) => ({
-                  ...prev,
-                  [userAgreementNameQuestion.variable]: true,
-                }));
-              }}
-              value=""
-              hidden={false}
-              index={0}
-            ></ContractQuestion>
-            // <InputGroup />
-          )}
-        /> */}
         {slideQuestions}
-
-        {/* <div className="flex justify-end">
-          <button
-            type="submit"
-            className="bg-green-500 hover:bg-green-600 text-white"
-          >
-            Submit
-          </button>
-        </div> */}
       </m.form>
     </>
   );

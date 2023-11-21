@@ -1,8 +1,15 @@
-import Link from "next/link";
 import { type Contracts } from "@prisma/client";
+// import Link from "next/link";
 
-import AgreementPicker from "./agreement_picker";
+import AgreementPicker from "./AgreementPicker";
 import getAgreements from "~/data/agreements";
+import { cn } from "~/utils/cn";
+import Link from "next/link";
+
+export const metadata = {
+  title: "New Document - Plainly Legal",
+  description: "Generate a new document.",
+};
 
 export default async function Page() {
   const contracts = (await getAgreements()) as Contracts[];
@@ -13,12 +20,20 @@ export default async function Page() {
 
   return (
     <>
-      <section id="content" className="mt-10vh pt-0">
-        <div className="w-full max-w-xl p-6">
-          <div className="grid grid-cols-1 gap-10">
+      <section
+        id="content"
+        className={cn(
+          "mt-10vh py-10",
+          // "mb-24 flex-grow justify-center"
+        )}
+      >
+        <div className="w-full max-w-xl px-6">
+          <div className="grid grid-cols-1 gap-6">
             <div className="col-span-full text-center">
-              <h2 className="mb-0">Agreement Generator</h2>
+              <h2 className="mb-0">Legal Doc Generator</h2>
             </div>
+
+            {/* <hr className="w-20 justify-self-center border-light_purple-900" /> */}
 
             <div className="col-span-full text-center">
               {!!contracts && contracts.length > 0 ? (
@@ -28,11 +43,13 @@ export default async function Page() {
               )}
             </div>
 
-            <div className="col-span-full">
+            <div className="col-span-full mt-5">
               <div className="flex justify-center">
-                <button className="btn btn-primary w-auto border border-purple-100 bg-transparent normal-case text-purple-600 hover:border-purple-900 hover:bg-purple-900 hover:text-white">
-                  <Link href="/help">Still not sure?</Link>
-                </button>
+                <Link
+                  href="https://help.plainlylegal.com/legal-doc-generator"
+                  target="_blank"
+                  className="capitalize text-gray-500 underline"
+                >{`Not Sure? Click Here`}</Link>
               </div>
             </div>
           </div>

@@ -1,8 +1,9 @@
+export const revalidate = 0;
 import { getAgreement } from "~/data/agreements";
 import { type FullContracts } from "~/types/contracts";
-import NewAgreement from "~/components/agreements/ConductAgreement";
 import { currentUser } from "@clerk/nextjs";
 import { type User } from "@clerk/nextjs/dist/types/server";
+import ConductAgreement from "~/components/agreements/ConductAgreement";
 
 const defaultErrorText = "Something went wrong. Please try again later.";
 
@@ -33,6 +34,8 @@ export default async function Page({ params }: { params: Params }) {
     throw new Error("You must be logged in to view this page.");
 
   return (
-    <NewAgreement contract={contract} user={user} />
+    <section id="content" className="flex-grow py-0">
+      <ConductAgreement agreement={contract} userId={user?.id} />
+    </section>
   );
 }

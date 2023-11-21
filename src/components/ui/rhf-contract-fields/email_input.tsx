@@ -6,32 +6,36 @@ interface Props {
   question: ClauseQuestions;
   classes?: string;
   placeholder?: string;
-  ref: React.Ref<HTMLInputElement>;
+  inputRef: React.Ref<HTMLInputElement> | undefined;
   value?: string;
-  valid?: (value : boolean) => void;
+  valid?: (value: boolean) => void;
   onChange?: (value: string) => void;
   errorState?: boolean;
+  enterPress?: () => void;
 }
 
 const InputGroup: React.FC<Props> = ({
   defaultValue,
-  onChange,
-  valid,
   question,
   classes,
+  placeholder,
+  inputRef,
   value,
-  ref,
+  valid,
+  onChange,
   errorState,
+  enterPress
 }: Props) => {
-  const [ error, setError ] = React.useState<string>("Please enter an email address");
+  const [error, setError] = React.useState<string>(
+    "Please enter an email address"
+  );
 
-  function handleChange(value: string){
-
+  function handleChange(value: string) {
     //Dont allow anything sketchy to be input except for normal email chars
     value = value.replace(/[^a-zA-Z0-9@._-]/g, "");
 
     //Push the change to the form
-    if(onChange){
+    if (onChange) {
       onChange(value);
     }
 
@@ -39,17 +43,17 @@ const InputGroup: React.FC<Props> = ({
     const isValid = (str: string) => /@.*\./.test(str);
     //Check if the question is answered with valid input and push the valid state up
     if (valid) {
-      valid( isValid(value) );
+      valid(isValid(value));
     }
 
     //Check if the question is answered with valid input
-    if( value.length === 0 ) {
+    if (value.length === 0) {
       setError("Please enter an email address");
       return;
     }
 
     //Check if the question has a @ char and a . after the @
-    if( !isValid(value) ) {
+    if (!isValid(value)) {
       setError("Please enter a valid email address");
       return;
     }
@@ -57,6 +61,12 @@ const InputGroup: React.FC<Props> = ({
     //Clear errors since we have a valid input
     setError("");
   }
+
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>): void => {
+    if (e.key === 'Enter' && enterPress) {
+        enterPress();
+    }
+  };
 
   return (
     <label
@@ -70,8 +80,9 @@ const InputGroup: React.FC<Props> = ({
         id={question.variable}
         defaultValue={value ?? defaultValue ?? ""}
         onChange={(e) => handleChange(e.target.value)}
-        placeholder={""}
-        ref={ref}
+        onKeyPress={handleKeyPress}
+        placeholder={placeholder ?? ""}
+        ref={inputRef}
       />
 
       {/* Show the error if present */}
@@ -80,10 +91,9 @@ const InputGroup: React.FC<Props> = ({
           {error}
         </span>
       )}
-
     </label>
   );
-}
+};
 InputGroup.displayName = "Emberly Input Group";
 
 export default InputGroup;

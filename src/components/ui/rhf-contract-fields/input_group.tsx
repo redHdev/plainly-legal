@@ -1,16 +1,24 @@
 import React from "react";
 import { type ClauseQuestions } from "@prisma/client";
+import * as xssModule from "xss";
+
+//Create a whitelist with no tags or anything allowed
+const options = {
+  whiteList: {},
+};
+const xss = new xssModule.FilterXSS(options);
 
 interface Props {
   defaultValue: string;
   question: ClauseQuestions;
   classes?: string;
   placeholder?: string;
-  ref: React.Ref<HTMLInputElement>;
+  inputRef: React.RefObject<HTMLInputElement> | undefined;
   value?: string;
   valid?: (value: boolean) => void;
   onChange?: (value: string) => void;
   errorState?: boolean;
+  enterPress?: () => void;
 }
 
 export const InputGroup: React.FC<Props> = ({
@@ -20,14 +28,15 @@ export const InputGroup: React.FC<Props> = ({
   question,
   classes,
   value,
-  ref,
+  inputRef,
   errorState,
+  enterPress
 }: Props) => {
   const [error, setError] = React.useState<string>("Please enter an input");
 
   function handleChange(value: string) {
-    //Dont allow anything sketchy to be input
-    value = value.replace(/[^a-zA-Z0-9 ]/g, "");
+    //Dont allow anything sketchy to be input but still allow all normal puncuation. no < or > or anything like that
+    value = xss.process(value);
 
     //Push the change to the form
     if (onChange) {
@@ -43,6 +52,13 @@ export const InputGroup: React.FC<Props> = ({
       valid(hasText);
     }
   }
+
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>): void => {
+    if (e.key === 'Enter' && enterPress) {
+        enterPress();
+    }
+  };
+
   return (
     <label
       role="group"
@@ -55,8 +71,10 @@ export const InputGroup: React.FC<Props> = ({
         name={question.variable}
         defaultValue={value ?? defaultValue ?? ""}
         onChange={(e) => handleChange(e.target.value)}
+        onKeyPress={handleKeyPress}
         placeholder={""}
-        ref={ref}
+        ref={inputRef}
+        autoFocus={true}
       />
 
       {/* Show the error if present */}

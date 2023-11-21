@@ -71,4 +71,41 @@ export const formatDateUSA = (date: Date | undefined): string => {
   return `${month} ${day}, ${year} @ ${paddedHours}:${formattedMinutes}${period}`;
 };
 
+export const formatDateUSASimple = (date: Date | undefined): string => {
+  if (!date || isNaN(date.getTime())) {
+    return "Invalid date";
+  }
+
+  const months = [
+    "Jan",
+    "Feb",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "Aug",
+    "Sept",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+
+  const month = months[date.getMonth()];
+  const day = date.getDate().toString().padStart(2, "0");
+  const year = date.getFullYear();
+  const hours = date.getHours();
+
+  let formattedHours = hours % 12;
+  if (formattedHours === 0) {
+    formattedHours = 12;
+  }
+
+  if (month === undefined || day === undefined || year === undefined) {
+    return "Invalid date";
+  }
+
+  return `${month} ${day}, ${year}`;
+};
+
 export default onPromise;

@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React from "react";
 
+import { cn } from "~/utils/cn";
+
 interface Props {
   href: string;
   //allow children
@@ -9,21 +11,17 @@ interface Props {
   [x: string]: string | React.ReactNode | undefined;
 }
 
-const StyleizedLink: React.FC<Props> = ({
-  href,
-  children,
-  ...props
-}: Props) => {
-
-  const addedClasses = typeof props.className === 'string' ? props.className : '';
-
-  //Combine the classes if they passed className as a prop
-  const classes = `flex gap-1 h-full w-full cursor-pointer items-center justify-center rounded border p-2 text-center leading-5 transition-all duration-200 text-white bg-[#F88379] text-white ${addedClasses}`;
+const StylizedLink: React.FC<Props> = ({ href, children, ...props }: Props) => {
+  const addedClasses =
+    typeof props.className === "string" ? props.className : "";
 
   return (
     <Link
       {...props}
-      className={classes}
+      className={cn(
+        "flex h-full w-full cursor-pointer items-center justify-center gap-1 whitespace-nowrap rounded border bg-[#F88379] p-2 text-center leading-5 text-white transition-all duration-200",
+        addedClasses,
+      )}
       href={href}
     >
       {children}
@@ -31,4 +29,4 @@ const StyleizedLink: React.FC<Props> = ({
   );
 };
 
-export default StyleizedLink;
+export default StylizedLink;

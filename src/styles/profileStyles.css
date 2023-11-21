@@ -1,0 +1,16 @@
+
+@media screen and (max-width: 767px) {
+    .cl-profileSectionContent button {
+        padding:  0;
+    }
+    
+    .cl-card {
+        border: none;
+        box-shadow:  none;
+    }
+    
+    .cl-pageScrollBox {
+        padding: 0;
+        scrollbar-gutter: unset;
+    }
+}

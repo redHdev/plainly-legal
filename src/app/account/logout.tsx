@@ -6,9 +6,13 @@ import { LogOut } from "~/components/icons";
 export const SignOutButton = () => {
   const { signOut } = useClerk();
 
-  const clickHandler = async () => {
+  const completeSignOut = async () => {
     await signOut();
     window.location.reload();
+  }
+
+  const clickHandler = () => {
+    void completeSignOut();
   };
 
   return (

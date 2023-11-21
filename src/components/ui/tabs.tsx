@@ -15,7 +15,7 @@ const TabsList = React.forwardRef<
     ref={ref}
     className={cn(
       "text-purple-70 inline-flex items-center justify-center rounded-md bg-purple-50 p-1 data-[orientation=vertical]:flex-col",
-      className
+      className,
     )}
     {...props}
   />
@@ -29,8 +29,10 @@ const TabsTrigger = React.forwardRef<
   <TabsPrimitive.Trigger
     ref={ref}
     className={cn(
-      "ring-offset-background focus-visible:ring-ring inline-flex items-center justify-center whitespace-nowrap rounded-sm bg-transparent px-3 py-1.5 text-sm font-medium transition-colors duration-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-white data-[state=active]:text-purple-800 data-[state=active]:shadow-sm",
-      className
+      "inline-flex items-center justify-center whitespace-nowrap rounded-sm bg-transparent px-3 py-1.5 text-sm font-medium transition-colors duration-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-light_purple-600 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+      "text-purple-600 [&_svg.custom]:fill-purple-600",
+      "data-[state=active]:bg-white data-[state=active]:text-purple-800 data-[state=active]:shadow-sm [&_svg.custom]:data-[state=active]:fill-purple-800",
+      className,
     )}
     {...props}
   />
@@ -44,8 +46,8 @@ const TabsContent = React.forwardRef<
   <TabsPrimitive.Content
     ref={ref}
     className={cn(
-      "focus-visible:ring-ring mt-2 animate-fadeInUp_50 ring-offset-purple-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
-      className
+      "focus-visible:ring-ring mt-2 animate-fadeInUp_50 flex-col ring-offset-purple-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 data-[state=active]:flex",
+      className,
     )}
     {...props}
   />

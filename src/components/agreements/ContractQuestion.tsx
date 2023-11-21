@@ -7,6 +7,16 @@ import RadioGroup from "~/components/ui/rhf-contract-fields/radio_group";
 
 import { useAnimate } from "framer-motion";
 
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "~/components/ui/shadcn/dialog";
+import { cn } from "~/utils/cn";
+
 interface Props {
   field: ControllerRenderProps;
   question: FullContractQuestions;
@@ -36,7 +46,7 @@ const ContractQuestion = React.forwardRef<
       children,
       index,
     }: Props,
-    ref
+    ref,
   ) => {
     let inputType: string = question.inputType;
 
@@ -54,7 +64,7 @@ const ContractQuestion = React.forwardRef<
               display: "none",
             },
           },
-          { duration: 0.2 }
+          { duration: 0.2 },
         );
       } else {
         void animate(
@@ -63,7 +73,7 @@ const ContractQuestion = React.forwardRef<
             display: "flex",
             opacity: 1,
           },
-          { delay: animationDelay, duration: animationDuration }
+          { delay: animationDelay, duration: animationDuration },
         );
       }
     }, [animate, animationDelay, animationDuration, hidden, scope]);
@@ -71,11 +81,19 @@ const ContractQuestion = React.forwardRef<
     //If we have a select or boolean with only 2 options, we want to use radio buttons instead of a selector to make it easier to see
     if (question.inputType === "SELECT" || question.inputType === "BOOLEAN") {
       if (
-        question.inputOptions &&
+        !question.inputOptions ||
         Object.entries(question.inputOptions).length <= 2
       ) {
         inputType = "RADIO";
       }
+    }
+
+    //Make sure that the boolean options are always yes/no
+    if (question.inputType === "BOOLEAN") {
+      question.inputOptions = {
+        true: "Yes",
+        false: "No",
+      };
     }
 
     return (
@@ -90,14 +108,41 @@ const ContractQuestion = React.forwardRef<
       >
         {/* This is where the back button renders */}
         {children}
-
-        <div className="pl-shadow flex flex-col items-center gap-5 rounded-2xl p-6">
-          <span
-            id={`${question.variable}-label`}
-            className="text-center text-lg"
-          >
-            {question.text}
-          </span>
+        <div
+          className={cn(
+            // "pl-shadow p-6",
+            "relative flex flex-col items-center gap-5 rounded-2xl",
+          )}
+        >
+          <div className="label-container w-full">
+            <span id={`${question.variable}-label`} className="text-lg">
+              {question.text}
+            </span>
+            {question.help && (
+              <Dialog>
+                <DialogTrigger
+                  className="ml-2 inline-flex h-5 w-5 items-center justify-center rounded-full bg-purple-100 text-sm"
+                  title="Help"
+                >
+                  ?
+                </DialogTrigger>
+                <DialogContent
+                  className={cn(
+                    "bg-white",
+                    question.help.length > 400 ? "w-dialog-md" : "w-dialog-xs",
+                  )}
+                >
+                  <DialogHeader>
+                    <DialogTitle>Question Explained</DialogTitle>
+                    <DialogDescription
+                      className="text-base"
+                      dangerouslySetInnerHTML={{ __html: question.help }}
+                    />
+                  </DialogHeader>
+                </DialogContent>
+              </Dialog>
+            )}
+          </div>
 
           {inputType === "SELECT" && (
             <SelectGroup
@@ -148,7 +193,7 @@ const ContractQuestion = React.forwardRef<
         </div>
       </div>
     );
-  }
+  },
 );
 ContractQuestion.displayName = "Emberly Input Group";
 

@@ -1,46 +1,51 @@
+"use client";
+
+// Import Node Modules
+import { useState } from "react";
 import { type FullContracts } from "~/types/contracts";
-import AgreementGenerator from "./AgreementGenerator";
-import { type User } from "@clerk/nextjs/dist/types/server";
 import { type SavedAgreements } from "@prisma/client";
 
-interface NewAgreementProps {
-  contract: FullContracts;
-  user: User;
-}
-export const NewAgreement: React.FC<NewAgreementProps> = ({ contract, user }) => {
-  return <StartAgreement contract={contract} user={user} />
-}
+// Import Components
+import AgreementGenerator from "~/components/agreements/AgreementGenerator";
+import DisplayAgreement from "~/components/agreements/DisplayAgreement";
+// import ComingSoon from "../ComingSoon";
 
-
-interface ContinueAgreementProps {
-  contract: FullContracts;
-  user: User;
-  savedAgreement: SavedAgreements;
-}
-export const ContinueAgreement: React.FC<ContinueAgreementProps> = ({ contract, user, savedAgreement }) => {
-  return <StartAgreement contract={contract} user={user} savedAgreement={savedAgreement} />
-
-}
-
-interface StartAgreementProps {
-  user: User;
-  contract: FullContracts;
+interface ConductAgreementProps {
+  agreement: FullContracts;
+  userId: string;
   savedAgreement?: SavedAgreements;
 }
-const StartAgreement: React.FC<StartAgreementProps> = ({ contract, user, savedAgreement }) => {
 
-  if( !contract && !savedAgreement ) {
-    throw new Error("You must provide either a contract or a saved agreement to start an agreement.");
+export const ConductAgreement: React.FC<ConductAgreementProps> = ({
+  agreement,
+  userId,
+  savedAgreement,
+}) => {
+  const [userAgreement, setUserAgreement] = useState<SavedAgreements | undefined>(savedAgreement);
+
+  //If we get a new saved, agreement, show the displayAgreement component
+  function onChange(agreement: SavedAgreements) {
+    setUserAgreement(agreement);
   }
 
-  return (
-    <>
-      <section id="content" className="flex-grow py-0">
-        <AgreementGenerator agreement={contract} userId={user?.id} savedAgreement={savedAgreement} />
-      </section>
-    </>
-  );
+  // //Temp Messaging show coming soon component
+  // return (
+  //   <ComingSoon heading="In Maintenance">
+  //     <div className="text-center">We are currently updating the Agreement Generator. Please check back in a moment.</div>
+  //   </ComingSoon>
+  // );
 
-}
-  
-export default NewAgreement;
+  //Check if the userAgreement is complete and if so return the DisplayAgreement in this client component
+  if (userAgreement?.completed) return <DisplayAgreement agreement={userAgreement} onChange={onChange} />;
+
+  return (
+    <AgreementGenerator
+      agreement={agreement}
+      userId={userId}
+      savedAgreement={userAgreement}
+      onComplete={onChange}
+    />
+  );
+};
+
+export default ConductAgreement;

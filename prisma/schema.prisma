@@ -1,28 +1,68 @@
-generator client {
-  provider        = "prisma-client-js"
-  previewFeatures = ["jsonProtocol"]
-}
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 datasource db {
   provider     = "mysql"
   url          = env("DATABASE_URL")
+  directUrl    = env("DIRECT_DATABASE_URL")
   relationMode = "prisma"
+}
+
+generator client {
+  provider        = "prisma-client-js"
+}
+
+generator zod {
+  provider       = "zod-prisma-types"
+}
+
+enum InputType {
+  SELECT
+  CHECKBOX
+  BOOLEAN
+  DROPDOWN
+  RADIO
+}
+
+enum Operand {
+  EQUALS
+  NOT_EQUALS
+  GREATER_THAN
+  LESS_THAN
+  GREATER_THAN_OR_EQUAL_TO
+  LESS_THAN_OR_EQUAL_TO
+  CONTAINS
+  NOT_CONTAINS
+}
+
+enum answerFormat {
+  text
+  price
+  integer
+  email
+  address
+  date
+  percentage
+  select
+  wysiwyg
 }
 
 model Contracts {
   id                String              @id @default(cuid())
   key               Int                 @unique
+  slug              String              @unique
+  userRole          String              @default("")
   name              String
+  description       String              @db.Text
   agreementTitle    String
   variables         Json
   tags              String              @db.Text
   createdAt         DateTime            @default(now())
   updatedAt         DateTime            @updatedAt
-  description       String              @db.Text
-  slug              String              @unique
-  clauseOrder       Json?
   contractQuestions ContractQuestions[]
+  contractQuestionOrder       Json?
   clauses           Clauses[]
+  clauseOrder       Json?
 }
 
 model ContractQuestions {
@@ -51,6 +91,7 @@ model Clauses {
   id                 String               @id @default(cuid())
   key                Int                  @unique
   group              String
+  plainTextName      String
   version            String
   text               String               @db.Text
   help               String?              @db.Text
@@ -62,15 +103,16 @@ model Clauses {
 }
 
 model ClauseQuestions {
-  id           String    @id @default(cuid())
-  key          Int       @unique
-  variable     String
-  prompt       String
-  help         String    @db.Text
-  answerFormat String
-  function     String?   @db.Text
-  questionType String    @db.Text
-  clause       Clauses[]
+  id            String    @id @default(cuid())
+  key           Int       @unique
+  questionType  String    @db.Text
+  variable      String
+  prompt        String    @db.LongText
+  help          String    @db.Text
+  answerFormat  answerFormat
+  answerOptions Json?
+  function      String?   @db.Text
+  clause        Clauses[]
 }
 
 model ClauseConditionals {
@@ -83,137 +125,199 @@ model ClauseConditionals {
 }
 
 model SavedAgreements {
-  id                  String   @id @default(cuid())
-  createdAt           DateTime @default(now())
-  updatedAt           DateTime @updatedAt
-  user_id             String
-  data_questions      Json
-  data_clauses        Json
-  data_clause_answers Json
-  data_contract_edits Json
-  completed           Boolean  @default(false)
-  agreement           String   @db.Text
-  agreement_variables Json
-  user_defined_name   String   @db.Text
+  id                       String   @id @default(cuid())
+  user_defined_name        String   @db.Text
+  agreement                String   @db.Text
+  createdAt                DateTime @default(now())
+  updatedAt                DateTime @updatedAt
+  user_id                  String
+  agreement_variables      Json     @default("{}")
+  data_questions           Json     @default("{}")
+  data_clauses             Json     @default("{}")
+  data_clause_answers      Json     @default("{}")
+  data_clause_calculations Json     @default("{}")
+  data_contract_edits      Json     @default("{}")
+  completedClauses         Json     @default("{}")
+  text                     String?   @db.LongText
+  completed                Boolean  @default(false)
+  archived                 Boolean  @default(false)
+
+  //Composite Indexes that will be frequently queried so that we have a fast response time for searches.
+  @@index([user_id])
+  @@index([archived])
+  @@index([updatedAt])
+  @@index([user_id, archived])
 }
 
 model UserMeta {
   id     String @id @default(cuid())
   userId String
-  key    String @db.Text
+  key    String @db.VarChar(500)
   value  String @db.Text
-}
 
-model BusinessProfile {
-  id            String        @id @default(cuid())
-  userId        String
-  businessName  String        @db.Text
-  ownerName     String        @db.Text
-  signerName    String        @db.Text
-  addressOne    String        @db.Text
-  addressTwo    String        @db.Text
-  city          String        @db.Text
-  state         String        @db.Text
-  zip           String        @db.Text
-  website       String        @db.Text
-  choiceOfLaw   String        @db.Text
-  choiceOfForum BusinessForum
-  enableFee     Boolean
-}
-
-model ClauseConditionalsToClauses {
-  A String
-  B String
-
-  @@unique([A, B], map: "_ClauseConditionalsToClauses_AB_unique")
-  @@index([B], map: "_ClauseConditionalsToClauses_B_index")
-  @@map("_ClauseConditionalsToClauses")
-}
-
-model ClauseQuestionsToClauses {
-  A String
-  B String
-
-  @@unique([A, B], map: "_ClauseQuestionsToClauses_AB_unique")
-  @@index([B], map: "_ClauseQuestionsToClauses_B_index")
-  @@map("_ClauseQuestionsToClauses")
-}
-
-model ClausesToContracts {
-  A String
-  B String
-
-  @@unique([A, B], map: "_ClausesToContracts_AB_unique")
-  @@index([B], map: "_ClausesToContracts_B_index")
-  @@map("_ClausesToContracts")
-}
-
-model ContractQuestionConditionalsToContractQuestions {
-  A String
-  B String
-
-  @@unique([A, B], map: "_ContractQuestionConditionalsToContractQuestions_AB_unique")
-  @@index([B], map: "_ContractQuestionConditionalsToContractQuestions_B_index")
-  @@map("_ContractQuestionConditionalsToContractQuestions")
-}
-
-model ContractQuestionsToContracts {
-  A String
-  B String
-
-  @@unique([A, B], map: "_ContractQuestionsToContracts_AB_unique")
-  @@index([B], map: "_ContractQuestionsToContracts_B_index")
-  @@map("_ContractQuestionsToContracts")
-}
-
-model Options {
-  id    String @id
-  key   String @unique
-  value String
-}
-
-model TermsOfService {
-  id        String   @id
-  version   Int      @unique
-  text      String   @db.LongText
-  createdAt DateTime @default(now())
-}
-
-model UserTermsOfServiceAcceptance {
-  id        String   @id
-  createdAt DateTime @default(now())
-  userId    String
-}
-
-model TermsOfServiceToUserTermsOfServiceAcceptance {
-  A String
-  B String
-
-  @@unique([A, B], map: "_TermsOfServiceToUserTermsOfServiceAcceptance_AB_unique")
-  @@index([B], map: "_TermsOfServiceToUserTermsOfServiceAcceptance_B_index")
-  @@map("_TermsOfServiceToUserTermsOfServiceAcceptance")
-}
-
-enum InputType {
-  SELECT
-  CHECKBOX
-  BOOLEAN
-  DROPDOWN
-  RADIO
-}
-
-enum Operand {
-  EQUALS
-  NOT_EQUALS
-  GREATER_THAN
-  LESS_THAN
-  GREATER_THAN_OR_EQUAL_TO
-  LESS_THAN_OR_EQUAL_TO
-  CONTAINS
-  NOT_CONTAINS
+  @@unique([userId, key])
 }
 
 enum BusinessForum {
   Arbitration
   Court
+}
+
+model BusinessProfile {
+  id                      String        @id @default(cuid())
+  userId                  String
+  businessName            String        @db.Text
+  ownerName               String        @db.Text
+  signerName              String        @db.Text
+  contactEmail            String?        @db.Text
+  addressOne              String        @db.Text
+  addressTwo              String        @db.Text
+  city                    String        @db.Text
+  state                   String        @db.Text
+  zip                     String        @db.Text
+  website                 String?       @db.Text
+  choiceOfLaw             String        @db.Text
+  choiceOfForum           BusinessForum
+  disputeLocation         String?        @db.Text
+  enableFee               Boolean
+  
+  prefillBusinessName     Boolean       @default(false)
+  prefillOwnerName        Boolean       @default(false)
+  prefillSignerName       Boolean       @default(false)
+  prefillContactEmail     Boolean       @default(false)
+  prefillAddress          Boolean       @default(false)
+  prefillWebsite          Boolean       @default(false)
+  prefillChoiceOfLaw      Boolean       @default(false)
+  prefillChoiceOfForum    Boolean       @default(false)
+  prefillDisputeLocation  Boolean       @default(false)
+  prefillEnableFee        Boolean       @default(false)
+
+  disclaimersIncluded     Json          @default("{}")
+  disclaimerLegal         String?       @db.Text
+  disclaimerMedical       String?       @db.Text
+  disclaimerFitness       String?       @db.Text
+  disclaimerFinancial     String?       @db.Text
+  disclaimerTax           String?       @db.Text
+}
+
+model Product {
+  id            String        @id @default(cuid())
+  productId     String        @db.VarChar(255) @unique
+  name          String        @db.Text
+  description   String        @db.Text
+  priceId       String        @db.Text
+  active        Boolean
+  price         Prices[]
+}
+
+model Prices {
+  id              String         @id @default(cuid())
+  priceId         String         @db.VarChar(255) @unique
+  active          Boolean        @default(true)
+  currency        String         @db.Text
+  productId       String         @default("")
+  unitAmount      Int
+  interval        String         @db.Text
+  products        Product[]
+} 
+
+model Subscription {
+  id                  String        @id @default(cuid())
+  subscriptionId      String        @db.Text
+  metaData            Json          @default("{}")
+  userId              String        @db.Text
+  status              String        @db.Text
+  price               Json          @default("{}")
+  quantity            Int        
+  cancelAtPeriodEnd   Boolean
+  cancelAt            String        @db.Text
+  canceledAt          String        @db.Text
+  currentPeriodStart  String        @db.Text
+  currentPeriodEnd    String        @db.Text
+  created             String        @db.Text
+  endedAt             String        @db.Text
+  trialStart          String        @db.Text
+  trialEnd            String        @db.Text
+}
+
+model Customer {
+  id                String  @id @default(cuid())
+  uuId              String  @db.Text
+  email             String  @db.Text
+  stripeCustomerId  String  @db.Text
+}
+
+model Options {
+  id    String @id @default(cuid())
+  key   String @unique
+  value String
+}
+
+model TermsOfService {
+  id                           String                         @id @default(cuid())
+  version                      Int                            @unique
+  text                         String                         @db.LongText
+  createdAt                    DateTime                       @default(now())
+  userTermsOfServiceAcceptance UserTermsOfServiceAcceptance[]
+}
+
+model UserTermsOfServiceAcceptance {
+  id             String           @id @default(cuid())
+  userId         String
+  termsOfService TermsOfService[]
+  createdAt      DateTime         @default(now())
+}
+
+
+
+
+
+
+// Audit Data
+enum auditAnswerFormat {
+  boolean
+  text
+  integer
+  question_set
+}
+model AuditQuestions {
+  id            String    @id @default(cuid())
+  key           Int       @unique
+  group         String    @db.Text
+  variable      String
+  text          String    @db.MediumText
+  help          String    @db.Text
+  answerType    auditAnswerFormat
+  answerOptions Json?
+  conditionals  AuditQuestionConditionals[]
+}
+
+model AuditQuestionConditionals {
+  id               String              @id @default(cuid())
+  key              Int                 @unique
+  operand          Operand
+  termOne          String
+  termTwo          String
+  question    AuditQuestions[]
+}
+
+model AuditQuestionSets {
+  id            String    @id @default(cuid())
+  key           Int       @unique
+  setCode       String    @db.Text
+  variable      String
+  text          String    @db.MediumText
+  help          String    @db.Text
+  answerType    auditAnswerFormat
+  answerOptions Json?
+  conditionals  AuditQuestionSetConditionals[]
+}
+
+model AuditQuestionSetConditionals {
+  id               String              @id @default(cuid())
+  key              Int                 @unique
+  operand          Operand
+  termOne          String
+  termTwo          String
+  question    AuditQuestionSets[]
 }

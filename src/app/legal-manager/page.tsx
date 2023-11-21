@@ -1,26 +1,46 @@
-'use client'
-import ComingSoon from "~/components/ComingSoon";
-import { useUserMeta } from "~/providers/UserMetaProvider";
+"use client";
 
-export default function Page() {
-  const { userMeta } = useUserMeta();
-
-  if(!userMeta) return null;
-
-  //If the user does not have a flag set as admin, show them a coming soon message
-  if (!userMeta?.isAdmin) {
-    return <ComingSoon heading={"Legal Manager Coming Soon"} />;
-  }
-  
+const Audit: React.FC = () => {
   return (
-    <section id="content" className="justify-center py-16">
-      <div className="w-full max-w-xl p-6 md:max-w-screen-xl">
-        <div className="grid grid-cols-1 items-center gap-x-7 gap-y-10 md:grid-cols-3">
-          <div className="col-span-full text-center">
-            <h2 className="mb-0">Legal Manager</h2>
+    <section id="content" className="flex-grow py-0">
+      <div className="flex w-full flex-grow flex-col px-3 md:px-6">
+        <div className="mx-auto grid w-full max-w-xl gap-8 py-14">
+          <div
+            className="col-span-1 flex-col gap-3"
+            role="group"
+            aria-labelledby="users_agreement_name-label"
+          >
+            <div className="pl-shadow flex flex-col items-center gap-5 rounded-2xl p-6">
+              <span
+                id="users_agreement_name-label"
+                className="text-center text-lg"
+              >
+                What’s the name of your brand?
+              </span>
+              <label
+                role="group"
+                aria-labelledby="users_agreement_name-label"
+                className="relative w-full"
+              >
+                <input
+                  placeholder=""
+                  type="text"
+                  name="users_agreement_name"
+                ></input>
+              </label>
+            </div>
           </div>
+          <a href="/legal-manager/trademark/">
+            <input
+              className="cursor-pointer"
+              type="submit"
+              value="Continue"
+            ></input>
+          </a>
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default Audit;

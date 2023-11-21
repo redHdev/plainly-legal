@@ -20,7 +20,7 @@ export async function getTOS(): Promise<TermsOfService | null> {
 
 
 // Get Agreements - Returns all agreements or null if none exist
-export async function getOptions(): Promise<KeyedOptions | null> {
+export default async function getOptions(): Promise<KeyedOptions | null> {
   const tos = await getTOS();
 
   // If there is no TOS, return null
@@ -40,5 +40,3 @@ export async function getOptions(): Promise<KeyedOptions | null> {
 
   return optionsFormatted;
 }
-
-export default getOptions;

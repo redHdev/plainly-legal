@@ -5,13 +5,13 @@ import { format } from "date-fns"
 import { Calendar as CalendarIcon } from "lucide-react"
 
 import { cn } from "@/utils/cn"
-import { Button } from "@/components/ui/shadcdn/button"
-import { Calendar } from "@/components/ui/shadcdn/calendar"
+import { Button } from "~/components/ui/shadcn/button"
+import { Calendar } from "~/components/ui/shadcn/calendar"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/shadcdn/popover"
+} from "~/components/ui/shadcn/popover"
 
 
 interface Props {
@@ -19,7 +19,7 @@ interface Props {
   question: ClauseQuestions;
   classes?: string;
   placeholder?: string;
-  ref: React.Ref<HTMLInputElement>;
+  inputRef: React.Ref<HTMLInputElement> | React.RefObject<HTMLButtonElement> | undefined;
   value?: string;
   valid?: (value : boolean) => void;
   onChange?: (value: string) => void;
@@ -32,7 +32,7 @@ const InputGroup: React.FC<Props> = ({
   question,
   classes,
   value,
-  ref,
+  inputRef,
   errorState,
 }: Props) => {
   const [ error, setError ] = React.useState<string>("Please select a valid date");
@@ -67,7 +67,7 @@ const InputGroup: React.FC<Props> = ({
       className={`input-container ${classes ?? "col-span-1"}`}
     >
       <Popover open={isOpen} onOpenChange={(value) => setOpen(value)}>
-        <PopoverTrigger asChild>
+        <PopoverTrigger asChild ref={inputRef as React.RefObject<HTMLButtonElement>}>
           <Button
             variant={"outline"}
             className={cn(
@@ -79,7 +79,7 @@ const InputGroup: React.FC<Props> = ({
             {date ? format(date, "PPP") : <span>Pick a date</span>}
           </Button>
         </PopoverTrigger>
-          <PopoverContent className="w-auto p-0 bg-white" ref={ref}>
+          <PopoverContent className="w-auto p-0 bg-white">
             <Calendar
               mode="single"
               selected={date}

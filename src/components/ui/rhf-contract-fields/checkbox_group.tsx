@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { type ContractQuestions } from "@prisma/client";
 import NextButton from "~/components/ui/Button";
+import { cn } from "~/utils/cn";
 
 interface Props {
   defaultValue: string;
@@ -62,26 +63,29 @@ const CheckboxGroup: React.FC<Props> = ({
 
   return (
     <>
-      <div className={`${classes} grid grid-cols-1 md:grid-cols-2 gap-3 items-start`}>
+      <div
+        className={cn(
+          "grid grid-cols-1 items-start gap-3 md:grid-cols-2",
+          classes
+        )}
+      >
         {!!Object.entries(options) &&
           Object.entries(options).map(([key, value]) => (
-            <label key={key} className="flex items-baseline gap-1.5 leading-5">
+            <label key={key} className="cursor-pointer flex items-baseline gap-2 leading-5">
               <input
                 type="checkbox"
+                className="min-w-[20px] min-h-[20px]"
                 name={question.variable}
-                value={key + '|' + value}
+                value={key + "|" + value}
                 // onBlur={onBlur}
                 onChange={handleChange}
-                checked={checkedValues.includes(key + '|' + value) ?? false}
+                checked={checkedValues.includes(key + "|" + value) ?? false}
               />
               {value}
             </label>
           ))}
       </div>
-      <NextButton
-        text={"Continue"}
-        onClick={onCompletion}
-      ></NextButton>
+      <NextButton text={"Continue"} onClick={onCompletion}></NextButton>
     </>
   );
 };

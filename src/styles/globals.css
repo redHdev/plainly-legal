@@ -8,10 +8,25 @@
 
   body {
     @apply text-purple-900;
+    padding-right: 0px!important;
+    margin-right: 0px!important;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply leading-tight mb-5 font-lato text-purple-800;
+  }
+
+  /* Reset the default styles so that lists show correctly */
+  ul, ol {
+    list-style: revert;
+    margin: revert;
+    padding: revert;
+  }
+
+  /* Reset the default styles so that links in spans or ps show normal underlines and colors, but others do not */
+  span a, p a {
+    color: revert;
+    text-decoration: revert;
   }
 
   h1 {
@@ -40,6 +55,7 @@
     @apply mb-5;
   }
 
+  /* This is potentially really messing things up. Not specific enough. */
   input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]) {
     @apply flex h-10 w-full rounded-md border border-purple-100 bg-transparent px-3 py-2 text-sm ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-purple-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-purple-100 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
   }
@@ -74,11 +90,7 @@ section {
 }
 
 .🔒️ p:not(:last-child) {
-  padding: 0px!important;
   margin: 0px!important;
-  white-space: break-spaces;
-  word-break: break-all;
-  text-align: left;
 }
 .cl-internal-b3fm6y {
   display: none;
@@ -117,8 +129,374 @@ button#mobile-nav[aria-expanded="true"] .burger {
   @apply after:opacity-0;
 }
 
+p a {
+  text-decoration: underline;
+  color: #1155CC;
+}
+
 .preview-clause{
   scroll-margin-top: 150px;
   transition: .2s ease-in-out;
 }
 
+.react-select__control, .react-select__value-container, .react-select__input-container {
+  height: 40px;
+  position: relative;
+  display: flex;
+}
+
+.react-select__input-container {
+    position: absolute;
+}
+
+div#loom-companion-mv3 {
+  display: none;
+}
+
+.cl-profileSectionPrimaryButton__emailAddresses {
+  display: none;
+}
+
+/* GLobal Print Styles */
+.print-only{
+  display: none;
+}
+@media print {
+  
+  header {
+      display: none;
+  }
+  
+  footer {
+      display: none!important;
+  }
+  .print-only{
+    display: block;
+  }
+  .clause-overview{
+    overflow: visible;
+  }
+}
+
+/* Don't show empty clauses if clauses are empty, AKA deleted */
+span.static-clause:empty {
+  display: none;
+}
+
+/*** Checkboxes ***/
+/* Hide native checkbox styling */
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.1em solid #a0a0a0;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  margin-bottom: -0.1em;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #59CBE8;
+}
+
+.checkbox-item:hover, input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked::before {
+transform: scale(1);
+}
+
+/*** Audit Results ***/
+.pl-legal-audit-results {
+  max-width: 70rem;
+}
+
+.pl-results-header {
+  border-bottom: 0.1em solid #e5e5e5;
+}
+
+.pl-audit-items .pl-audit-item-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1em;
+}
+
+.pl-audit-items .pl-audit-item-text {
+  font-size: 0.9rem;
+  color: #6c6c6c;
+  line-height: 1.5em;
+}
+
+.pl-priority-tag {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  line-height: 1em;
+  border: 0.12em solid #555;
+  background-color: #e9e9e9;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.25rem;
+}
+
+.pl-priority-tag.pl-priority-high {
+  border-color: #FF1F1F;
+  background-color: #FFD9D9;
+  color: #730d0d;
+}
+
+.pl-priority-tag.pl-priority-medium {
+  border-color: #FFA91F;
+  background-color: #FFF0AF;
+  color: #9b6713;
+}
+
+.pl-priority-tag.pl-priority-normal {
+  border-color: #36E2E2;
+  background-color: #AFFFF6;
+  color: #135a5a;
+}
+
+.pl-priority-tag.pl-priority-completed {
+  border-color: #36E243;
+  background-color: #BEFFAF;
+  color: #125017;
+}
+
+/* Flags */
+.pl-audit-priority-high .pl-audit-item-flag {
+  fill: #FF3E3E;
+}
+
+.pl-audit-priority-medium .pl-audit-item-flag {
+  fill: #FEA935;
+}
+
+.pl-audit-priority-normal .pl-audit-item-flag {
+  fill: #36E2E2;
+}
+
+.pl-audit-priority-completed .pl-audit-item-flag {
+  fill: #48df53;
+}
+
+.pl-audit-item .btn {
+  border-bottom: 1px solid #222;
+  background: transparent;
+  border-radius: 0;
+  color: #222;
+  padding: 0.4rem 0;
+  line-height: 1em;
+  height: fit-content;
+  text-transform: none;
+  display: flex;
+  width: max-content;
+  font-size: 0.9rem;
+}
+
+.pl-audit-item .btn img, .pl-audit-item .btn svg {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-left: 0.3rem;
+  margin-top: 0.1rem;
+}
+
+/*** Nothing Yet ***/
+
+.nothing-yet {
+  background-color: #fafafa;
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+  color: #6c6c6c;
+  line-height: 1em;
+}
+
+/*** Animated Slides ***/
+.animated-slides-wrapper .animated-slides > .slide > .pl-shadow {
+  box-shadow: none;
+  border: 1px solid #ccc;
+}
+.animated-slides-wrapper .animated-slides > .slide {
+  position: absolute;
+  z-index: 999999;
+  background-color: #fff;
+  animation: slideFadeOut 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.animated-slides-wrapper {
+  position: relative;
+}
+
+@keyframes slideFadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20rem);
+  }
+}
+
+/*** Set delays for each animated slide. ***/
+.animated-slides-wrapper .animated-slides > .slide:nth-child(1) {
+  animation-delay: 3s;
+}
+
+.animated-slides-wrapper .animated-slides > .slide:nth-child(2) {
+  animation-delay: 2.5s;
+}
+
+.animated-slides-wrapper .animated-slides > .slide:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.animated-slides-wrapper .animated-slides > .slide:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.animated-slides-wrapper .animated-slides > .slide:nth-child(5) {
+  animation-delay: 1s;
+}
+
+/* Disable clicking on animated slides */
+.animated-slides-wrapper .animated-slides > .slide a, .animated-slides-wrapper .animated-slides > .slide button, .animated-slides-wrapper .animated-slides > .slide {
+  pointer-events: none!important;
+}
+
+/*** Now let's set an animate in for the final slide. ***/
+.animated-slides-wrapper > .slide {
+  animation: slideFadeIn 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  opacity: 0;
+  transform: translateX(20rem);
+}
+
+@keyframes slideFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(20rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.terms-and-conditions h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* Transforms */
+.home-preview-container{
+  transform: translate(2.5rem)!important;
+}
+
+input[type="checkbox"]::before {
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  width: 0.8em;
+  height: 0.8em;
+}
+
+/*** Coming Soon Headings ***/
+.coming-soon-heading {
+  display: flex;
+  align-items: center;
+}
+
+.coming-soon-tag {
+  background-color: #dbdbdb;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.25rem;
+  color: #555;
+  letter-spacing: 0.1em;
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+  display: inline-block;
+  line-height: 1em;
+}
+
+.items-start .coming-soon-heading {
+  margin-top: -0.35rem;
+}
+
+.items-start .coming-soon-tag {
+  padding: 0.4rem 0.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .coming-soon-tag {
+    padding: 0.2rem 0.4rem;
+  }
+}
+
+
+.page-break {
+  page-break-after: always;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  display: block;
+}
+
+/* When printing, don't show the margin or scrollbars */
+@media print {
+  .page-break {
+    margin: unset!important;
+    opacity: 0;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Overflows for explainer popups / dialogs */
+[role=dialog] {
+  max-height: calc(100svh - 80px);
+  overflow-x: scroll;
+  overflow-y: visible;
+}
+
+/* Turn the variable on clauses into blocks instead of inline if they are the result of a wysywig editor */
+.has-tags {
+  display: block;
+  background-color: #fdd83530;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Turn off the P text that tiptap puts on the clauses */
+.tiptap p {
+  padding: unset;
+  margin: unset;
+}

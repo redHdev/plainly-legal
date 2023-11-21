@@ -23,34 +23,26 @@ export const AgreementName: React.FC<Props> = ({ onCompletion }) => {
   const {
     register,
     handleSubmit,
-    formState: { errors, isSubmitting },
+    formState: { errors },
   } = useForm<FormType>({
     resolver: zodResolver(userAgreementNameSchema),
     shouldUnregister: true,
   });
 
   const formref = useRef<HTMLFormElement>(null);
-  // const [slideCompletion, setSlideCompletion] = useState<completionData>({});
+  const [disabled, setDisabled] = React.useState<boolean>(false);
 
   // Log errors if any
   if (Object.keys(errors).length > 0) console.log("Errors:", errors);
 
   // Update formResults state upon form submission
   const onSubmit: SubmitHandler<FormType> = (data) => {
+    //Disable the button so it's not pressed twice
+    setDisabled(true);
+
+    // Run the onCompletion callback if it exists
     if (onCompletion) onCompletion(data.users_agreement_name);
   };
-
-  // const userAgreementNameQuestion = {
-  //   id: "users_agreement_name",
-  //   key: 1234567890, // dummy key
-  //   group: "default_fields",
-  //   variable: "users_agreement_name",
-  //   text: "What would you like to name this agreemet?",
-  //   help: "This is the name of the agreement",
-  //   inputType: "RADIO",
-  //   inputOptions: [],
-  //   conditionals: [],
-  // };
 
   return (
     <m.form
@@ -65,20 +57,17 @@ export const AgreementName: React.FC<Props> = ({ onCompletion }) => {
       }}
       ref={formref}
       onSubmit={onPromise({ promise: handleSubmit(onSubmit) })}
-      className="mx-auto grid w-full max-w-xl gap-8"
+      className="mx-auto grid w-full max-w-xl gap-8 py-14"
     >
       <div
         className={`col-span-1 flex-col gap-3`}
         role="group"
         aria-labelledby="users_agreement_name-label"
       >
-        <div className="pl-shadow flex flex-col items-center gap-5 rounded-2xl p-6">
-          <span
-            id={`users_agreement_name-label`}
-            className="text-center text-lg"
-          >
-            What would you like to name your agreement?
-          </span>
+        <div className="flex flex-col items-center gap-5">
+          <h4 id={`users_agreement_name-label`} className="mb-0 text-center">
+            {`Let's give this agreement a file name`}
+          </h4>
           <label
             role="group"
             aria-labelledby="users_agreement_name-label"
@@ -87,7 +76,9 @@ export const AgreementName: React.FC<Props> = ({ onCompletion }) => {
             <input
               type="text"
               {...register("users_agreement_name")}
-              placeholder={""}
+              placeholder={
+                "Agreement for John Doe - Winter " + new Date().getFullYear()
+              }
             />
 
             {/* Show the error if present */}
@@ -115,7 +106,12 @@ export const AgreementName: React.FC<Props> = ({ onCompletion }) => {
           </label>
         </div>
       </div>
-      <input type="submit" className="cursor-pointer" value={"Continue"} disabled={isSubmitting} />
+      <input
+        type="submit"
+        className="cursor-pointer"
+        value={"Continue"}
+        disabled={disabled}
+      />
     </m.form>
   );
 };

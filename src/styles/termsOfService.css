@@ -1,26 +1,11 @@
-.tos-dialog {
-  width: 83%!important;
-  max-width: none!important;
-}
-
 .tos-dialog button:not(.tos-submit-button) {
   display: none;
 }
 
-
-@media (max-width: 1024px) {
-  .tos-dialog {
-    width: 100%!important;
-    height: 100vh!important;
-    max-width: none!important;
-    max-height: none!important;
-  }
+.tos-dialog p, .terms-and-conditions p {
+  margin-bottom: 0px !important;
 }
 
-.tos-dialog p {
-  margin-bottom: 0px;
-}
-
-.tos-dialog .dialog-description {
-  padding-top: 25px;
-}
+/* .terms-and-conditions {
+  max-height: 75vh;
+} */

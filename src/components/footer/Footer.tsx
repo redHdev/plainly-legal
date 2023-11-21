@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import "~/styles/globals.css";
-
 import logoObj from "public/assets/logo.svg";
 import { cn } from "~/utils/cn";
 
@@ -24,7 +22,7 @@ export default function Footer({ className }: { className?: string }) {
     <footer
       className={cn(
         "flex flex-col items-center bg-purple-900 py-14 text-white",
-        className
+        className,
       )}
     >
       <div className="grid w-full max-w-screen-xl grid-cols-1 items-center gap-8 px-6 md:grid-cols-3 md:gap-10">
@@ -39,18 +37,39 @@ export default function Footer({ className }: { className?: string }) {
               priority
             />
           </Link>
-          <div className="flex flex-row flex-wrap gap-x-3 gap-y-1 text-sm">
-            <a href="https://plainlylegal.com/privacy-policy/" target="_blank">
-              Privacy Policy
-            </a>
-            <span className="sep">|</span>
-            <a href="https://plainlylegal.com/terms-of-use/" target="_blank">
-              Terms of Use
-            </a>
-            <span className="sep">|</span>
-            <a href="https://plainlylegal.com/disclaimer/" target="_blank">
-              Disclaimer
-            </a>
+          <div className="flex flex-col gap-y-1">
+            <div className="flex flex-row flex-wrap gap-x-3 gap-y-1 text-sm">
+              <a
+                href="https://plainlylegal.com/privacy-policy/"
+                target="_blank"
+              >
+                Privacy Policy
+              </a>
+              <span className="sep">|</span>
+              <a href="https://plainlylegal.com/disclaimer/" target="_blank">
+                Disclaimer
+              </a>
+              <span className="sep">|</span>
+              <a href="https://plainlylegal.com/contact/" target="_blank">
+                Contact
+              </a>
+              <span className="sep">|</span>
+              <a href="https://plainlylegal.com/affiliates/" target="_blank">
+                Affiliates
+              </a>
+            </div>
+            <div className="flex flex-row flex-wrap gap-x-3 gap-y-1 text-sm">
+              <a href="https://plainlylegal.com/terms-of-use/" target="_blank">
+                Website Terms of Use
+              </a>
+              <span className="sep">|</span>
+              <a
+                href="https://plainlylegal.com/software-terms-of-use/"
+                target="_blank"
+              >
+                Software Terms of Use
+              </a>
+            </div>
           </div>
         </div>
 

@@ -6,42 +6,58 @@ interface Props {
   question: ClauseQuestions;
   classes?: string;
   placeholder?: string;
-  ref: React.Ref<HTMLInputElement>;
+  inputRef: React.Ref<HTMLInputElement> | undefined;
   value?: string;
-  valid?: (value : boolean) => void;
+  valid?: (value: boolean) => void;
   onChange?: (value: string) => void;
   errorState?: boolean;
+  enterPress?: () => void;
 }
 
 const NumberInput: React.FC<Props> = ({
   defaultValue,
-  onChange,
-  valid,
   question,
   classes,
+  placeholder,
+  inputRef,
   value,
-  ref,
+  valid,
+  onChange,
   errorState,
+  enterPress
 }: Props) => {
-  const [ error, setError ] = React.useState<string>("Please enter an input");
+  const [error, setError] = React.useState<string>("Please enter an input");
 
-  function handleChange(value: string){
-    if(onChange){
-      onChange(value);
-    }
+  function handleChange(value: string) {
 
     //Dont allow anything sketchy to be input but a number
-    value = value.replace(/[^0-9]/g, "");
-    
+    const newValue = value.replace(/[^0-9]/g, "");
+
+    // Update the value in the parent component
+    if (onChange) {
+      onChange(newValue);
+    }
+
     //Check if the question is answered with valid input
-    const hasText = value.length !== 0 ;
-    setError(hasText ? "" : "Please enter a valid input");
+    const isValid = value.length !== 0 && value.length == newValue.length;
+    setError(isValid ? "" : "Please enter a valid input");
 
     //Check if the question is answered with valid input
     if (valid) {
-      valid(hasText);
+      valid(isValid);
     }
   }
+
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>): void => {
+    if (e.key === 'Enter' && enterPress) {
+        enterPress();
+    }
+
+    if(e.key === "-" || e.key === "e") {
+      e.preventDefault();
+    }
+  };
+
   return (
     <label
       role="group"
@@ -50,12 +66,14 @@ const NumberInput: React.FC<Props> = ({
     >
       <input
         type="number"
+        min="0"
         name={question.variable}
         id={question.variable}
         defaultValue={value ?? defaultValue ?? ""}
         onChange={(e) => handleChange(e.target.value)}
-        placeholder={""}
-        ref={ref}
+        onKeyDown={handleKeyPress}
+        placeholder={placeholder ?? ""}
+        ref={inputRef}
       />
 
       {/* Show the error if present */}
@@ -64,10 +82,9 @@ const NumberInput: React.FC<Props> = ({
           {error}
         </span>
       )}
-
     </label>
   );
-}
+};
 NumberInput.displayName = "Emberly Input Group";
 
 export default NumberInput;

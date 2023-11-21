@@ -1,0 +1,60 @@
+[
+    {
+        "id": 1,
+        "priority": "high",
+        "name": "Create LLC for Bobby Klinck",
+        "description": "Without an LLC, you are personally liable for everything that happens in the business. Creating an LLC can shield you from some personal liability. To be clear, you will generally always be personally liable for your own actions. As things stand, you can also be held personally liable for any actions your team members take on behalf of your business. Creating an LLC will shield your personal assets from claims arising from wrongdoing by one of your team members.",
+        "action": "generate_document",
+        "action_url": "#",
+        "completed": false
+    },
+    {
+        "id": 2,
+        "priority": "high",
+        "name": "Run A Trademark Search For Plainly Legal",
+        "description": "Because you have established a brand other than your business name, it is important to make sure no one else has staked a claim to that brand name through a trademark. You do this by searching your brand name through search engines and through the United States Patent and Trademark Office&apos;s trademark filings to make sure no one has laid a claim to the name. If you don&apos;t deal with this task now, you might find yourself having to change your brand on an emergency basis later if someone owns the trademark and comes after you.",
+        "completed": false
+    },
+    {
+        "id": 3,
+        "priority": "high",
+        "name": "Enter Into Contractor Agreement With Emberly Digital",
+        "description": "You should have a written agreement with every contractor you work with. That agreement should include the scope of the work, a transfer of intellectual property, a confidentiality clause, and payment provisions. If you do not have a written agreement in place with Emberly Digital, use our Contractor Agreement to create an agreement now. If you already have an agreement in place, review it to make sure it includes the key elements listed above.",
+        "completed": false
+    },
+    {
+        "id": 4,
+        "priority": "medium",
+        "name": "File a DBA",
+        "description": "Because your trade name is different from the name of your LLC, you should file a &ldquo;doing business as&rdquo; or &ldquo;dba&rdquo; with your state. Most states legally require a dba if you are operating under a different tradename.",
+        "completed": false
+    },
+    {
+        "id": 5,
+        "priority": "medium",
+        "name": "Enter Into Employee Confidentiality Agreement with Katie Chase",
+        "description": "As a knowledge brand, your confidential information is valuable. To ensure that your &ldquo;secret sauce&rdquo; remains secret, you need to have a written confidentiality agreement with everyone who has access to the information. Employees are the most obvious category of folks who will have access to this information, so you should have a written confidentiality agreement with each employee. You can create an Employee Confidentiality Agreement for Katie Chase using our Legal Document Generator.",
+        "completed": false
+    },
+    {
+        "id": 6,
+        "priority": "medium",
+        "name": "Ensure Your Website Is Accessible",
+        "description": "Multiple courts have concluded that websites must comply with the Americans With Disabilities Act (the &ldquo;ADA&rdquo;). Unfortunately, there is not a single authoritative rule about what that means exactly. The current consensus is that business owners must comply with the middle lever of what is called the WCAG standards. Ensuring accessibility is a long-term project for most websites; it is something you&apos;ll likely need to do in stages. We recommend using the tools provided by UserWay to identify and fix accessibility issues with your website. We proudly use UserWay on our site and act as an affiliate because we love their product.",
+        "completed": false
+    },
+    {
+        "id": 7,
+        "priority": "normal",
+        "name": "Create Google Alerts for Legal Made Plain",
+        "description": "An important part of protecting your branding is to monitor the names that matter to your business to make sure someone else doesn&apos;t start using those names. For registered trademarks, this is part of the monitoring and enforcement work, but it is important even for names you have decided not to register quite yet. You should create Google Alerts for Legal Made Plain so you&apos;ll know if anyone else starts using it.",
+        "completed": false
+    },
+    {
+        "id": 8,
+        "priority": "normal",
+        "name": "Limit Access to Sensitive Materials",
+        "description": "Getting your employees and contractors to sign agreements that require them to protect your confidential information is a good first step to protecting sensitive information, you also need to set up your electronic storage systems to limit access. Even with written agreements in place, some courts have concluded that information loses its protection if you allow broad access to the information across your organization. Think through how to store files so that you can limit access to the most sensitive information only to those who need to know it.",
+        "completed": false
+    }
+]

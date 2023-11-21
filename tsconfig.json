@@ -17,6 +17,7 @@
     "incremental": true,
     "noUncheckedIndexedAccess": true,
     "baseUrl": ".",
+    "types": ["jest"],
     "paths": {
       "~/*": ["./src/*"],
       "@/*": ["./src/*"]
@@ -30,11 +31,12 @@
   "include": [
     ".eslintrc.cjs",
     "next-env.d.ts",
+    "jest.config.js",
     "**/*.ts",
     "**/*.tsx",
     "**/*.cjs",
     "**/*.mjs",
     ".next/types/**/*.ts"
-  ],
+, "tests/import/importClauseQuestions.ts"  ],
   "exclude": ["node_modules"]
 }

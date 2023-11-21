@@ -1,10 +1,6 @@
 "use client";
 
 import * as React from "react";
-import Link from "next/link";
-
-import { cn } from "@/utils/cn";
-// import { s } from "@/components/icons"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -13,115 +9,139 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-  // NavigationMenuViewport,
   NavigationMenuViewportFromRight,
 } from "@/components/ui/navigation-menu";
 
-import { Help } from "@/components/icons";
-import { AddDocument } from "~/components/icons";
-import { SearchShield } from "~/components/icons";
-import { Robot } from "~/components/icons";
+import { mainMenuData, type MenuLinks, LoopItemPreGuard } from "./mainMenuData";
+import { cn } from "@/utils/cn";
 
-export function MainNav({ className }: { className?: string }) {
+// Main Component
+// Main Component
+export const MainNav = ({ className }: { className?: string }) => {
+  const menuItems = mainMenuData();
+
   return (
     <NavigationMenu className={className}>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Home
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link
-            href="https://plainlylegal.com/#learn-more"
-            passHref
-            prefetch={true}
-            target="_blank"
-            className={navigationMenuTriggerStyle()}
-          >
-            About
-          </Link>
+          <NavigationMenuLink href="/" className={navigationMenuTriggerStyle()}>
+            Home
+          </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
       <div className="flex flex-grow"></div>
       <NavigationMenuList>
-        <NavigationMenuItem>
-          <Link href="/beta-dashboard" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              <Help className="mr-2.5 h-auto w-4 fill-white" />
-              <span className="whitespace-nowrap">Beta Dashboard</span>
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid gap-5 p-5 text-purple-800 md:w-[500px] md:grid-cols-2">
-              <div className="flex flex-row flex-nowrap items-start gap-1.5">
-                <span>
-                  <AddDocument className="block h-4 w-4 fill-purple-800" />
-                </span>
-                <ListItem href="/agreements" title="Agreement Generator">
-                  <span className="text-purple-500">
-                    A legal agreement generator for startups.
-                  </span>
-                </ListItem>
-              </div>
-
-              <div className="flex flex-row flex-nowrap items-start gap-1.5">
-                <span>
-                  <SearchShield className="h-4 w-4 fill-purple-800" />
-                </span>
-                <ListItem href="/legal-manager" title="Legal Manager">
-                  <span className="text-purple-500">
-                    A legal auditing tool for startups.
-                  </span>
-                </ListItem>
-              </div>
-
-              <div className="flex flex-row flex-nowrap items-start gap-1.5">
-                <span>
-                  <Robot className="h-4 w-4 fill-purple-800" />
-                </span>
-                <ListItem href="/chatlegal" title="ChatLegal™">
-                  <span className="text-purple-500">
-                    A legal chatbot for startups.
-                  </span>
-                </ListItem>
-              </div>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
+        <NavLoop menuLinks={menuItems} />
       </NavigationMenuList>
       <NavigationMenuViewportFromRight />
     </NavigationMenu>
   );
-}
+};
 
+// Child components below
+// Child components below
+// Child components below
+
+// Modified "ShadCN" List Item
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
   React.ComponentPropsWithoutRef<"a">
 >(({ className, title, children, ...props }, ref) => {
   return (
-    <li>
-      <NavigationMenuLink asChild>
-        <a
-          ref={ref}
-          className={cn(
-            "hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-slate-700 dark:focus:bg-slate-700 block select-none space-y-1 rounded-md leading-none no-underline outline-none transition-colors",
-            className
-          )}
-          {...props}
-        >
-          <div className="font-bold leading-none">{title}</div>
-          <p className="text-slate-500 dark:text-slate-400 line-clamp-2 leading-snug">
-            {children}
-          </p>
-        </a>
-      </NavigationMenuLink>
-    </li>
+    <NavigationMenuLink asChild>
+      <a
+        ref={ref}
+        className={cn(
+          "hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-slate-700 dark:focus:bg-slate-700 block select-none space-y-1 rounded-md leading-none no-underline outline-none transition-colors",
+          className,
+        )}
+        {...props}
+      >
+        <div className="font-bold leading-none">{title}</div>
+        <p className="text-slate-500 dark:text-slate-400 line-clamp-2 leading-snug">
+          {children}
+        </p>
+      </a>
+    </NavigationMenuLink>
   );
 });
 ListItem.displayName = "ListItem";
+
+// Loop through menu items
+const NavLoop = ({ menuLinks }: { menuLinks: MenuLinks }) => {
+  const menuItems = Object.entries(menuLinks).map(([key, value]) => {
+    return (
+      <LoopItemPreGuard roles={value.roles} key={key}>
+        {value.showSepBefore && (
+          <div className="mx-4 flex items-center justify-center">
+            <div className="inline-flex h-5 w-px bg-white/50"></div>
+          </div>
+        )}
+        {!value.mobileOnly && <NavLoopItem key={key} title={key} value={value} />}
+      </LoopItemPreGuard>
+    );
+  });
+  return menuItems;
+};
+
+// Loop Item
+const NavLoopItem = ({
+  title,
+  value,
+}: {
+  title: string;
+  value: MenuLinks[keyof MenuLinks];
+}) => {
+  if (value.children) {
+    return (
+      <NavigationMenuItem >
+        <NavigationMenuTrigger>
+          {value.icon}
+          {title}
+        </NavigationMenuTrigger>
+        <NavigationMenuContent>
+          {/* Loop through children */}
+          <div className="grid gap-0 text-purple-800 md:w-[450px]">
+            {Object.entries(value.children).map(([childKey, childValue]) => (
+              <div
+                className={cn(
+                  "flex flex-row flex-nowrap items-start gap-1.5 p-4",
+                  childValue.comingSoon && "pointer-events-none opacity-50",
+                )}
+                key={childKey}
+              >
+                <span>{childValue.icon}</span>
+                <ListItem
+                  href={childValue.link}
+                  target={childValue.newTab ? "_blank" : ""}
+                  title={
+                    childKey + (childValue.comingSoon ? " - Coming Soon" : "")
+                  }
+                >
+                  <span className="text-purple-500">
+                    {childValue.description}
+                  </span>
+                </ListItem>
+              </div>
+            ))}
+          </div>
+        </NavigationMenuContent>
+      </NavigationMenuItem>
+    );
+  } else {
+    return (
+      <NavigationMenuItem>
+        <NavigationMenuLink
+          href={value.link}
+          target={value.newTab ? "_blank" : ""}
+          className={navigationMenuTriggerStyle()}
+        >
+          {value.icon}
+          <span className="whitespace-nowrap">{title}</span>
+        </NavigationMenuLink>
+      </NavigationMenuItem>
+    );
+  }
+};
+
+export default MainNav;

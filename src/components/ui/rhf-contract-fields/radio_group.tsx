@@ -33,24 +33,23 @@ const RadioGroup: React.FC<Props> = ({
     throw new Error(`Options for ${question.variable} do not exist`);
   }
 
-  if (Object.entries(options).length === 0) {
-    options["true"] = "Yes";
-    options["false"] = "No";
-  }
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     onChange(e.target.value);
   };
 
   return (
-    <div className={`grid w-full grid-cols-2 gap-5 ${classes ? classes : ""}`}>
+    <div
+      className={`grid w-full grid-cols-1 gap-x-5 gap-y-3 lg:grid-cols-2 ${
+        classes ? classes : ""
+      }`}
+    >
       {Object.entries(options).map(([key, value]) => (
         <div key={key} className="grid h-full w-full">
           <input
             type="radio"
             id={question.variable + "_" + key}
             name={question.variable}
-            value={key + '|' + value}
+            value={key + "|" + value}
             onChange={handleChange}
             onClick={() => {
               if (onCompletion) onCompletion();
@@ -58,7 +57,7 @@ const RadioGroup: React.FC<Props> = ({
             className="peer hidden"
           />
           <label
-            className="flex h-full w-full cursor-pointer items-center justify-center rounded border border-purple-100 bg-white p-2 text-center leading-5 transition-all duration-200 hover:border-light_purple-200 hover:bg-light_purple-50 peer-checked:border-[#C64236] peer-checked:bg-[#F88379] peer-checked:text-white"
+            className="flex h-full w-full cursor-pointer items-center justify-center rounded border border-purple-100 bg-white p-2 text-center text-sm leading-5 transition-all duration-200 hover:border-light_purple-200 hover:bg-light_purple-50 peer-checked:border-[#C64236] peer-checked:bg-[#F88379] peer-checked:text-white lg:text-base"
             // unusedColors="peer-checked:border-[#C64236] peer-checked:bg-[#F88379]"
             htmlFor={question.variable + "_" + key}
           >

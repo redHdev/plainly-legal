@@ -4,8 +4,8 @@ import * as React from "react";
 import Link from "next/link";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
-// import { cn } from "@/utils/cn";
-// import { Icons } from "@/components/icons"
+import { KeyRound } from "lucide-react";
+
 import {
   NavigationMenu,
   // NavigationMenuContent,
@@ -22,9 +22,9 @@ export function AccountNav({ className }: { className?: string }) {
   return (
     <NavigationMenu className={className}>
       <NavigationMenuList>
-        <NavigationMenuItem>
-          {/* What signed in users see */}
-          <SignedIn>
+        {/* What signed in users see */}
+        <SignedIn>
+          <NavigationMenuItem>
             <div className="ml-4 aspect-square h-9 w-9 rounded-full bg-purple-500">
               <UserButton
                 userProfileMode="navigation"
@@ -42,14 +42,23 @@ export function AccountNav({ className }: { className?: string }) {
                 }}
               />
             </div>
-          </SignedIn>
-          {/* Signed out users get sign in button */}
-          <SignedOut>
-            <Link href="/account/login" passHref>
-              Login
+          </NavigationMenuItem>
+        </SignedIn>
+        {/* Signed out users get sign in button */}
+        <SignedOut>
+          <div className="mx-4 flex items-center justify-center">
+            <div className="inline-flex h-5 w-px bg-white/50"></div>
+          </div>
+          <NavigationMenuItem>
+            <Link
+              href="/account/login"
+              className="-mr-3 inline-flex items-center gap-2.5 px-3 py-1 font-medium"
+            >
+              <KeyRound className="h-4 w-4" />
+              <span>Login</span>
             </Link>
-          </SignedOut>
-        </NavigationMenuItem>
+          </NavigationMenuItem>
+        </SignedOut>
       </NavigationMenuList>
       <NavigationMenuViewportFromRight />
     </NavigationMenu>

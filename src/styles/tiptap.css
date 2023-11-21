@@ -1,0 +1,34 @@
+.tiptap {
+  min-height: 150px;
+  max-height: 400px;
+  cursor: text;
+  overflow: auto;
+  overflow-x: hidden;
+  outline: unset!important;
+}
+.prefill-disclaimer .tiptap > *:first-child {
+  text-indent: 110px;
+}
+
+.editor-toolbar {
+  @apply flex flex-row flex-wrap bg-gray-100 border-b border-gray-300 px-3.5 py-1 gap-1;
+}
+
+.editor-toolbar button {
+  @apply flex items-center justify-center rounded p-0.5;
+}
+
+.editor-toolbar button:hover {
+  @apply bg-gray-200;
+}
+.editor-toolbar button.is-active {
+  @apply bg-light_purple-50;
+}
+
+.editor-toolbar button > svg {
+  @apply w-5 h-auto stroke-purple-500;
+}
+
+.editor-toolbar button.is-active > svg {
+  @apply text-white stroke-light_purple-900;
+}

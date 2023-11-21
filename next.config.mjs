@@ -19,6 +19,11 @@ const config = {
         hostname: 'www.gravatar.com',
         port: '',
       },
+      {
+        protocol: 'https',
+        hostname: 'img.clerk.com',
+        port: '',
+      }
     ]
   },
 
@@ -32,9 +37,14 @@ const config = {
   //   locales: ["en"],
   //   defaultLocale: "en",
   // },
-  experimental: {
-    appDir: true,
-    serverActions: true,
-  },
+  async redirects() {
+    return [
+      {
+        source: "/beta",
+        destination: "/account/sign-up?redirect_url=/account/onboard",
+        permanent: true,
+      }
+    ];
+  }
 };
 export default config;

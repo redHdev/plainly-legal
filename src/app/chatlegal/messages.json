@@ -1,0 +1,81 @@
+{
+  "hi":{
+    "seen":false,
+    "type":"automated",
+    "text":"Hi, I'm your legal assistant. I'm here to help you with your legal questions. Ask your question and I will try to find a verified laywer response. What can I help you with today?"
+  },
+  "how can i prevent my online business from being sued for defamation or libel?":{
+    "seen":false,
+    "type":"laywer",
+    "text":"Interesting question. Defamation law makes it illegal for you to say something that is not true about someone that will harm their reputation. There are two kinds of defamation.<br><br>Libel is defamation that is written, so it would apply to a blog post or written social media post. Slander is defamation through a spoken statement, so it would apply to something you said in a podcast or on a video.<br><br>There are two ways to avoid a defamation claim. First, you could just avoid saying or writing negative things about anyone as part of your business. If you avoid saying negative things, you can't hurt someone's reputation, so defamation wouldn't apply.<br><br>Second, you can make sure that any negative thing you do say or write is factually true. So long as something is true, you can't be held liable for defamation. A word of caution here, just because you won't lose doesn't mean someone won't sue you. In other words, relying on the “it's true” defense might ultimately help you win the case but only after significant legal headaches.<br><br>If you want to say negative things about any person or business as part of your online business, we at Plainly Legal™ strongly recommend that you consult with a lawyer directly to understand the limits.",
+    "quickReply": {
+      "text": "Does this answer your question?",
+      "options": [
+        {
+          "text": "Yes",
+          "value": "quick-reply:helpful"
+        },
+        {
+          "text": "No",
+          "value": "quick-reply:not-helpful"
+        }
+      ]
+    }
+  },
+  "how do i comply with the ccpa":{
+    "seen":false,
+    "type":"laywer",
+    "text":"Good question, but before I talk about how to comply with the California Consumer Privacy Act (CCPA), let's see if you even have to comply. The CCPA only applies if one of the following is true about your business:<br><ul><li>You have annual revenues of more than $25 million.</li><li>You collect personal information from 50,000 or more people or entities in California per year.</li><li>More than 50% of your annual revenue comes from selling personal information.</li></ul><br>Do any of those apply to your business?",
+    "quickReply": {
+      "text": "",
+      "options": [
+        {
+          "text": "Yes",
+          "value": "quick-reply:ccpa-applies"
+        },
+        {
+          "text": "No",
+          "value": "quick-reply:ccpa-not-applies"
+        }
+      ]
+    }
+  },
+  "what are the most important steps i need to take to protect my online business?":{
+    "seen":false,
+    "type":"laywer",
+    "text":"That's a pretty broad question and it will depend on a lot of particular circumstances about your business. That's why we created the Legal Manager function within Plainly Legal™.<br><br><a href='/legal-manager'>Click here to head over to the Legal Manager to look at your prioritized task list.</a>"
+  },
+  "quick-reply:helpful":{
+    "seen":false,
+    "type":"automated",
+    "text":"I'm glad I could help! Anything else I can help you with today? If so, ask away."
+  },
+  "quick-reply:anything-else":{
+    "seen":false,
+    "type":"automated",
+    "text":"Anything else I can help you with today? If so, ask away."
+  },
+  "quick-reply:not-helpful":{
+    "seen":false,
+    "type":"automated",
+    "text":"I'm sorry I couldn't help. If you have any other questions, please let me know or contact support."
+  },
+  "quick-reply:ccpa-not-applies":{
+    "seen":false,
+    "type":"automated",
+    "text":"In that case, your business is not subject to the CCPA and you are not required to do anything.<br><br> Would you still like to know what you would have to do to comply if the law did apply to your business?",
+    "quickReply": {
+      "text": "",
+      "options": [
+        {
+          "text": "Yes",
+          "value": "quick-reply:anything-else"
+        },
+        {
+          "text": "No",
+          "value": "quick-reply:anything-else"
+        }
+      ]
+    }
+  }
+}

@@ -53,10 +53,11 @@ const SelectGroup: React.FC<Props> = ({
 
   const handleChange = (value: string) => {
     onChange(value);
-    if (onCompletion) {
-      onCompletion();
-    }
   };
+
+  const handleCompletion = () => {
+    if (onCompletion) onCompletion();
+  }
 
   return (
     <>
@@ -69,7 +70,7 @@ const SelectGroup: React.FC<Props> = ({
         <SelectContent>
           {!!Object.entries(options) &&
             Object.entries(options).map(([key, value]) => (
-              <SelectItem key={key} value={key + '|' + value}>
+              <SelectItem key={key} value={key + '|' + value} onPointerUp={handleCompletion}>
                 {value}
               </SelectItem>
             ))}

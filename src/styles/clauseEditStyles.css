@@ -1,5 +1,10 @@
-.edit-clause-text .clause-variable {
-  background-color: #ffea0023;
-  padding: 3px;
-  margin: -3px;
+.edit-clause-text .clause-variable, .edit-clause-text .clause-variable ul, .edit-clause-text .clause-variable ol {
+  /* background-color: #ffea0023; */
+  @apply bg-[#FDD835]/20;
+}
+
+/* Hide boarders and styles on tiptap we don't want when editing a clause */
+.edit-clause-text .tiptap {
+  border: unset!important;
+  padding: unset!important;
 }

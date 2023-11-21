@@ -1,12 +1,13 @@
 import { getAgreement } from "~/data/agreements";
 import { type FullContracts } from "~/types/contracts";
-import { ContinueAgreement } from "~/components/agreements/ConductAgreement";
 import { currentUser } from "@clerk/nextjs";
 import { type User } from "@clerk/nextjs/dist/types/server";
 import { getSavedAgreement } from "~/data/savedAgreements";
 import { type SavedAgreements } from "@prisma/client";
+import ConductAgreement from "~/components/agreements/ConductAgreement";
 
-const defaultErrorText = "Could not continue with the agreement. Please try again later.";
+const defaultErrorText =
+  "Could not continue with the agreement. Please try again later.";
 
 interface Params {
   [keys: string]: string;
@@ -14,37 +15,36 @@ interface Params {
 
 export default async function Page({ params }: { params: Params }) {
   // check if params is null
-  
   if (
     params === null ||
     typeof params !== "object" ||
     !params.hasOwnProperty("id") ||
     typeof params.id !== "string"
-  ) {
+  )
     throw new Error(defaultErrorText);
-  }
 
-
-  //Get the savedAgreement based on the id
-  const savedAgreement: SavedAgreements | null = await getSavedAgreement(params.id);
   //If we have no savedAgreement, throw an error
-  if (!savedAgreement)
-    throw new Error(defaultErrorText);
+  const fetchedUserAgreement = (await getSavedAgreement(
+    params.id,
+  )) as SavedAgreements;
 
-
-  const user: User | null = await currentUser();
   // If there is no user, throw an error
-  if (!user || user == null)
-    throw new Error("You must be logged in to view this page.");
+  const user = (await currentUser()) as User;
 
-
-  const contract: FullContracts | null = await getAgreement(savedAgreement.agreement);
-  //If we have no contract, throw an error
-  if (!contract)
-    throw new Error(defaultErrorText);
-
+  const contract = (await getAgreement(
+    fetchedUserAgreement.agreement,
+  )) as FullContracts;
 
   return (
-    <ContinueAgreement contract={contract} user={user} savedAgreement={savedAgreement} />
+    <section
+      id="content"
+      className="flex-grow py-0 print:block print:flex-none"
+    >
+      <ConductAgreement
+        agreement={contract}
+        userId={user?.id}
+        savedAgreement={fetchedUserAgreement}
+      />
+    </section>
   );
 }

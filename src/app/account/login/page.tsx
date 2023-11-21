@@ -1,29 +1,17 @@
-"use client";
-
 import { type NextPage } from "next";
-import { SignIn } from "@clerk/nextjs";
-import { useSearchParams } from "next/navigation";
+import Login from "./Login";
 
-const Login: NextPage = () => {
-  const searchParams = useSearchParams();
+export const metadata = {
+  title: "Login - Plainly Legal",
+  description: "Login to your account.",
+};
 
-  let redirectUrl = "/";
-  if (searchParams !== null) {
-    const urlSearchParams = searchParams.get("search");
-
-    if (urlSearchParams !== null) redirectUrl = urlSearchParams;
-  }
-
+const Page: NextPage = () => {
   return (
     <section id="content" className="gap-20 bg-white py-20">
-      <SignIn
-        path="/account/login"
-        routing="hash"
-        signUpUrl="/account/sign-up"
-        redirectUrl={redirectUrl}
-      />
+      <Login />
     </section>
   );
 };
 
-export default Login;
+export default Page;

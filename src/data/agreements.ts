@@ -9,34 +9,27 @@ import { type FullContracts } from "~/types/contracts";
 //Get Agreements - Returns all agreements or null if none exist
 export async function getAgreements(): Promise<Contracts[] | null> {
   try {
-    const contracts = await prisma.contracts.findMany({
-      // // Commented out for now - not required at this moment
-      // include: {
-      //   contractQuestions: true,
-      //   clauses: true,
-      // },
-    });
+    const contracts = await prisma.contracts.findMany();
 
     return contracts;
   } catch (error) {
-    // console.error(error);
+    console.error("getAgreements() ERROR: ", error);
     return null;
-  } finally {
-    await prisma.$disconnect();
   }
 }
 
 export async function getAgreement(
-  identifier: number | string
+  identifier: string
 ): Promise<FullContracts | null> {
-  //If id is a string, get by slug, otherwise get by id
+  // If id is a string, get by slug, otherwise get by id
 
-  const whereType = typeof identifier === "string" ? "slug" : "id";
+  // const whereType = typeof identifier === "string" ? "slug" : "id";
 
   try {
     const contract = await prisma.contracts.findUnique({
       where: {
-        [whereType]: identifier,
+        // [whereType]: identifier,
+        slug: identifier,
       },
       include: {
         clauses: {
@@ -72,10 +65,8 @@ export async function getAgreement(
       clauses: sortedClauses,
     };
   } catch (error) {
-    // console.error(error);
+    console.error("getAgreement() ERROR: ", error);
     return null;
-  } finally {
-    await prisma.$disconnect();
   }
 }
 

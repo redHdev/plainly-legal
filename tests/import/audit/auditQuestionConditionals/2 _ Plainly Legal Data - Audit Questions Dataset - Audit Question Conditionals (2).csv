@@ -1,0 +1,27 @@
+ID,Question ID,Term One,Operand,Term Two
+1,2,llc_created,EQUALS,TRUE
+2,3,llc_created,EQUALS,TRUE
+3,4,llc_created,EQUALS,FALSE
+4,5,llc_count,EQUALS,1
+5,6,llc_count,GREATER_THAN,1
+6,10,llc_created,EQUALS,TRUE
+7,11,llc_created,EQUALS,FALSE
+8,101,website_built,EQUALS,TRUE
+9,102,website_built,EQUALS,TRUE
+10,103,state_privacy_laws,EQUALS,TRUE
+11,104,website_built,EQUALS,TRUE
+12,105,website_built,EQUALS,TRUE
+13,106,website_built,EQUALS,TRUE
+14,107,affiliate_links,EQUALS,TRUE
+15,109,third_party_sites,EQUALS,TRUE
+16,204,brand_photos,EQUALS,TRUE
+17,206,stock_images,EQUALS,TRUE
+18,208,video_audio,EQUALS,TRUE
+19,210,brand_fonts,EQUALS,TRUE
+20,214,guests,EQUALS,TRUE
+21,401,have_team,EQUALS,TRUE
+22,402,have_employees,EQUALS,TRUE
+23,403,have_employees,EQUALS,TRUE
+24,404,have_team,EQUALS,TRUE
+25,405,have_contractors,EQUALS,TRUE
+26,406,have_contractors,EQUALS,TRUE

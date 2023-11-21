@@ -1,0 +1,781 @@
+Key,Clause Group,Clause Version,Clause Text,Clause Help,Delete Warning,Formatting,Questions,Plain Text Name
+1900,legalese,miscellaneous_clauses_standard,"<p><strong>Miscellaneous Clauses</strong><br />
+<br />
+The Parties further agree:<br />
+<br />
+<em><u>Entire Agreement.</u> </em>This Agreement constitutes the sole and entire agreement of the Parties with respect to the subject matter contained herein, and supersedes all prior and contemporaneous understandings, agreements, representations and warranties, both written and oral, regarding such subject matter.<br />
+<br />
+<em><u>Amendments</u></em>. No amendment to or modification of this Agreement is effective unless it is in writing and signed by each Party.<br />
+<br />
+<em><u>Severability</u></em>. If any term or provision of this Agreement is found by a court of competent jurisdiction to be invalid, illegal or unenforceable in any jurisdiction, such invalidity, illegality or unenforceability shall not affect any other term or provision of this Agreement or invalidate or render unenforceable such term or provision in any other jurisdiction.<br />
+<br />
+<em><u>Waiver</u></em>. No waiver by any Party of any of the provisions of this Agreement shall be effective unless explicitly set forth in writing and signed by the Party so waiving. Except as otherwise set forth in this Agreement, no failure to exercise, or delay in exercising, any right, remedy, power or privilege arising from this Agreement shall operate or be construed as a waiver thereof, nor shall any single or partial exercise of any right, remedy, power or privilege hereunder preclude any other or further exercise thereof or the exercise of any other right, remedy, power or privilege.<br />
+<br />
+<em><u>Assignment</u></em>. Neither Party may assign, transfer, delegate or subcontract any of its rights or delegate any of its obligations under this Agreement without the prior written consent of the other Party. For the avoidance of doubt, any party may rely upon employees or independent contractors to perform any work required of it in this agreement, but the Party shall remain ultimately responsible for the completion of that work and its quality. Any purported assignment or delegation in violation of this Section shall be null and void.<br />
+<br />
+<em><u>Relationship of the Parties</u></em>. The relationship between the Parties is that of independent contractors. Nothing contained in this Agreement shall be construed as creating any agency, partnership, joint venture or other form of joint enterprise, employment or fiduciary relationship between the parties, and neither Party shall have authority to contract for or bind the other party in any manner whatsoever.<br />
+<br />
+<em><u>No Third-Party Beneficiaries</u></em>. This Agreement benefits solely the Parties to this Agreement and their respective permitted successors and assigns and nothing in this Agreement, express or implied, confers on any other Person any legal or equitable right, benefit or remedy of any nature whatsoever under or by reason of this Agreement.<br />
+<br />
+<u><em>Indemnification</em></u>. Each Party (the &ldquo;<strong>Indemnifying Party</strong>&rdquo;) agrees to indemnify, defend, and hold harmless the other Party, its officers, directors, employees, and agents for any losses, costs, liabilities, and expenses (including reasonable attorneys&rsquo; fees) relating to or arising from the Indemnifying Party&rsquo;s (i) breach or non-fulfillment of any representation, warranty, or covenant in this Agreement, (ii) breach of this Agreement, or (iii) grossly negligent behavior in connection with this Agreement.<br />
+<br />
+<em><u>Force Majeure</u></em>. Neither Party shall be liable or responsible to the other, nor be deemed to have defaulted or breached this Agreement, for any failure or delay in fulfilling or performing any term of this Agreement when and to the extent such failure or delay is caused by or results from acts or circumstances beyond the reasonable control of that Party including, without limitation, acts of God, flood, fire, earthquake, explosion, governmental actions, war, invasion or hostilities (whether war is declared or not), terrorist threats or acts, riot, or other civil unrest, national emergency, revolution, insurrection, epidemic or pandemic, lock-outs, strikes or other labor disputes (whether or not relating to either Party&#39;s workforce), or restraints or delays affecting carriers or inability or delay in obtaining supplies of adequate or suitable materials, materials or telecommunication breakdown or power outage. If the event in question continues for a continuous period in excess of 15 days, either Party shall be entitled to give notice in writing to the other to terminate this Agreement.</p>
+","<p>This section includes the boilerplate legal language that should be included in all agreements.<br />
+<br />
+The Entire Agreement &amp; Amendments clauses work together to mean that this agreement and any later written agreement are the only binding agreements. It prevents either party from claiming there was a side, unwritten agreement.<br />
+<br />
+The Severability clause means that if something in this agreement is found to be invalid, the rest of the agreement remains in place.<br />
+<br />
+The Waiver clause allows you to show grace without losing any rights. In other words, if you want to give the other side a break when they don&#39;t live up to the agreement once, you can do that without it meaning you can&#39;t enforce the agreement later.<br />
+<br />
+The Assignment clause basically says this agreement is only between the parties. Neither party can try to transfer their rights under this agreement to someone else.<br />
+<br />
+The Relationship of the Parties clause means that nothing about this agreement creates a partnership or anything of the sort.<br />
+<br />
+The No Third-Party Beneficiaries clause is meant to prevent some unnamed outsider from claiming they have rights under the agreement (and suing you).<br />
+<br />
+The Indemnification clause means that if either party gets sued by a third party because of the bad behavior of the other party to this agreement, the badly behaving party is responsible for paying for the defense of that suit.<br />
+<br />
+The Force Majeure clause is sometimes called the &quot;acts of god&quot; clause. It excuses a party from meeting their obligations if they are prevented by a major catastrophe that is outside their control (e.g., a pandemic or invasion of their country).</p>
+","As a general rule, you should not touch these clauses. This legalese is there for a reason. If you remove part or all of this clause, you very well might undermine the enforceability of the agreement or create the risk that someone can claim there is an agreement beyond what is written.",,,Miscellaneous Clauses
+1901,legalese,web_dev_reps_and_warranties,"<p><strong>Representations And Warranties</strong><br />
+<br />
+{service_provider_designation} warrants that it shall perform the Services using personnel of commercially reasonable skill, experience, and qualifications in a timely, workmanlike, and professional manner in accordance with generally recognized industry standards for similar services.<br />
+<br />
+{service_provider_designation} represents and warrants that all work-product provided by {service_provider_designation} shall not infringe upon or violate any third party&rsquo;s intellectual property rights. All elements included in the work-product shall either be licensed specifically for inclusion in the design, created by {service_provider_designation}, or otherwise be free of any third-party copyright claims.<br />
+<br />
+{customer_identifier} represents and warrants that the use of any assets or design elements provided by {customer_identifier} to the {service_provider_designation} shall not infringe upon or violate any third party&rsquo;s intellectual property rights. All assets and design elements provided by {customer_identifier} shall either be licensed specifically for inclusion in the design, created by the {customer_identifier}, or otherwise be free of any third-party copyright claims. In accordance with this representation and warranty, {service_provider_designation} shall not be held responsible for any copyright infringement that might arise as a result of the inclusion of elements or assets provided by the {customer_identifier}.</p>
+","Representations and warranties is a legal phrase that basically means promises and assurances. In this specific clause, you are agreeing to perform the work in a professional manner, and each party is agreeing that they will only provide or use materials that won't create any copyright issues. In other words, each side is agreeing they won't use graphics or other assets that are owned by someone else. ","This clause is meant to protect both parties to the agreement. If you remove this clause, there is a risk that you might engage in copyright infringement unknowingly because your client provides you with copyrighted materials they don't have the right to use. ",,,Representations and Warranties
+1902,legalese,limitation_of_liability_general,"<p><strong>Limitation of Liability</strong><br />
+<br />
+IN NO EVENT SHALL EITHER PARTY BE LIABLE TO THE OTHER PARTY OR TO ANY THIRD PARTY FOR ANY LOSS OF USE, REVENUE, OR PROFIT, OR FOR ANY CONSEQUENTIAL, INCIDENTAL, INDIRECT, EXEMPLARY, SPECIAL, OR PUNITIVE DAMAGES WHETHER ARISING OUT OF BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE, REGARDLESS OF WHETHER SUCH DAMAGE WAS FORESEEABLE AND WHETHER OR NOT THE PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, AND NOTWITHSTANDING THE FAILURE OF ANY AGREED OR OTHER REMEDY OF ITS ESSENTIAL PURPOSE.</p>
+","This clause places limits on any damages that your client or someone down the line from your client could claim from you. The goal of this would be to limit any claim by your client only to their direct, actual losses. Obviously, the hope is that this clause never matters, but it protects you if a dispute does arise.","This clause is intended to limit the risk that your client will be able to get damages beyond any actual, direct harm they suffer if something goes wrong. Removing it will mean your client could claim any form of damages in any dispute that might arise.",,,Limitation of Liability
+1903,legalese,forum_choice_arbitration,"<p><strong>Choice of Law &amp; Choice of Forum</strong><br />
+<br />
+The Parties agree that this Agreement shall be construed under the laws of {choice_of_law} regardless of any choice of law rules.<br />
+<br />
+Each Party irrevocably and unconditionally agrees that any dispute arising under or related to this Agreement shall be resolved exclusively through individual, non-class arbitration to be held in {dispute_location} under the rules of the American Arbitration Association. Each Party irrevocably and unconditionally submits to the exclusive jurisdiction of such arbitration and agrees to bring any such dispute only in such forum. Each Party agrees that a final judgment by such arbitration is conclusive and may be enforced in other jurisdictions by suit on the judgment or in any other manner provided by law.</p>","<p>This clause addresses what happens if there is a dispute between the parties to the agreement.<br />
+<br />
+The first paragraph sets out what state&#39;s law will apply in any dispute about the agreement. The legal rules often don&#39;t vary much between states, but there are small variations. The choice of law section helps the parties avoid a dispute about at least this first issue.<br />
+<br />
+The second paragraph sets out that any dispute will be resolved through arbitration, which is a form of private dispute resolution. It also sets out where that arbitration will occur and explains that the parties are agreeing that the decision in the arbitration is final.</p>","You should not delete this clause. While you certainly hope you'll never find yourself in a dispute about the agreement, this clause is intended to reduce the uncertainty and risks for you. Removing this would allow the other party to bring a dispute in any forum they choose. Do not remove this clause unless you replace it with another similar clause.",,"18, 19",Choice of Law & Forum
+1904,legalese,forum_choice_court,"<p><strong>Choice of Law &amp; Choice of Forum</strong><br />
+<br />
+The Parties agree that this Agreement shall be construed under the laws of {choice_of_law} regardless of any choice of law rules.<br />
+<br />
+Each Party irrevocably and unconditionally agrees that any dispute arising under or related to this Agreement shall be resolved exclusively in the state or federal courts with jurisdiction for cases arising in {dispute_location}. Each Party irrevocably and unconditionally submits to the exclusive jurisdiction of such courts and agrees to bring any such dispute only in such forum. Each Party agrees that a final judgment by such court is conclusive and may be enforced in other jurisdictions by suit on the judgment or in any other manner provided by law.</p>","<p>This clause addresses what happens if there is a dispute between the parties to the agreement.<br />
+<br />
+The first paragraph sets out what state&#39;s law will apply in any dispute about the agreement. The legal rules often don&#39;t vary much between states, but there are small variations. The choice of law section helps the parties avoid a dispute about at least this first issue.<br />
+<br />
+The second paragraph sets out that any dispute will be resolved by bringing an action in courts in a specific location. It also sets out that the decision of that court will be final.</p>","You should not delete this clause. While you certainly hope you'll never find yourself in a dispute about the agreement, this clause is intended to reduce the uncertainty and risks for you. Removing this would allow the other party to bring a dispute in any forum they choose. Do not remove this clause unless you replace it with another similar clause.",,"18, 19",Choice of Law & Forum
+1905,legalese,incorporate_website_terms,"<p><strong>Terms of Use and Privacy Policy</strong><br />
+<br />
+The Company&rsquo;s Terms of Use and Privacy Policy are hereby incorporated by reference into this Agreement. Except as modified by this Agreement, each of those agreements and policies shall apply fully to You. In the event of a conflict between any of those policies and this Agreement, this Agreement shall govern.</p>
+",This clause acts as a backstop. It means that everything in your website's legal policies also applies to your program unless the issue is addressed specifically in this agreement.  ,"This clause is meant as extra protection and gets express consent to the terms of your privacy policy. Generally, you'll want to leave this clause in the agreement.",,,Incorporation of Website Policy
+1906,legalese,miscellaneous_clauses_group_program,"<p><strong>Miscellaneous Clauses</strong><br />
+<br />
+The Parties further agree:<br />
+<br />
+<em><u>Entire Agreement</u></em>. This Agreement constitutes the sole and entire agreement of the Parties with respect to the subject matter contained herein, and supersedes all prior and contemporaneous understandings, agreements, representations and warranties, both written and oral, regarding such subject matter.<br />
+<br />
+<em><u>Amendments</u></em>. No amendment to or modification of this Agreement is effective unless it is in writing and signed by each Party.<br />
+<br />
+<em><u>Severability</u></em>. If any term or provision of this Agreement is found by a court of competent jurisdiction to be invalid, illegal or unenforceable in any jurisdiction, such invalidity, illegality or unenforceability shall not affect any other term or provision of this Agreement or invalidate or render unenforceable such term or provision in any other jurisdiction.<br />
+<br />
+<em><u>Waiver</u></em>. No waiver by any Party of any of the provisions of this Agreement shall be effective unless explicitly set forth in writing and signed by the Party so waiving. Except as otherwise set forth in this Agreement, no failure to exercise, or delay in exercising, any right, remedy, power or privilege arising from this Agreement shall operate or be construed as a waiver thereof, nor shall any single or partial exercise of any right, remedy, power or privilege hereunder preclude any other or further exercise thereof or the exercise of any other right, remedy, power or privilege.<br />
+<br />
+<em><u>Relationship of the Parties</u></em>. The relationship between the Parties is that of independent contractors. Nothing contained in this Agreement shall be construed as creating any agency, partnership, joint venture or other form of joint enterprise, employment or fiduciary relationship between the parties, and neither Party shall have authority to contract for or bind the other party in any manner whatsoever.<br />
+<br />
+<em><u>No Third-Party Beneficiaries</u></em>. This Agreement benefits solely the Parties to this Agreement and their respective permitted successors and assigns and nothing in this Agreement, express or implied, confers on any other Person any legal or equitable right, benefit or remedy of any nature whatsoever under or by reason of this Agreement.<br />
+<br />
+<em><u>Indemnification</u></em>. Each Party (the &ldquo;Indemnifying Party&rdquo;) agrees to indemnify, defend, and hold harmless the other Party, its officers, directors, employees, and agents for any losses, costs, liabilities, and expenses (including reasonable attorneys&rsquo; fees) relating to or arising from the Indemnifying Party&rsquo;s (i) breach or non-fulfillment of any representation, warranty, or covenant in this Agreement, (ii) breach of this Agreement, or (iii) grossly negligent behavior in connection with this Agreement.<br />
+<br />
+<em><u>Force Majeure</u></em>. Neither Party shall be liable or responsible to the other, nor be deemed to have defaulted or breached this Agreement, for any failure or delay in fulfilling or performing any term of this Agreement when and to the extent such failure or delay is caused by or results from acts or circumstances beyond the reasonable control of that Party including, without limitation, acts of God, flood, fire, earthquake, explosion, governmental actions, war, invasion or hostilities (whether war is declared or not), terrorist threats or acts, riot, or other civil unrest, national emergency, revolution, insurrection, epidemic and pandemic, lock-outs, strikes or other labor disputes (whether or not relating to either Party&#39;s workforce), or restraints or delays affecting carriers or inability or delay in obtaining supplies of adequate or suitable materials, materials or telecommunication breakdown or power outage. If the event in question continues for a continuous period in excess of 15 days, either Party shall be entitled to give notice in writing to the other to terminate this Agreement.</p>","<p>This section includes the boilerplate legal language that should be included in all agreements.<br />
+<br />
+The Entire Agreement &amp; Amendments clauses work together to mean that this agreement and any later written agreement are the only binding agreements. It prevents either party from claiming there was a side, unwritten agreement.<br />
+<br />
+The Severability clause means that if something in this agreement is found to be invalid, the rest of the agreement remains in place.<br />
+<br />
+The Waiver clause allows you to show grace without losing any rights. In other words, if you want to give the other side a break when they don&#39;t live up to the agreement once, you can do that without it meaning you can&#39;t enforce the agreement later.<br />
+<br />
+The Assignment clause basically says this agreement is only between the parties. Neither party can try to transfer their rights under this agreement to someone else.<br />
+<br />
+The Relationship of the Parties clause means that nothing about this agreement creates a partnership or anything of the sort.<br />
+<br />
+The No Third-Party Beneficiaries clause is meant to prevent some unnamed outsider from claiming they have rights under the agreement (and suing you).<br />
+<br />
+The Indemnification clause means that if either party gets sued by a third party because of the bad behavior of the other party to this agreement, the badly behaving party is responsible for paying for the defense of that suit.<br />
+<br />
+The Force Majeure clause is sometimes called the &quot;acts of god&quot; clause. It excuses a party from meeting their obligations if they are prevented by a major catastrophe that is outside their control (e.g., a pandemic or invasion of their country).</p>
+","As a general rule, you should not touch these clauses. This legalese is there for a reason. If you remove part or all of this clause, you very well might undermine the enforceability of the agreement or create the risk that someone can claim there is an agreement beyond what is written.",,,Miscellaneous Clauses
+1907,legalese,limitation_of_liability_group_program,"<p><strong>Limitation of Liability</strong><br />
+<br />
+You agree to absolve and do hereby absolve the Company of any and all liability or loss that You or any person or entity associated with You may suffer or incur as a result of use of the Program and/or any information and resources contained in the Program. You agree that the Company shall not be liable to You for any type of damages, including direct, indirect, special, incidental, equitable, or consequential loss or damages for use of the Program.<br />
+<br />
+The information, software, products, and service included or available through the Program may include inaccuracies or typographical errors. Changes are periodically added to the information in the Program. The Company and/or its suppliers may make improvements and/or changes in the Program at any time.<br />
+<br />
+The Company and/or its suppliers make no representations about the suitability, reliability, availability, timeliness, and accuracy of the information, software, products, services, and related graphics contained in the Program for any purpose. To the maximum extent permitted by applicable law, all such information, software, products, services, and related graphics are provided &ldquo;as is&rdquo; without warranty or condition of any kind. The Company and/or its suppliers hereby disclaim all warranties and conditions with regard to this information, software, products, services, and related graphics, including all implied warranties or conditions of merchantability, fitness for a particular purpose, title, and non-infringement.<br />
+<br />
+To the maximum extent permitted by applicable law, in no event shall the Company and/or its suppliers be liable for any direct, indirect, punitive, incidental, special, consequential damages or any damages whatsoever including, without limitation, damages for loss of use, data, or profits arising out of or in any way connected with the use or performance of the Program, with the delay or inability to use the Program or related service, the provision of or failure to provide services, or for any information, software, products, services, and related graphics obtained through the Program, or otherwise arising out of the use of the Program, whether based on contract, tort, negligence, strict liability, or otherwise, even if the Company or any of its suppliers has been advised of the possibility of damages. Because some States or other jurisdictions do not allow the exclusion or limitation of liability for consequential or incidental damages, the above limitations may not apply to You. If You are dissatisfied with the Program or any portion of it, Your sole and exclusive remedy is to discontinue using the Program.</p>","This clause places limits on the claims your customers can make against you and limits any damages that your customers could claim from you even if they could make a case. The goal of this would be to limit any claim by your customer only to their direct, actual losses. Obviously, the hope is that this clause never matters, but it protects you if a dispute does arise.",This clause is intended to limit the risk that your customer will sue you and limit damages if they do. Removing it will mean your client could claim any form of damages in any dispute that might arise.,,,Limitation of Liability
+1908,legalese,fee_shifting,"<p><strong>Fee Shifting</strong><br />
+<br />
+The Parties agree that the prevailing Party in any action relating to or arising out of this Agreement will be awarded its reasonable attorneys&rsquo; fees and costs incurred as a result of such a proceeding.</p>
+","This provision means that if there is ever a dispute about your agreement in court or arbitration, the losing party will have to reimburse the other party for all legal fees associated with that dispute.","We included this clause because you said you wanted to include it in answering the questions. If you remove this provision, each party will be responsible for the costs incurred in a dispute, no matter who wins.",,,Fee Shifting
+1909,legalese,limitation_of_liability_product,"<p><strong>Limitation of Liability</strong><br />
+<br />
+You agree to absolve and do hereby absolve the Company of any and all liability or loss that You or any person or entity associated with You may suffer or incur as a result of use of the Product and/or any information and resources contained in the Product. You agree that the Company shall not be liable to You for any type of damages, including direct, indirect, special, incidental, equitable, or consequential loss or damages for use of the Product.<br />
+<br />
+The information, software, products, and service included or available through the Product may include inaccuracies or typographical errors. Changes are periodically added to the information in the Product. The Company and/or its suppliers may make improvements and/or changes in the Product at any time.<br />
+<br />
+The Company and/or its suppliers make no representations about the suitability, reliability, availability, timeliness, and accuracy of the information, software, products, services, and related graphics contained in the Product for any purpose. To the maximum extent permitted by applicable law, all such information, software, products, services, and related graphics are provided &ldquo;as is&rdquo; without warranty or condition of any kind. The Company and/or its suppliers hereby disclaim all warranties and conditions with regard to this information, software, products, services, and related graphics, including all implied warranties or conditions of merchantability, fitness for a particular purpose, title, and non-infringement.<br />
+<br />
+To the maximum extent permitted by applicable law, in no event shall the Company and/or its suppliers be liable for any direct, indirect, punitive, incidental, special, consequential damages or any damages whatsoever including, without limitation, damages for loss of use, data, or profits arising out of or in any way connected with the use or performance of the Product, with the delay or inability to use the Product or related service, the provision of or failure to provide services, or for any information, software, products, services, and related graphics obtained through the Product, or otherwise arising out of the use of the Product, whether based on contract, tort, negligence, strict liability, or otherwise, even if the Company or any of its suppliers has been advised of the possibility of damages. Because some States or other jurisdictions do not allow the exclusion or limitation of liability for consequential or incidental damages, the above limitations may not apply to You. If You are dissatisfied with the Product or any portion of it, Your sole and exclusive remedy is to discontinue using the Product.</p>
+","This clause places limits on the claims your customers can make against you and limits any damages that your customers could claim from you even if they could make a case. The goal of this would be to limit any claim by your customer only to their direct, actual losses. Obviously, the hope is that this clause never matters, but it protects you if a dispute does arise.",This clause is intended to limit the risk that your customer will sue you and limit damages if they do. Removing it will mean your client could claim any form of damages in any dispute that might arise.,,,Limitation of Liability
+1910,legalese,tech_agreement_reps_and_warranties,"<p><strong>Representations And Warranties</strong><br />
+<br />
+{service_provider_designation} warrants that it shall perform the Services using personnel of commercially reasonable skill, experience, and qualifications in a timely, workmanlike, and professional manner in accordance with generally recognized industry standards for similar services.<br />
+<br />
+{customer_identifier} acknowledges and agrees that the service is being provided on an &quot;as is&quot; basis, and {customer_identifier} assumes all responsibility and risk for any technical issues that may arise during the process.<br />
+<br />
+{customer_identifier} hereby agrees to release and discharge the {service_provider_designation} and its owners, officers, employees, and agents from any and all claims, demands, and causes of action that {customer_identifier} may have or may later accrue, arising out of or in any way related to the service, including any technical issues that may arise during or as a result of that service.<br />
+<br />
+Further, {customer_identifier} represents and warrants that they will take all reasonable steps to avoid any irreparable harm, including taking steps to backup their online platforms to the extent possible prior to the {service_provider_designation} providing the service.</p>","Representations and warranties is a legal phrase that basically means promises and assurances. In this specific clause, the party providing the services is agreeing to perform the work in a professional manner, and the client is agreeing to assume the risks associated with tech issues that might arise as a result of the work. ","This clause is meant to protect both parties to the agreement. If you remove this clause, there is a risk that a client will blame you for technical issues that are beyond your control. ",,,Representations and Warranties
+1911,legalese,contractor_reps_re_deliverables,"<p><strong>Representations and Warranties Regarding Deliverables</strong><br />
+<br />
+You represent and warrant to the Company that the Company will receive good and valid title to all Deliverables, free and clear of all encumbrances and liens of any kind, and that all Deliverables are and shall be Your original work (except for material in the public domain or provided by the Company) and do not and will not violate or infringe upon the intellectual property right or any other right whatsoever of any person, firm, corporation, or other entity.</p>","Representations and warranties is a legal phrase that basically means promises and assurances. In this specific clause, the contractor is providing assurances that the work product created under this agreement won't infringe on any third party's intellectual property rights. In other words, the contractor is assuring the company that the contractor's work won't get the company sued.",This clause is meant to protect you by requiring the contractor to agree not to use anyone else's protected material in the work they do for you. You generally should not remove this clause from the agreement. ,,,Representations and Warranties
+1912,legalese,photo_addendum_other_agreements,"<p><strong>Other Agreements Remain In Force</strong><br />
+<br />
+Except as set forth in this Addendum, all prior agreements between the Company and the Photographer remains in full force and effect in accordance with their original provisions and terms. To the extent this Addendum conflicts with any provision in the prior agreements, the terms of this Addendum shall prevail.</p>","This clause explains that this agreement doesn't replace any other agreement between the company and the photographer; this agreement adds to any prior agreement. Importantly, however, it does say that this agreement trumps anything that might be different in any other agreement. ","If you have any other written agreements with the photographer (or might in the future), do not remove this clause. Without this clause, there would be uncertainty about how the different agreements work together. ",,,Other Agreements Remain In Force
+1913,legalese,guest_non_solicit_absolute,"<p><strong>Promotion And Solicitation Limits</strong><br />
+<br />
+{guest_expert_identifier} agrees not to promote {guest_expert_identifier}&#39;s services to the Program participants or solicit Program participants to retain {guest_expert_identifier}&rsquo;s services within the Program discussion area or by contacting Program participants directly. {guest_expert_identifier} may not engage in private discussions with Program participants regarding {guest_expert_identifier}&rsquo;s services even if the Program participant solicits such discussion.</p>",This clause sets out that the guest may not solicit program participants under any circumstances.,"If you remove this clause, the guest will be free to solicit program participants. ",,,Non-Solicitation Clause
+1914,legalese,guest_non_solicit_limited,"<p><strong>Promotion And Solicitation Limits</strong><br />
+<br />
+{guest_expert_identifier} agrees not to promote {guest_expert_identifier}&#39;s services to the Program participants or solicit Program participants to retain {guest_expert_identifier}&rsquo;s services within the Program discussion area or by contacting Program participants directly. {guest_expert_identifier} may engage in private discussions with Program participants regarding {guest_expert_identifier}&rsquo;s services so long as the Program participant initiates said discussion.</p>",This clause sets out that the guest may not solicit program participants but may repond if a program participant initiates the conversation.,"If you remove this clause, the guest will be free to solicit program participants. ",,,Non-Solicitation Clause
+1915,legalese,affiliate_reps_and_warranties,"<strong>Representations and Warranties</strong><br />
+<br />
+The Company represents and warrants:
+
+<ul>
+        <li>that it shall not knowingly and intentionally violate any law, regulation, or rule applicable to its business operations;</li>
+        <li>that the products and/or services offered in connection with the Affiliate Program are legal products and services within the Company&rsquo;s jurisdiction;</li>
+        <li>that it intends to be bound by the mutual promises, terms, and conditions of this Agreement; and</li>
+        <li>that it has the necessary intellectual property and other rights to offer the products that are available for promotion under the Affiliate Program.</li>
+</ul>
+
+Affiliate represents and warrants:
+
+<ul>
+        <li>that Affiliate has read this Agreement, understands its terms, and agrees to be bound by this Agreement;</li>
+        <li>that this Agreement constitutes Affiliate&rsquo;s valid and binding agreement and was executed by a person with authority to bind the Affiliate;</li>
+        <li>that Affiliate&rsquo;s answers to the questions in the Application were truthful and accurate to the best of Affiliate&rsquo;s knowledge;</li>
+        <li>that Affiliate will comply with CAN-SPAM, GDPR, and CA-SL requirements in connection with email marketing;</li>
+        <li>that Affiliate will comply with all applicable Federal Trade Commission rules, regulations, and guidelines related to affiliate marketing;</li>
+        <li>that Affiliate will not make use of the Company&rsquo;s name, trademark, or service mark in any manner other than expressly allowed under the Affiliate Program; and</li>
+        <li>that Affiliate will not engage in any behavior that violates the terms of this Agreement or that constitutes an attempt to fraudulently or deceptively increase the earnings of Affiliate under this Affiliate Program.</li>
+</ul>","This clause sets out assurances that each side is making to the other. Representations and Warranties is legal jargon for an assurance from a contracting party. You generally use them to make assurances about the current state of affairs (e.g., the representation that the affiliate has read the agreement) or a promise to do something in the future that isn't strictly about performing a service to the other contracting party (e.g., the affiliate assurance that it will comply with all relevant laws). ","You should not remove this section. Among other things, this is where your affiliates are promising to follow all the relevant laws. You want this in your agreement because without it, you might be held liable if an affiliate is flagrantly violating those marketing laws. ",,,Representations and Warranties
+1916,legalese,affiliate_limitation_of_liability,"<p><strong>Limitation of Liability</strong><br />
+<br />
+YOU AGREE TO ABSOLVE AND DO HEREBY ABSOLVE THE COMPANY OF ANY AND ALL LIABILITY OR LOSS THAT YOU OR ANY PERSON OR ENTITY ASSOCIATED WITH YOU MAY SUFFER OR INCUR AS A RESULT OF PARTICIPATION IN THE AFFILIATE PROGRAM AND/OR ANY INFORMATION AND RESOURCES CONTAINED IN THE AFFILIATE PROGRAM. YOU AGREE THAT THE COMPANY SHALL NOT BE LIABLE TO YOU FOR ANY TYPE OF DAMAGES, INCLUDING DIRECT, INDIRECT, SPECIAL, INCIDENTAL, EQUITABLE, OR CONSEQUENTIAL LOSS OR DAMAGES FOR PARTICIPATION IN THE AFFILIATE PROGRAM.<br />
+<br />
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE COMPANY BE LIABLE FOR ANY DIRECT, INDIRECT, PUNITIVE, INCIDENTAL, SPECIAL, CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF USE, DATA, OR PROFITS ARISING OUT OF OR IN ANY WAY CONNECTED WITH THE USE OR PERFORMANCE OF THE AFFILIATE PROGRAM, WITH THE DELAY OR INABILITY TO USE THE AFFILIATE PROGRAM OR RELATED SERVICE, THE PROVISION OF OR FAILURE TO PROVIDE SERVICES, OR FOR ANY INFORMATION, SOFTWARE, PRODUCTS, SERVICES, AND RELATED GRAPHICS OBTAINED THROUGH THE AFFILIATE PROGRAM, OR OTHERWISE ARISING OUT OF THE USE OF THE AFFILIATE PROGRAM, WHETHER BASED ON CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY, OR OTHERWISE, EVEN IF THE COMPANY OR ANY OF ITS SUPPLIERS HAS BEEN ADVISED OF THE POSSIBILITY OF DAMAGES. BECAUSE SOME STATES OR OTHER JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU. IF YOU ARE DISSATISFIED WITH THE AFFILIATE PROGRAM OR ANY PORTION OF IT, YOUR SOLE AND EXCLUSIVE REMEDY IS TO TERMINATE YOUR PARTICIPATION IN THE AFFILIATE PROGRAM.</p>
+","This clause places limits on the claims your affiliates can make against you and limits any damages that your affiliates could claim from you even if they could make a case. The goal of this would be to limit any claim by your affiliates only to their direct, actual losses. Obviously, the hope is that this clause never matters, but it protects you if a dispute does arise.",This clause is intended to limit the risk that your affiliates will sue you and limit damages if they do. Removing it will mean your affiliate could claim any form of damages in any dispute that might arise.,,,Limitation of Liability
+1917,legalese,website_changes_to_terms,"<strong>Changes To the Terms Of Use</strong><br />
+<br />
+We may revise and update these Terms of Use from time to time at our sole discretion. All changes are effective immediately when we post them and apply to all access to and use of the Website thereafter. Your continued use of the Website following the posting of the revised Terms of Use means that You accept and agree to the changes. You are expected to check this page from time to time so You are aware of any changes, as they are binding on You.",This section explains that you can change the terms at any time and that users are bound by the most recent terms.,"You should not delete this clause. You will almost certainly need to change your website terms at some point, and this clause ensures there's no question that you may change the terms and that users are bound by them. ",,,Changes To the Terms Of Use
+1918,legalese,privacy_policy_incorporation,"<strong>Privacy Policy</strong><br />
+<br />
+Your use of the Website is also subject to the Company&rsquo;s Privacy Policy. Please review our Privacy Policy, which also governs the Website and informs users of our data collection practices. Your agreement to the Privacy Policy is hereby incorporated into these Terms of Use.",This section explains that users are also bound by your Privacy Policy.,You should not delete this clause because you want users to acknowledge that they were provided access to a privacy policy. ,,,Privacy Policy
+1919,legalese,website_limitation_of_liability,"<strong>Limitation of Liability</strong><br />
+<br />
+YOU AGREE TO ABSOLVE THE COMPANY OF ANY AND ALL LIABILITY OR LOSS THAT YOU OR ANY PERSON OR ENTITY ASSOCIATED WITH YOU MAY SUFFER OR INCUR AS A RESULT OF THE USE OF THE INFORMATION CONTAINED ON THIS WEBSITE AND/OR THE RESOURCES YOU MAY DOWNLOAD FROM THIS WEBSITE. YOU AGREE THAT THE COMPANY SHALL NOT BE LIABLE TO YOU FOR ANY TYPE OF DAMAGES, INCLUDING DIRECT, INDIRECT, SPECIAL, INCIDENTAL, EQUITABLE, OR CONSEQUENTIAL LOSS OR DAMAGES FOR USE OF THIS WEBSITE.<br />
+<br />
+THE INFORMATION, SOFTWARE, PRODUCTS, AND SERVICES INCLUDED IN OR AVAILABLE THROUGH THE WEBSITE MAY INCLUDE INACCURACIES OR TYPOGRAPHICAL ERRORS. CHANGES ARE PERIODICALLY ADDED TO THE INFORMATION HEREIN. THE COMPANY AND/OR ITS SUPPLIERS MAY MAKE IMPROVEMENTS AND/OR CHANGES IN THE WEBSITE AT ANY TIME.<br />
+<br />
+THE COMPANY AND/OR ITS SUPPLIERS MAKE NO REPRESENTATIONS ABOUT THE SUITABILITY, RELIABILITY, AVAILABILITY, TIMELINESS, AND ACCURACY OF THE INFORMATION, SOFTWARE, PRODUCTS, SERVICES AND RELATED GRAPHICS CONTAINED ON THE WEBSITE FOR ANY PURPOSE. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, ALL SUCH INFORMATION, SOFTWARE, PRODUCTS, SERVICES, AND RELATED GRAPHICS ARE PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OR CONDITION OF ANY KIND. THE COMPANY AND/OR ITS SUPPLIERS HEREBY DISCLAIM ALL WARRANTIES AND CONDITIONS WITH REGARD TO THIS INFORMATION, SOFTWARE, PRODUCTS, SERVICES AND RELATED GRAPHICS, INCLUDING ALL IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.<br />
+<br />
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE COMPANY AND/OR ITS SUPPLIERS BE LIABLE FOR ANY DIRECT, INDIRECT, PUNITIVE, INCIDENTAL, SPECIAL, CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF USE, DATA OR PROFITS, ARISING OUT OF OR IN ANY WAY CONNECTED WITH THE USE OR PERFORMANCE OF THE WEBSITE, WITH THE DELAY OR INABILITY TO USE THE WEBSITE OR RELATED SERVICES, THE PROVISION OF OR FAILURE TO PROVIDE SERVICES, OR FOR ANY INFORMATION, SOFTWARE, PRODUCTS, SERVICES, AND RELATED GRAPHICS OBTAINED THROUGH THE WEBSITE, OR OTHERWISE ARISING OUT OF THE USE OF THE WEBSITE, WHETHER BASED ON CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY OR OTHERWISE, EVEN IF THE COMPANY OR ANY OF ITS SUPPLIERS HAS BEEN ADVISED OF THE POSSIBILITY OF DAMAGES. BECAUSE SOME STATES/JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, THE ABOVE LIMITATION MAY NOT APPLY TO YOU. IF YOU ARE DISSATISFIED WITH ANY PORTION OF THE WEBSITE, OR WITH ANY OF THESE TERMS OF USE, YOUR SOLE AND EXCLUSIVE REMEDY IS TO DISCONTINUE USING THE WEBSITE.","This clause places limits on the claims your customers can make against you and limits any damages that your customers could claim from you even if they could make a case. The goal of this would be to limit any claim by your customer only to their direct, actual losses. Obviously, the hope is that this clause never matters, but it protects you if a dispute does arise.",This clause is intended to limit the risk that your customer will sue you and limit damages if they do. Removing it will mean your client could claim any form of damages in any dispute that might arise.,,,Limitation of Liability
+1920,legalese,guest_blog_waiver,"<strong>Waiver of Claims</strong><br />
+<br />
+Regardless of whether Your Guest Post is selected for publication, to the fullest extent permitted by applicable law, You hereby irrevocably waive all legal and equitable claims relating to or arising out of Your submission of the Guest Post and relating to or arising out of the Company&rsquo;s subsequent publication of the Guest Post.",This clause requires the guest blogger to say they will not bring any claims against you. ,"Do not remove this clause. This clause protects you from claims by the guest blogger. While the chances of those claims arising is small, it's better to include a waiver to be safe. ",,,Waiver of Claims
+1921,legalese,,,,,,,
+1922,legalese,,,,,,,
+1923,legalese,,,,,,,
+1924,legalese,,,,,,,
+1925,legalese,,,,,,,
+1926,legalese,,,,,,,
+1927,legalese,,,,,,,
+1928,legalese,,,,,,,
+1929,legalese,,,,,,,
+1930,legalese,,,,,,,
+1931,legalese,,,,,,,
+1932,legalese,,,,,,,
+1933,legalese,,,,,,,
+1934,legalese,,,,,,,
+1935,legalese,,,,,,,
+1936,legalese,,,,,,,
+1937,legalese,,,,,,,
+1938,legalese,,,,,,,
+1939,legalese,,,,,,,
+1940,legalese,,,,,,,
+1941,,,,,,,,
+1942,,,,,,,,
+1943,,,,,,,,
+1944,,,,,,,,
+1945,,,,,,,,
+1946,,,,,,,,
+1947,,,,,,,,
+1948,,,,,,,,
+1949,,,,,,,,
+1950,,,,,,,,
+1951,,,,,,,,
+1952,,,,,,,,
+1953,,,,,,,,
+1954,,,,,,,,
+1955,,,,,,,,
+1956,,,,,,,,
+1957,,,,,,,,
+1958,,,,,,,,
+1959,,,,,,,,
+1960,,,,,,,,
+1961,,,,,,,,
+1962,,,,,,,,
+1963,,,,,,,,
+1964,,,,,,,,
+1965,,,,,,,,
+1966,,,,,,,,
+1967,,,,,,,,
+1968,,,,,,,,
+1969,,,,,,,,
+1970,,,,,,,,
+1971,,,,,,,,
+1972,,,,,,,,
+1973,,,,,,,,
+1974,,,,,,,,
+1975,,,,,,,,
+1976,,,,,,,,
+1977,,,,,,,,
+1978,,,,,,,,
+1979,,,,,,,,
+1980,,,,,,,,
+1981,,,,,,,,
+1982,,,,,,,,
+1983,,,,,,,,
+1984,,,,,,,,
+1985,,,,,,,,
+1986,,,,,,,,
+1987,,,,,,,,
+1988,,,,,,,,
+1989,,,,,,,,
+1990,,,,,,,,
+1991,,,,,,,,
+1992,,,,,,,,
+1993,,,,,,,,
+1994,,,,,,,,
+1995,,,,,,,,
+1996,,,,,,,,
+1997,,,,,,,,
+1998,,,,,,,,
+1999,,,,,,,,
+2000,,,,,,,,
+2001,,,,,,,,
+2002,,,,,,,,
+2003,,,,,,,,
+2004,,,,,,,,
+2005,,,,,,,,
+2006,,,,,,,,
+2007,,,,,,,,
+2008,,,,,,,,
+2009,,,,,,,,
+2010,,,,,,,,
+2011,,,,,,,,
+2012,,,,,,,,
+2013,,,,,,,,
+2014,,,,,,,,
+2015,,,,,,,,
+2016,,,,,,,,
+2017,,,,,,,,
+2018,,,,,,,,
+2019,,,,,,,,
+2020,,,,,,,,
+2021,,,,,,,,
+2022,,,,,,,,
+2023,,,,,,,,
+2024,,,,,,,,
+2025,,,,,,,,
+2026,,,,,,,,
+2027,,,,,,,,
+2028,,,,,,,,
+2029,,,,,,,,
+2030,,,,,,,,
+2031,,,,,,,,
+2032,,,,,,,,
+2033,,,,,,,,
+2034,,,,,,,,
+2035,,,,,,,,
+2036,,,,,,,,
+2037,,,,,,,,
+2038,,,,,,,,
+2039,,,,,,,,
+2040,,,,,,,,
+2041,,,,,,,,
+2042,,,,,,,,
+2043,,,,,,,,
+2044,,,,,,,,
+2045,,,,,,,,
+2046,,,,,,,,
+2047,,,,,,,,
+2048,,,,,,,,
+2049,,,,,,,,
+2050,,,,,,,,
+2051,,,,,,,,
+2052,,,,,,,,
+2053,,,,,,,,
+2054,,,,,,,,
+2055,,,,,,,,
+2056,,,,,,,,
+2057,,,,,,,,
+2058,,,,,,,,
+2059,,,,,,,,
+2060,,,,,,,,
+2061,,,,,,,,
+2062,,,,,,,,
+2063,,,,,,,,
+2064,,,,,,,,
+2065,,,,,,,,
+2066,,,,,,,,
+2067,,,,,,,,
+2068,,,,,,,,
+2069,,,,,,,,
+2070,,,,,,,,
+2071,,,,,,,,
+2072,,,,,,,,
+2073,,,,,,,,
+2074,,,,,,,,
+2075,,,,,,,,
+2076,,,,,,,,
+2077,,,,,,,,
+2078,,,,,,,,
+2079,,,,,,,,
+2080,,,,,,,,
+2081,,,,,,,,
+2082,,,,,,,,
+2083,,,,,,,,
+2084,,,,,,,,
+2085,,,,,,,,
+2086,,,,,,,,
+2087,,,,,,,,
+2088,,,,,,,,
+2089,,,,,,,,
+2090,,,,,,,,
+2091,,,,,,,,
+2092,,,,,,,,
+2093,,,,,,,,
+2094,,,,,,,,
+2095,,,,,,,,
+2096,,,,,,,,
+2097,,,,,,,,
+2098,,,,,,,,
+2099,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+2422,,,,,,,,
+2423,,,,,,,,
+2424,,,,,,,,
+2425,,,,,,,,
+2426,,,,,,,,
+2427,,,,,,,,
+2428,,,,,,,,
+2429,,,,,,,,
+2430,,,,,,,,
+2431,,,,,,,,
+2432,,,,,,,,
+2433,,,,,,,,
+2434,,,,,,,,
+2435,,,,,,,,
+2436,,,,,,,,
+2437,,,,,,,,
+2438,,,,,,,,
+2439,,,,,,,,
+2440,,,,,,,,
+2441,,,,,,,,
+2442,,,,,,,,
+2443,,,,,,,,
+2444,,,,,,,,
+2445,,,,,,,,
+2446,,,,,,,,
+2447,,,,,,,,
+2448,,,,,,,,
+2449,,,,,,,,
+2450,,,,,,,,
+2451,,,,,,,,
+2452,,,,,,,,
+2453,,,,,,,,
+2454,,,,,,,,
+2455,,,,,,,,
+2456,,,,,,,,
+2457,,,,,,,,
+2458,,,,,,,,
+2459,,,,,,,,
+2460,,,,,,,,
+2461,,,,,,,,
+2462,,,,,,,,
+2463,,,,,,,,
+2464,,,,,,,,
+2465,,,,,,,,
+2466,,,,,,,,
+2467,,,,,,,,
+2468,,,,,,,,
+2469,,,,,,,,
+2470,,,,,,,,
+2471,,,,,,,,
+2472,,,,,,,,
+2473,,,,,,,,
+2474,,,,,,,,
+2475,,,,,,,,
+2476,,,,,,,,
+2477,,,,,,,,
+2478,,,,,,,,
+2479,,,,,,,,
+2480,,,,,,,,
+2481,,,,,,,,
+2482,,,,,,,,
+2483,,,,,,,,
+2484,,,,,,,,
+2485,,,,,,,,
+2486,,,,,,,,
+2487,,,,,,,,
+2488,,,,,,,,
+2489,,,,,,,,
+2490,,,,,,,,
+2491,,,,,,,,
+2492,,,,,,,,
+2493,,,,,,,,
+2494,,,,,,,,
+2495,,,,,,,,
+2496,,,,,,,,
+2497,,,,,,,,
+2498,,,,,,,,
+2499,,,,,,,,
+2500,,,,,,,,
+2501,,,,,,,,

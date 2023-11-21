@@ -1,28 +1,33 @@
 import React from "react";
 import { type ClauseQuestions } from "@prisma/client";
-import { NumericFormat } from 'react-number-format';
+import { NumericFormat } from "react-number-format";
 
 interface Props {
   defaultValue: string;
   question: ClauseQuestions;
   classes?: string;
   placeholder?: string;
+  inputRef: React.Ref<HTMLInputElement> | undefined;
   value?: string;
-  valid?: (value : boolean) => void;
+  valid?: (value: boolean) => void;
   onChange?: (value: string) => void;
   errorState?: boolean;
+  enterPress?: () => void;
 }
 
 const PriceInput: React.FC<Props> = ({
   defaultValue,
-  onChange,
-  valid,
   question,
   classes,
+  placeholder,
   value,
+  valid,
+  inputRef,
+  onChange,
   errorState,
+  enterPress
 }: Props) => {
-  const [ error, setError ] = React.useState<string>("Please enter an input");
+  const [error, setError] = React.useState<string>("Please enter an input");
 
   function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
     const value = event.target.value;
@@ -30,12 +35,12 @@ const PriceInput: React.FC<Props> = ({
     //remove the $ sign and commas
     const valueWithoutFormatting = value.replace(/[^0-9]/g, "");
 
-    if(onChange){
+    if (onChange) {
       onChange(value);
     }
 
     //Check if the question is answered with valid input
-    const hasText = valueWithoutFormatting.length !== 0 ;
+    const hasText = valueWithoutFormatting.length !== 0;
     setError(hasText ? "" : "Please enter a valid input");
 
     //Check if the question is answered with valid input
@@ -43,6 +48,13 @@ const PriceInput: React.FC<Props> = ({
       valid(hasText);
     }
   }
+
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>): void => {
+    if (e.key === 'Enter' && enterPress) {
+        enterPress();
+    }
+  };
+
   return (
     <label
       role="group"
@@ -54,10 +66,12 @@ const PriceInput: React.FC<Props> = ({
         id={question.variable}
         defaultValue={value ?? defaultValue ?? ""}
         onChange={handleChange}
-        placeholder={""}
+        onKeyPress={handleKeyPress}
+        placeholder={placeholder ?? ""}
         thousandSeparator={true}
         prefix={"$"}
         allowLeadingZeros={false}
+        getInputRef={inputRef}
       />
 
       {/* Show the error if present */}
@@ -66,10 +80,9 @@ const PriceInput: React.FC<Props> = ({
           {error}
         </span>
       )}
-
     </label>
   );
-}
+};
 PriceInput.displayName = "Emberly Input Group";
 
 export default PriceInput;
